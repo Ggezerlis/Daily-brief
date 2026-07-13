@@ -1,0 +1,21 @@
+Morning, George — it's Monday the thirteenth of July, and it's shaping up to be a scorcher, so let's move fast. Three things up top. Athens is baking near thirty-six degrees today, so water is your first job. Second, you've got a couple of new-device login alerts in your inbox, one on your ElevenLabs account and one on Link, both from a Windows machine on Chrome; if that wasn't you, sort it this morning. And third, the Chamonix World Cup wrapped with a finish you'll want to hear. I couldn't reach your calendar today, so eyeball it yourself before you plan things.
+
+Let's start with the world. The big one is the Middle East. Overnight the US military said it struck a hundred and forty targets inside Iran, and Iran says it fired back toward Jordan and other Gulf states. It's the sharpest escalation in this exchange yet, so expect headlines to stay jumpy all week. In American politics, Senator Lindsey Graham has died of a ruptured aorta, just after flying home from Ukraine, where he'd been one of Kyiv's loudest backers. And lighter: the World Cup is down to the wire, with Argentina into the semis on a late Alvarez screamer, and Spain meeting France tomorrow in Texas, two sides that haven't lost all tournament.
+
+Here's a science note that's basically for you. Researchers found that heavy, repeated practice physically rewires the brain, letting a trained skill bypass the prefrontal cortex and run on dedicated circuits instead. That's the neuroscience of a move going from thinking to automatic, which is exactly what those thousandth-rep boulder sessions are buying you.
+
+On to AI and tech. OpenAI's GPT-5.6 went live last Wednesday and it's already the default in ChatGPT, with gains in coding and reasoning. Google's Gemini 3.1 Pro is topping the hardest reasoning benchmarks right now, and on the Claude side, Sonnet 5 landed a couple of weeks back as their most capable agentic Sonnet yet. No rumors today, all shipped and confirmed.
+
+Weather, quickly. Hot and mostly sunny, with northerly winds keeping it from feeling swampy. Low thirties through the morning, peaking near thirty-six in the afternoon, easing into the high twenties by evening. No real rain risk for Athens; the odd thunderstorm stays up in the mountains. Sunset's about a quarter to nine.
+
+Your personal front. As I said, the calendar was unreachable, so check it by hand. On email, the thing that actually needs you is those two new-login notices, one ElevenLabs and one Link, both new Windows devices, worth a quick "was that me?" The rest is noise: a stack of Reddit digests, a few receipts, and a gear sale. Nothing else is urgent.
+
+Quick health nudge, and I mean it today. With thirty-six degrees and any climbing on the docket, sip water before you're thirsty; get a bottle down before your session, not after.
+
+Now the good stuff, climbing. Chamonix Lead and Speed just finished. In the men's lead, Alberto Ginés López finally won his first-ever World Cup gold, beating Luka Potocar after seven years of podiums without the top step. In the women's lead, eighteen-year-old Annie Sanders grabbed her third gold of the season, with Chaehyun Seo on the podium yet again. And in speed, Olympic champ Veddriq Leonardo came back from a long injury to take it in four-point-eight-nine seconds. The season's heating up.
+
+One for gamers. Epic is giving away Nova Lands, a chill open-world factory builder, and Tattoo Tycoon this week, both free until Wednesday evening our time, so grab them before they're gone.
+
+And a bit of learning to close. Word of the day is crux: the hardest, most decisive point of a climb or a problem. As in, the third clip was the crux, and once I stuck it the rest flowed. Today's tip: when you're prompting an AI model, put your instructions before the long text you want it to work on, since models follow the ask more reliably when it comes first.
+
+That's your day: hot, packed, and worth an early start. Go get it.
