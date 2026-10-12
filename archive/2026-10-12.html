@@ -1,0 +1,145 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Monday, 12 October 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the forty-first straight morning. The ElevenLabs key is present but revoked, and needs re-issuing before audio can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip warn">Action &middot; A payment needs fixing</span>
+    <span class="chip warn">Security &middot; Check a new sign-in</span>
+    <span class="chip">World &middot; Trump touts Russia&ndash;Ukraine truce</span>
+    <span class="chip">World &middot; US disables ship in Gulf</span>
+    <span class="chip">Science &middot; 10 min exercise, deeper sleep</span>
+    <span class="chip">AI &middot; Quiet weekend, no releases</span>
+    <span class="chip">Weather &middot; Sunny then cloudy, ~25&deg;C</span>
+    <span class="chip">Learning &middot; Word: barn door</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; it&rsquo;s Monday the twelfth, and here&rsquo;s the shape of it before anything else. <span class="redacted">&mdash; personal items &mdash;</span> Weather&rsquo;s kind, so here&rsquo;s the rest over coffee.</p>
+      <p>Out in the wider world, the big one is murky but it moved markets: Trump&rsquo;s been touting an energy ceasefire between Russia and Ukraine, claiming both sides will stop hitting each other&rsquo;s power and infrastructure. Stocks ticked up and oil slipped on the news &mdash; except Moscow hasn&rsquo;t actually confirmed it, and Ukrainian power plants were still getting hit afterward, with Zelensky openly puzzled. So treat it as a hope, not a done deal. Closer to a boil, the Gulf: after that Houthi strike on Riyadh&rsquo;s airport, the US disabled a cargo ship trying to run Iran&rsquo;s blockade in the Gulf of Oman &mdash; a jet hit its stern, crew unharmed &mdash; and Trump&rsquo;s now openly weighing whether to join Saudi Arabia&rsquo;s offensive. And a neat bit of science for the athlete in you: a University of Texas team found that just ten extra minutes of exercise a day was linked to measurably deeper, more restorative sleep. Small lever, real payoff.</p>
+      <p>On the AI front it&rsquo;s genuinely quiet &mdash; no confirmed releases over the weekend. Two things got spotted rather than announced, so take them as rumors: someone caught an unannounced OpenAI life-sciences model, Rosalind Discovery, listed on their pricing page, and Google&rsquo;s next Gemini is still only turning up in limited testing. Nothing you can actually use yet. The labs are between drops.</p>
+      <p>Weather in Athens is a two-halves day. Bright and sunny through the morning, about seventeen first thing climbing to a warm twenty-five by mid-afternoon &mdash; then it clouds over from around three, with a small chance of a stray shower and the wind picking up from the southwest, gusting a little later on. Evening settles back to the low twenties. Sun&rsquo;s down by about ten to seven.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick water nudge &mdash; warm, sunny, and odds are there&rsquo;s a wall in your day, so keep a bottle on you and actually drink from it.</p>
+      <p>Two for the pocket. Word of the day is barn door &mdash; that climbing moment when your body swings open off the wall like a door on its hinges because your weight&rsquo;s tipped off balance, usually one hand and one foot fighting a losing battle. And a fact to chew on: a day on Venus is longer than its year. The planet spins so slowly that one full turn takes about two hundred and forty-three Earth days, while a single lap around the Sun takes only two hundred and twenty-five &mdash; so the day literally outlasts the year.</p>
+      <p>That&rsquo;s your Monday &mdash; a murky truce to keep an eye on, one card and one sign-in to sort, and a bright afternoon turning cloudy. Go get after it.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>Trump touts a Russia&ndash;Ukraine &ldquo;energy ceasefire&rdquo; &mdash; but it&rsquo;s unconfirmed.</strong> President Trump hailed an <strong>energy-and-infrastructure ceasefire</strong> between Moscow and Kyiv, and <strong>stocks rose while oil prices fell</strong> on the news. The catch: <strong>Russia has not confirmed it</strong>, and <strong>Ukrainian power plants were still being struck afterward</strong>, with President Zelensky expressing surprise at the continued hits. Treat it as a hope, not a settled deal. <a href="https://www.euronews.com/">Euronews</a></li>
+    <li><strong>Gulf escalates &mdash; US disables a ship, weighs joining Saudi strikes (update).</strong> After the deadly <strong>Houthi strike on Riyadh&rsquo;s King Khalid International Airport</strong>, US forces <strong>disabled a commercial cargo ship</strong> trying to run Iran&rsquo;s blockade in the Gulf of Oman &mdash; CENTCOM says a jet struck its stern without harming the crew &mdash; and <strong>Trump said the US is weighing whether to join Saudi Arabia&rsquo;s offensive</strong> against the Houthis. <a href="https://www.aljazeera.com/news/">Al Jazeera</a> <a href="https://www.cnbc.com/">CNBC</a></li>
+    <li><strong>Science &mdash; ten more minutes of exercise, deeper sleep.</strong> A <strong>University of Texas at Austin</strong> study found that people who did <strong>just ~10 more minutes of daily exercise</strong> got <strong>more deep, restorative sleep</strong> &mdash; a small, achievable lever on sleep quality, especially relevant if you&rsquo;re training. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>A genuinely quiet weekend &mdash; no confirmed model releases.</strong> Two items were <strong>spotted, not announced</strong> (treat as rumor): an <strong>unannounced OpenAI life-sciences model, &ldquo;Rosalind Discovery,&rdquo;</strong> appeared on the API pricing page, and <strong>Google&rsquo;s next Gemini remains in limited A/B testing</strong> only. Nothing shippable to use yet; the labs are between drops. <a href="https://www.testingcatalog.com/tag/ai/">TestingCatalog</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>A two-halves day: sunny morning, cloudy afternoon.</strong> Clear and bright early &mdash; about <strong>17&deg;C</strong> first thing, peaking near <strong>25&deg;C</strong> mid-afternoon, easing to the <strong>low 20s</strong> in the evening. <strong>Overcast from ~15:00</strong>, with a <strong>small chance of a stray shower</strong> (rain stays minimal, ~0&nbsp;mm) and the <strong>wind picking up from the SW</strong> in the afternoon (gusts to ~24&nbsp;km/h). No weather warnings. Sunset about <strong>18:52</strong>. <a href="https://wttr.in/Athens,Greece">wttr.in</a> <a href="https://www.timeanddate.com/sun/greece/athens">Time and Date</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar unavailable today.</strong> The calendar connector wasn&rsquo;t reachable this morning &mdash; check it yourself for anything on today.</li>
+    <li><strong>1 action &mdash; a failed payment has knocked a service offline.</strong> A recurring/auto-reload charge didn&rsquo;t go through and took some apps down; it&rsquo;s the same card thread snagging your other services, so one fix should clear the lot. (Details audio-only.)</li>
+    <li><strong>1 security item &mdash; a new device sign-in to review.</strong> A fresh login on another of your accounts; if it wasn&rsquo;t you, secure that account. (Details audio-only.)</li>
+    <li><strong>1 collaboration invite</strong> is waiting on a yes or no. (Details audio-only.)</li>
+    <li><strong>1 new calendar invite</strong> for an event in late November arrived. (Details audio-only.)</li>
+    <li><strong>Family admin ticking along</strong> &mdash; an ongoing plan is still being weighed; you&rsquo;ve already replied, so nothing needed right now. (Details audio-only.)</li>
+    <li>Everything else is receipts, renewals, social pings and newsletters &mdash; nothing needing a reply.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Warm, sunny stretch with likely time on the wall &mdash; keep a water bottle within reach and sip through the day.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>barn door</em>:</strong> a climbing move where your <strong>body swings open off the wall like a door on its hinges</strong>, because your weight has tipped off balance &mdash; typically one hand and one foot losing the fight to hold you in. <a href="https://en.wikipedia.org/wiki/Glossary_of_climbing_terms">Climbing glossary</a></li>
+    <li><strong>Surprising fact &mdash; a day on Venus is longer than its year.</strong> Venus rotates so slowly that <strong>one full turn takes ~243 Earth days</strong>, while a <strong>single orbit of the Sun takes only ~225 days</strong> &mdash; so a Venusian day literally outlasts a Venusian year. <a href="https://science.nasa.gov/venus/venus-facts/">NASA</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key needs re-issuing, 41st straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
