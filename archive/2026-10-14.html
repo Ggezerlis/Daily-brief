@@ -1,0 +1,158 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Wednesday, 14 October 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the forty-third straight morning. The ElevenLabs subscription itself still looks active (a fresh receipt arrived at the weekend), so the key is present but revoked and simply needs re-issuing before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip warn">Action &middot; Re-enable a hosted service</span>
+    <span class="chip">World &middot; Ukraine energy truce unravels</span>
+    <span class="chip">World &middot; Saudi strikes Yemen oil sites</span>
+    <span class="chip">World &middot; JWST finds dark-matter-rich cluster</span>
+    <span class="chip">AI &middot; Meta ships frontier models &mdash; lull over</span>
+    <span class="chip">Weather &middot; Wet all day, ~14&ndash;16&deg;C</span>
+    <span class="chip">Gaming &middot; Epic freebies end tomorrow</span>
+    <span class="chip">Climbing &middot; Salt Lake City boulder Fri&ndash;Sun</span>
+    <span class="chip">Learning &middot; Word: crimp</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; it&rsquo;s Wednesday the fourteenth, grey and wet in Athens again, so another indoor one. Two things up top: the AI lull just broke &mdash; Meta&rsquo;s shipped a pair of frontier models that, on their own numbers, beat the big names, which is worth a look given what you build. And that Russia&ndash;Ukraine energy truce Trump trumpeted is already falling apart. <span class="redacted">&mdash; personal items &mdash;</span> Here&rsquo;s the rest.</p>
+      <p>Out in the world, that energy ceasefire didn&rsquo;t last the week. Russia hit Ukraine&rsquo;s power grid again with a mass strike, leaving thousands across the south without electricity, and Kyiv says Moscow broke the truce almost as soon as it was announced &mdash; so treat the whole thing as talk, not a deal. Down in the Gulf, the Saudi&ndash;Houthi fight keeps widening: Saudi Arabia struck oil sites across western Yemen after missile debris hit Riyadh and an Aramco building in Dhahran, and Trump&rsquo;s still weighing whether to pitch in, with the Houthis warning of a swift, painful response if he does. And a lovely bit of science: the James Webb telescope has found an ancient galaxy cluster packed with far more dark matter than it should have, which nudges astronomers to rethink how the early universe clumped together.</p>
+      <p>Now the big one &mdash; AI&rsquo;s two-week quiet spell is over. Meta&rsquo;s dropped two frontier models, Muse Wonder and Muse Wonder Full, and on Meta&rsquo;s own benchmarks they edge out OpenAI&rsquo;s GPT-6 and Anthropic&rsquo;s Claude Fable on coding and memory. Independent testers at Vals back part of that up, ranking the top model first on cybersecurity tasks. The usual caveat applies &mdash; a lot of those numbers are Meta&rsquo;s own, so wait for outside testing before you believe the headline &mdash; but after a fortnight of nothing, a new player actually at the frontier is the story. They&rsquo;ll power Meta&rsquo;s Muse assistant going forward.</p>
+      <p>Athens weather: wet from dawn to dusk, low cloud and drizzle that thickens to proper rain around midday, when there&rsquo;s about an eighty percent chance of it. Temperature barely budges &mdash; fourteen first thing, maybe sixteen at the peak, back to fourteen by evening. It&rsquo;s gusty early, easterly wind punching up near sixty kilometres an hour before it eases off this afternoon. Sun&rsquo;s down by about ten to seven.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick health nudge: cool and damp means your thirst cue goes quiet, so keep water moving if you&rsquo;re training indoors today.</p>
+      <p>Gaming heads-up &mdash; last call. The Epic freebies, Out of Sight and TerraScape, vanish tomorrow around eleven in the morning your time, so if you want them, grab them tonight; they&rsquo;re yours forever once claimed. Next week&rsquo;s pair is Agent A and Bad Cheese from Thursday.</p>
+      <p>Climbing&rsquo;s about to light up: the Salt Lake City boulder round runs Friday to Sunday, the specialists&rsquo; last big test of the season. Sorato Anraku goes in leading the men&rsquo;s standings with five wins on the year, so he&rsquo;s the one to watch, and then the whole circuit closes with the lead finale in Santiago the week after. Worth lining up a stream.</p>
+      <p>Two for the pocket. Word of the day is crimp &mdash; the small, sharp edge you grab with just your fingertips, knuckles stacked and bent. And a productivity trick: the Eisenhower matrix. Sort every task into urgent-and-important, important-but-not-urgent, urgent-but-not, and neither &mdash; then do, schedule, delegate, delete. The trap is living in the urgent box and never reaching the important one.</p>
+      <p>That&rsquo;s your Wednesday &mdash; grey and indoors, one payment toggle to flip, and a genuine AI drop to poke at. Go get after it.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>The Russia&ndash;Ukraine energy truce is already unravelling (update).</strong> Days after President Trump announced an <strong>energy-and-infrastructure ceasefire</strong>, <strong>Russia hit Ukraine&rsquo;s power grid with a fresh mass strike</strong>, leaving <strong>thousands in the south without electricity</strong>; Kyiv says Moscow <strong>breached the truce almost immediately</strong>. Treat it as talk, not a done deal. <a href="https://www.intellinews.com/russia-ends-energy-ceasefire-with-mass-strikes-on-ukraine-s-power-grid-423730/">Intellinews</a> <a href="https://www.kyivpost.com/">Kyiv Post</a></li>
+    <li><strong>Saudi&ndash;Houthi fight widens into Yemen&rsquo;s oil sites.</strong> Saudi Arabia <strong>struck oil facilities across western Yemen</strong> after <strong>intercepted-missile debris hit Riyadh and an Aramco building in Dhahran</strong>, wounding several. Trump is <strong>still weighing whether to join the Saudi campaign</strong>; the Houthis warn of a <strong>&ldquo;swift and painful&rdquo; response</strong> if he does. <a href="https://www.aljazeera.com/news/">Al Jazeera</a> <a href="https://www.cbsnews.com/live-updates/iran-war-us-trump-saudi-arabia-houthi/">CBS News</a></li>
+    <li><strong>Webb spots an ancient cluster unusually rich in dark matter.</strong> NASA&rsquo;s <strong>James Webb Space Telescope</strong> has revealed an <strong>ancient galaxy cluster with an unexpectedly dense concentration of dark matter</strong> &mdash; a result that <strong>challenges current theories of how the early universe assembled</strong> its large-scale structure. <a href="https://www.sciencedaily.com/news/space_time/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Meta ships frontier models &mdash; the two-week lull is over.</strong> Meta Superintelligence Labs released <strong>Muse Wonder and Muse Wonder Full</strong>. On <strong>Meta&rsquo;s own benchmarks</strong> they <strong>edge out OpenAI&rsquo;s GPT-6 and Anthropic&rsquo;s Claude Fable 5.1 on coding and memory</strong>; independent testers at <strong>Vals</strong> rank the top model <strong>first on cybersecurity tasks</strong>, and Artificial Analysis called it &ldquo;a material jump&rdquo; over prior Meta models. <em>Caveat:</em> most headline numbers are Meta&rsquo;s own &mdash; wait for broader third-party testing. The models will power Meta&rsquo;s <strong>Muse assistant</strong>. <a href="https://fortune.com/2026/10/13/metas-muse-models-reach-the-ai-frontier-and-kill-any-hopes-to-pace-it">Fortune</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Wet and grey, dawn to dusk.</strong> <strong>Low cloud and drizzle</strong> thickening to <strong>proper rain around midday</strong> (~<strong>80% chance</strong>). Temperature in a tight band: about <strong>14&deg;C early</strong>, up to roughly <strong>16&deg;C</strong> at the peak, back to <strong>14&deg;C by evening</strong>. <strong>Gusty easterly wind early</strong>, up near <strong>55&ndash;60&nbsp;km/h</strong>, easing this afternoon. No severe-weather warnings for Attica. Sunset about <strong>18:49</strong>. <a href="https://wttr.in/Athens,Greece">wttr.in</a> <a href="https://www.timeanddate.com/sun/greece/athens">Time and Date</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Gaming &amp; Deals</h3>
+  <ul>
+    <li><strong>Epic freebies end tomorrow &mdash; last call.</strong> <strong>Out of Sight</strong> (atmospheric story game) and <strong>TerraScape</strong> (medieval city-building puzzler) are <strong>free to keep until about 11:00 Athens time on Thursday, 15 October</strong>; once claimed they&rsquo;re yours for good. Next up from 15 Oct: <strong>Agent A</strong> and <strong>Bad Cheese</strong>. <a href="https://store.epicgames.com/en-US/free-games">Epic Games Store</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Climbing</h3>
+  <ul>
+    <li><strong>Salt Lake City boulder round this weekend.</strong> The <strong>World Climbing Series boulder stop in Salt Lake City runs 16&ndash;18 October</strong> (Fri&ndash;Sun) &mdash; the boulder specialists&rsquo; last big test of the year. <strong>Sorato Anraku leads the men&rsquo;s standings with five wins</strong> on the season. The circuit then closes with the <strong>lead finale in Santiago, Chile, 23&ndash;25 October</strong>. <a href="https://www.worldclimbing.com/">World Climbing</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar unavailable today.</strong> The calendar connector wasn&rsquo;t reachable this morning &mdash; check it yourself for anything on today.</li>
+    <li><strong>1 action &mdash; a hosted service switched itself off.</strong> A recurring auto-reload hit its monthly cap and disabled itself; one re-enable (with a higher limit) brings it back. (Details audio-only.)</li>
+    <li><strong>1 low-priority dev deadline &mdash; mid-November.</strong> A platform housekeeping task is due in about a month. (Details audio-only.)</li>
+    <li><strong>1 minor &mdash; credits expiring.</strong> A batch of credits on one of your tools lapses in a couple of days. (Details audio-only.)</li>
+    <li>Otherwise a quiet inbox &mdash; receipts, promos, social and gaming pings, nothing needing a reply; the family threads are already handled.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Cool, damp day &mdash; the thirst cue is quieter, so keep water within reach if you&rsquo;re training indoors.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>crimp</em>:</strong> a <strong>small, sharp edge</strong> on a climbing wall or rock that you grip with just your <strong>fingertips</strong>, knuckles stacked and bent. <em>&ldquo;The crux is a two-finger crimp you have to trust.&rdquo;</em> <a href="https://en.wikipedia.org/wiki/Glossary_of_climbing_terms">Glossary of climbing terms</a></li>
+    <li><strong>Productivity &mdash; the Eisenhower matrix.</strong> Sort every task into four boxes &mdash; <strong>urgent &amp; important</strong> (do now), <strong>important, not urgent</strong> (schedule), <strong>urgent, not important</strong> (delegate), <strong>neither</strong> (delete). The classic trap is living in the urgent box and never reaching the genuinely important one.</li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key needs re-issuing, 43rd straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
