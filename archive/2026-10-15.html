@@ -1,0 +1,149 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Thursday, 15 October 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the forty-fourth straight morning. The ElevenLabs subscription itself still looks active (a receipt arrived last weekend), so the key is present but revoked and simply needs re-issuing before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip warn">Action &middot; Cancel a trial before tomorrow</span>
+    <span class="chip">World &middot; US floats unfreezing Russian assets</span>
+    <span class="chip">World &middot; Gulf tense, oil above $100</span>
+    <span class="chip">Science &middot; First working nuclear clocks</span>
+    <span class="chip">AI &middot; Quiet day; Gemini Argon paid-only</span>
+    <span class="chip">Weather &middot; Cloudy ~18&deg;C, dry by day</span>
+    <span class="chip">Gaming &middot; Epic swaps free games today</span>
+    <span class="chip">Learning &middot; Word: dyno</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; it&rsquo;s Thursday the fifteenth, cool and cloudy in Athens with the overnight rain already cleared out, so a dry if grey one ahead. Two things up top. First, the big diplomatic surprise: the US has floated handing some frozen Russian money back to restart Ukraine peace talks, and Europe flatly said no. And second, today&rsquo;s the day Epic swaps its free games, so there&rsquo;s a grab-both window around six this evening. <span class="redacted">&mdash; personal items &mdash;</span></p>
+      <p>Out in the world, that peace-talk story is the one to watch. According to the Financial Times, American envoys &mdash; Witkoff and Kushner among them &mdash; quietly pitched European and NATO reps in Miami on unfreezing part of the roughly two hundred sixty billion euros in Russian assets the West locked up back in twenty twenty-two, parking it in a US-overseen vehicle as a carrot to get Moscow back to the table. The Europeans rejected it outright, and it clearly rattled Kyiv, which wasn&rsquo;t expecting Washington to ease the pressure on Russia. Meanwhile the Gulf stays on a knife-edge &mdash; Hormuz is still effectively shut, oil&rsquo;s hanging above a hundred dollars, and every fresh Houthi volley at Saudi Arabia keeps traders jumpy. And a gorgeous bit of physics: rival teams in Vienna and Beijing have built the first working nuclear clocks, timekeepers so steady they&rsquo;d drift about a second every thirty million years. They don&rsquo;t beat the best atomic clocks yet, but they open a whole new way to test the fundamental constants of nature.</p>
+      <p>Over in AI, it&rsquo;s quiet again &mdash; no confirmed frontier release in the last day, after Meta&rsquo;s splash earlier this week. The one practical thing worth knowing: Google&rsquo;s newest model, Gemini 4 Argon, is still only reaching paying subscribers, Ultra and Pro, with no free-tier access yet. So if you&rsquo;re poking at Gemini on the free app, you&rsquo;re on the lighter model, not the new frontier one. Nothing else shipped that&rsquo;s worth dropping what you&rsquo;re doing for.</p>
+      <p>Athens weather: cloudy and mild, no sun to speak of. About fifteen or sixteen first thing, nudging to maybe eighteen at the afternoon peak, then sliding back to the low teens after dark. The rain&rsquo;s behind us &mdash; there was a wet spell overnight, but you&rsquo;re looking at a dry day, basically zero chance once you&rsquo;re up and about. Just a gentle northerly breeze, nothing to lean into. Sun goes down about ten to seven.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick health nudge: it&rsquo;s cool and damp, which quietly switches off your thirst, so keep water moving if you&rsquo;re training today &mdash; you&rsquo;ll drink less than you need without noticing.</p>
+      <p>Gaming, and this one&rsquo;s time-sensitive. Today&rsquo;s the Epic Store swap. The current freebies, Out of Sight and TerraScape, vanish around six this evening your time &mdash; last call, grab them if you want them. And from six, two new ones land, free to keep through next Thursday: Agent A, a slick sixties spy puzzler, and Bad Cheese, a short, creepy little horror game where you&rsquo;re a mouse surviving a very bad household. Both worth the click.</p>
+      <p>Two for the pocket. Word of the day is dyno &mdash; a dynamic move where you launch off the wall, both feet leaving the holds, to slap a grip that&rsquo;s out of reach. <em>She stuck the dyno to the finish.</em> And a fact to chew on: the Eiffel Tower is actually up to fifteen centimetres taller in summer, because the iron expands in the heat and the whole structure grows.</p>
+      <p>That&rsquo;s your Thursday &mdash; grey but dry, a diplomatic curveball to watch, and fresh games at six. Go get after it.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>US floats unfreezing some Russian assets to restart Ukraine peace talks &mdash; Europe says no.</strong> Per a <strong>Financial Times</strong> report, US envoys <strong>Steve Witkoff and Jared Kushner</strong> pitched European, NATO and EU representatives in <strong>Miami</strong> on releasing part of the roughly <strong>&euro;260&nbsp;billion in frozen Russian sovereign assets</strong> (locked up in 2022), parking the funds in a <strong>US-overseen vehicle</strong> as leverage to revive negotiations. <strong>European delegates rejected it outright</strong>, and the move reportedly <strong>surprised Kyiv</strong>. <a href="https://www.business-standard.com/world-news/us-proposes-unfreezing-russian-assets-to-revive-ukraine-peace-talks-report-126101500156_1.html">Business Standard</a> <a href="https://gvwire.com/2026/10/14/us-floats-unfreezing-some-russian-assets-to-restart-ukraine-peace-talks-ft-reports/">GV Wire (FT)</a></li>
+    <li><strong>The Gulf stays on a knife-edge.</strong> The <strong>Strait of Hormuz remains effectively shut</strong>, <strong>crude is still hanging above $100</strong>, and continued <strong>Houthi missile-and-drone volleys at Saudi Arabia</strong> keep energy markets jumpy as the Saudi&ndash;Houthi fight grinds on and the US weighs its involvement. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Physicists build the first working nuclear clocks.</strong> Rival teams in <strong>Vienna (TU Wien) and Beijing (Tsinghua)</strong> report the first functioning clocks keyed to a <strong>thorium-229</strong> nuclear transition, so steady they&rsquo;d <strong>drift about a second every 30&nbsp;million years</strong>. They don&rsquo;t beat the best optical atomic clocks yet, but open a <strong>new way to probe nature&rsquo;s fundamental constants</strong> and hunt dark matter. <a href="https://www.natureasia.com/en/info/press-releases/detail/9455">Nature</a> <a href="https://arabic.euronews.com/2026/10/08/scientists-in-austria-and-china-have-developed-the-worlds-first-nuclear-clocks-this-breakt">Euronews</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>A quiet day &mdash; no confirmed frontier release in 24h</strong> (after Meta&rsquo;s Muse Wonder drop earlier in the week). The one practical note: <strong>Google&rsquo;s Gemini 4 Argon is still only reaching paying tiers</strong> (AI Ultra and Pro), with <strong>no free-tier access yet</strong> &mdash; so the free Gemini app is on the lighter model, not the new frontier one. Rumoured releases elsewhere remain unconfirmed. <a href="https://smartscope.blog/en/blog/gemini-4-argon-access-introductory-pricing-2026/">SmartScope</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Cloudy and mild, dry through the day.</strong> Overcast with little or no sun. About <strong>15&ndash;16&deg;C first thing</strong>, up to a peak near <strong>18&deg;C</strong> in the afternoon, sliding to the <strong>low teens (~13&ndash;14&deg;C) after dark</strong>. A <strong>wet spell overnight cleared out</strong> &mdash; daytime rain chance is essentially <strong>0%</strong>. Only a <strong>gentle northerly breeze (~13&ndash;19&nbsp;km/h</strong>, gusts ~35). No weather warnings for Attica. Sunset about <strong>18:49</strong>. <a href="https://www.meteoblue.com/en/weather/week/athens_greece_264371">meteoblue</a> <a href="https://www.timeanddate.com/sun/greece/athens">Time and Date</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Gaming &amp; Deals</h3>
+  <ul>
+    <li><strong>Epic Games Store swaps its free games today.</strong> <strong>Out of Sight</strong> and <strong>TerraScape</strong> are free to keep only until about <strong>18:00 Athens time today</strong> &mdash; last call. From then, two new freebies land, <strong>free to keep through 22 October</strong>: <strong>Agent A: A Puzzle in Disguise</strong> (1960s spy puzzle-adventure) and <strong>Bad Cheese</strong> (a short psychological-horror game where you play a young mouse). <a href="https://store.epicgames.com/en-US/free-games">Epic Games Store</a> <a href="https://www.goclecd.fr/jeux-gratuits-epic-games-agent-a-bad-cheese-news-n/">GoCléCD</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar unavailable today.</strong> No calendar connector is reachable &mdash; check your own calendar for anything scheduled today.</li>
+    <li><strong>1 deadline &mdash; a free trial ends tomorrow evening.</strong> If you don&rsquo;t want it to roll into a paid charge, cancel it before then; otherwise ignore. (Details audio-only.)</li>
+    <li><strong>1 action still open &mdash; a hosted service auto-reload is switched off.</strong> It hit its monthly cap and needs re-enabling with a higher limit &mdash; same recurring thread. (Details audio-only.)</li>
+    <li>Otherwise a <strong>quiet inbox</strong> &mdash; receipts, policy-update notices, social and gaming pings; <strong>no new security alerts</strong> and nothing needing a reply. Family threads are handled.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Cool, damp air quietens the thirst cue &mdash; keep water within reach if you&rsquo;re training today, since you&rsquo;ll drink less than you need without noticing.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>dyno</em>:</strong> a <strong>dynamic climbing move</strong> where you <strong>launch off the wall</strong>, both feet leaving the holds, to catch a grip that&rsquo;s out of static reach. <em>&ldquo;She stuck the dyno to the finish hold.&rdquo;</em> <a href="https://en.wikipedia.org/wiki/Glossary_of_climbing_terms">Glossary of climbing terms</a></li>
+    <li><strong>Surprising fact.</strong> The <strong>Eiffel Tower is up to ~15&nbsp;cm taller in summer</strong>: the iron structure <strong>expands in the heat</strong>, so the whole tower grows (and leans slightly away from the sun) before shrinking back as it cools. <a href="https://www.toureiffel.paris/en/news/history-and-culture/all-you-need-know-about-dilation-eiffel-tower">Tour Eiffel</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key needs re-issuing, 44th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
