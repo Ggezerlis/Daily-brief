@@ -1,0 +1,150 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Saturday, 17 October 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the forty-sixth straight morning. The ElevenLabs subscription itself still looks active, so the key is present but revoked and simply needs re-issuing before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip warn">Action &middot; A lapsed trial &mdash; codes now down</span>
+    <span class="chip">World &middot; US&ndash;Israel&ndash;Iran war, Hormuz at risk</span>
+    <span class="chip">Science &middot; One rule for black-hole jets</span>
+    <span class="chip">World &middot; Kenya logs a 3rd Ebola case</span>
+    <span class="chip">AI &middot; Open-weight models keep landing</span>
+    <span class="chip">Weather &middot; Wet dawn, bright afternoon</span>
+    <span class="chip">Climbing &middot; SLC qualy shock, finals Sunday</span>
+    <span class="chip">Learning &middot; Word: flash</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; it&rsquo;s Saturday the seventeenth, and here&rsquo;s what actually matters today. The Gulf war you&rsquo;ve been tracking keeps grinding on, with the Strait of Hormuz now a genuine danger zone for shipping. The weather&rsquo;s doing you a favour, though: a wet, grey start that burns off to a bright, dry afternoon, so stack your outdoor plans after lunch. <span class="redacted">&mdash; personal items &mdash;</span> And it&rsquo;s a climbing weekend.</p>
+      <p>Let&rsquo;s go abroad. The war between the US, Israel and Iran keeps widening at the edges, and the sharpest development this week is at sea: more than ten vessels have been attacked in or near the Strait of Hormuz since Sunday, the worst stretch since the fighting began, while the Saudi-led coalition struck Houthi positions in Taiz, in Yemen, and the Houthis keep firing back at Saudi Arabia. No new ceasefire, and oil stays twitchy.</p>
+      <p>A gorgeous bit of physics to balance that. Astronomers found that black holes of wildly different sizes, from stellar ones right up to the giants at galaxy centres, seem to launch their jets by the very same universal rule. It even helps explain those eruptions that fire off years after a black hole has shredded a passing star. Same cosmic recipe, every scale.</p>
+      <p>And one to keep half an eye on: Kenya&rsquo;s confirmed a third case of Ebola, the Bundibugyo strain, linked back to the first patient, who died. Still contained for now, but worth watching.</p>
+      <p>Over in AI, the big consumer apps were quiet overnight &mdash; no fresh ChatGPT or Claude drop &mdash; but the open-weight corner keeps buzzing, which is the part that matters for you as a builder. NVIDIA expanded its Nemotron family with new open models tuned specifically for agentic workflows, the sort you can run locally or on your own hardware. And a startup called Reflection put out an Apache-licensed model named Beam, aimed squarely at coding and agents. Neither&rsquo;s a headline-grabber, but if you&rsquo;re wiring agents into your app, free-to-run models you can self-host are quietly the most useful releases going right now.</p>
+      <p>Athens weather is a day of two halves. You&rsquo;ll wake to rain and grey, with showers through the early morning that clear off by late morning. The afternoon flips to mostly sunny and dry, peaking near sixteen, then easing into the low teens by evening. Light northerly winds, no warnings today, and the sun sets around a quarter to seven.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick health note &mdash; that dry afternoon air pulls more water out of you than you&rsquo;ll notice, so keep a bottle close if you&rsquo;re climbing today.</p>
+      <p>Now your weekend. Salt Lake City qualification threw up a proper shock: Austria&rsquo;s Nicolai Uznik, who&rsquo;s been quiet all season, topped the men&rsquo;s, and Chi led the women&rsquo;s. Semis and finals run through Sunday, and since this is the last boulder event of the year, the overall series titles are on the line. Worth a tab.</p>
+      <p>Two for the pocket. Word of the day is <em>flash</em> &mdash; in climbing, sending a route first try but with the beta already in hand, someone&rsquo;s shown you the moves. Not quite an onsight, still a clean first go. And a productivity nudge: eat the frog &mdash; knock out your single hardest, most-dreaded task first thing, before the day fills up. Everything after it feels easy.</p>
+      <p>That&rsquo;s your Saturday: a grey morning burning off to a bright afternoon, a climbing weekend to watch, and little else tugging at you. Go enjoy it.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>The US&ndash;Israel&ndash;Iran war keeps widening at the edges, and the sea is the flashpoint.</strong> More than <strong>ten vessels have been attacked in or near the Strait of Hormuz since Sunday</strong> &mdash; the <strong>worst stretch since the war began</strong> &mdash; while the <strong>Saudi-led coalition struck Houthi positions in Taiz</strong>, Yemen, and the Houthis keep firing at Saudi Arabia. No fresh ceasefire; oil remains jumpy. <a href="https://www.aljazeera.com/news/">Al Jazeera</a> <a href="https://www.cbsnews.com/live-updates/iran-war-us-houthi-saudi-arabia-trump/">CBS News</a></li>
+    <li><strong>Black holes of every size seem to fire their jets by one universal rule.</strong> Astronomers report that black holes from <strong>stellar-mass up to the supermassive giants at galaxy centres</strong> appear to <strong>launch their jets the same way</strong> &mdash; a finding that even helps explain <strong>eruptions that flare years after a black hole shreds a passing star</strong>. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+    <li><strong>Kenya confirms a third Ebola case.</strong> Health authorities logged a <strong>third infection of the Bundibugyo strain</strong>, <strong>linked to the first patient</strong>, who died. The outbreak is described as contained for now but is being watched closely. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>The open-weight wave keeps rolling &mdash; no new flagship chatbot, but useful kit for builders.</strong> <strong>NVIDIA</strong> expanded its <strong>Nemotron</strong> family with new <strong>open-weight models tuned for agentic workflows</strong>, meant to run locally or on your own hardware. Separately, a startup called <strong>Reflection</strong> released <strong>Beam</strong>, an <strong>Apache-licensed model aimed at coding and agents</strong>. No new ChatGPT or Claude drop overnight. (Both items are from weekly AI roundups rather than primary blogs &mdash; verify specs before relying on them.) <a href="https://www.marketingprofs.com/opinions/2026/56192/ai-update-october-16-2026-ai-news-and-views-from-the-past-week">MarketingProfs</a> <a href="https://aiweekly.co/ai-news-today">AI Weekly</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>A wet, grey dawn clearing to a bright, dry afternoon.</strong> Showers linger through the <strong>early morning</strong> (rain chance ~80% at first light, <strong>dropping to ~10% by late morning</strong>), then the afternoon turns <strong>mostly sunny and dry</strong>. Temperatures climb from about <strong>13&ndash;14&deg;C in the morning</strong> to a <strong>peak near 16&deg;C mid-afternoon</strong>, easing to the <strong>low teens by evening</strong> (~11&deg;C overnight). <strong>Light northerly winds</strong> (~10&ndash;30&nbsp;km/h), <strong>no active warnings</strong>. Sunset about <strong>18:46</strong>. <a href="https://www.meteoblue.com/en/weather/week/athens_greece_264371">meteoblue</a> <a href="https://www.timeanddate.com/sun/greece/athens">Time and Date</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Climbing</h3>
+  <ul>
+    <li><strong>A qualification shock in Salt Lake City &mdash; the season&rsquo;s last boulder event.</strong> The <strong>World Climbing Series Salt Lake City</strong> stop (16&ndash;18 Oct, at Smith&rsquo;s Ballpark) sprang a surprise in qualification: <strong>Austria&rsquo;s Nicolai Uznik</strong>, quiet for much of the season, <strong>topped the men&rsquo;s</strong>, with <strong>Chi leading the women&rsquo;s</strong>. <strong>Semi-finals and finals run through Sunday</strong>, with the <strong>overall boulder series titles on the line</strong>. <a href="https://www.worldclimbing.com/">worldclimbing.com</a> <a href="https://ifsc.results.info/events/1531/infosheet">IFSC results</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar unavailable today.</strong> No calendar connector is reachable &mdash; check your own calendar for anything scheduled.</li>
+    <li><strong>1 action &mdash; a free trial has lapsed and its codes have stopped working.</strong> If you rely on them, take a minute to sort it; otherwise ignore. (Details audio-only.)</li>
+    <li>Otherwise a <strong>quiet inbox</strong> &mdash; a subscription renewal ticking along, a couple of routine terms-and-privacy updates, a founder-credits nudge from a service you use, and the usual social pings. <strong>No new security alerts</strong>, and nothing needs a reply.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>That dry afternoon air pulls more water out of you than you&rsquo;ll notice &mdash; keep a bottle close if you&rsquo;re climbing or training today.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>flash</em>:</strong> in climbing, to <strong>send a route on your first try</strong> but <strong>with prior beta</strong> &mdash; someone&rsquo;s shown you the moves or given you the sequence. It&rsquo;s a notch below an <em>onsight</em> (first go, zero information), but still a clean first ascent of the route. <a href="https://en.wikipedia.org/wiki/Glossary_of_climbing_terms">Glossary of climbing terms</a></li>
+    <li><strong>Productivity nudge &mdash; &ldquo;eat the frog&rdquo;:</strong> do your <strong>single hardest, most-dreaded task first thing</strong>, before the day fills with easier work. Clearing it early removes the dread tax and makes everything after it feel light. <a href="https://todoist.com/productivity-methods/eat-the-frog">Todoist</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key needs re-issuing, 46th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
