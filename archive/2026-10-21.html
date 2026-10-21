@@ -1,0 +1,142 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Wednesday, 21 October 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the fifty-first straight morning. The ElevenLabs subscription itself still looks active, so the key is present but revoked and simply needs re-issuing before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip warn">Action &middot; 1 card to fix</span>
+    <span class="chip">World &middot; Black Sea drone war pulls in NATO</span>
+    <span class="chip">World &middot; Rubio: Iran deal &ldquo;extremely difficult&rdquo;</span>
+    <span class="chip">AI &middot; Anthropic&rsquo;s ~$35B compute deal</span>
+    <span class="chip">Weather &middot; Clear, dry, ~22&deg;</span>
+    <span class="chip">Learning &middot; Word: sonder</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; it&rsquo;s Wednesday the twenty-first, and here&rsquo;s the shape of it. Top of the pile: that drone war in the Black Sea just pulled NATO in, with the alliance sending more patrol planes after a run of deadly strikes on cargo ships off Romania and Bulgaria. <span class="redacted">&mdash; personal items &mdash;</span> Otherwise Athens is clear and warm, a proper bright day.</p>
+      <p>Let&rsquo;s go wider. The lead is the Black Sea. Over the past week drones have hit at least seven cargo vessels off the coasts of Romania and Bulgaria, both NATO members, killing two people and leaving a couple of dozen missing. Romania has scrambled F-16s to shoot drones down over its own waters, and now NATO says it&rsquo;s deploying extra patrol aircraft to the region. No one&rsquo;s formally blamed Moscow, but a NATO source told Reuters the tankers were hit by Russian drones. It&rsquo;s edging uncomfortably close to Article Five territory.</p>
+      <p>Meanwhile, the Gulf. Secretary of State Rubio said out loud what everyone suspected, that striking a peace deal with Iran is, in his words, extremely difficult while attacks on Hormuz shipping keep coming. Tehran, for its part, warned that any American attack would bring destruction across the whole region. So the standoff you&rsquo;ve been hearing about for weeks is hardening, not thawing.</p>
+      <p>Over to AI, and it&rsquo;s another quiet morning on the apps you actually use, no new ChatGPT, Claude, Gemini or Grok feature overnight. The real story is the scale of the buildout behind them. Anthropic just signed a roughly thirty-five-billion-dollar compute deal with Lambda, leasing a giant Texas data center, and that&rsquo;s on top of an even larger one only weeks ago. The models aren&rsquo;t changing much week to week right now, but the money and electricity being poured into the next ones absolutely is.</p>
+      <p>Weather here is a gift again. Clear to lightly clouded all day, and basically no rain, zero percent, so leave the jacket. You&rsquo;ll start the morning around sixteen or seventeen degrees, nudge up to a warm twenty-two by mid-afternoon, then settle back toward eighteen or nineteen in the evening. Winds stay light, no warnings anywhere, and the sun goes down about twenty to seven. Classic golden October.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick health note: it&rsquo;s dry and warm again this afternoon, the kind of day that quietly dehydrates you, so keep a bottle within reach if you&rsquo;re climbing or training.</p>
+      <p>Two for the pocket. Word of the day is <em>sonder</em>, that quiet jolt when you realize every stranger you pass has a life every bit as vivid and complicated as your own. As in, stuck in the crowd at the gym, she was hit by a wave of sonder. And a fact to sit with: there are more trees on Earth, roughly three trillion of them, than there are stars in our entire galaxy, the Milky Way, which tops out around a few hundred billion. We are, quite literally, outnumbered by trees.</p>
+      <p>That&rsquo;s your Wednesday: a tense Black Sea abroad, a bright calm day here, and one card to fix before it nags you again. Go get after it.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>Black Sea drone war escalates &mdash; NATO sends in more patrol aircraft.</strong> Over the past week drones have struck <strong>at least seven cargo vessels</strong> off <strong>Romania and Bulgaria</strong> (both NATO members), leaving <strong>two dead and roughly two dozen missing</strong>. <strong>Romanian F-16s shot down drones</strong> over the country&rsquo;s territorial waters, and NATO says it is <strong>deploying additional patrol aircraft</strong> to the region. No member has formally blamed Russia, though a NATO source told Reuters the struck tankers were hit by <strong>Russian drones</strong> &mdash; raising uneasy questions about Article&nbsp;5. <a href="https://www.itv.com/news/2026-10-16/drone-attacks-on-vessels-in-black-sea-test-natos-ukraine-support">ITV</a> <a href="https://www.thestar.com.my/news/world/2026/10/18/romanian-f-16-fighter-jets-shoot-down-two-drones-over-romanian-territorial-waters">The Star / AP</a> <a href="https://gcaptain.com/romanian-fighter-jets-shoot-down-two-drones-over-territorial-waters/">gCaptain</a></li>
+    <li><strong>Rubio: an Iran peace deal is &ldquo;extremely difficult&rdquo; while Hormuz attacks continue.</strong> The <strong>US Secretary of State</strong> said reaching a deal with Tehran is &ldquo;extremely difficult&rdquo; as long as <strong>attacks on Hormuz shipping</strong> persist; Iran separately <strong>warned that any US attack would bring destruction across the region</strong>. The weeks-long Gulf standoff is hardening rather than easing. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Quiet on the consumer apps.</strong> <strong>No confirmed new ChatGPT, Claude, Gemini or Grok feature</strong> overnight &mdash; the week-to-week model race has gone briefly still. <a href="https://www.theneuron.ai/">The Neuron</a></li>
+    <li><strong>The real action is the compute buildout.</strong> <strong>Anthropic reportedly signed a ~$35&nbsp;billion cloud deal with Lambda</strong> (Oct&nbsp;19) &mdash; about <strong>350&nbsp;MW</strong> at a Hut&nbsp;8 facility in Texas, with NVIDIA holding the lease &mdash; on top of its earlier ~$45&nbsp;billion Nscale deal. The models are steady for now; the <strong>money and power behind the next ones</strong> are anything but. <a href="https://w.media/anthropic-strikes-us-45-billion-ai-compute-deal-with-nscale-reports/">W.Media</a> <a href="https://techstrong.ai/articles/anthropic-signs-45-billion-cloud-deal-with-nscale-ahead-of-planned-ipo-reports/">Techstrong.ai</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Clear and dry all day &mdash; peak near 22&deg;C.</strong> <strong>0% rain</strong> under clear-to-partly-cloudy skies. From a <strong>mild ~16&ndash;17&deg;C</strong> in the morning to a <strong>warm ~22&deg;C mid-afternoon</strong>, easing to <strong>~18&ndash;19&deg;C in the evening</strong> (overnight low ~16&deg;C). <strong>Light winds</strong>, <strong>no active warnings</strong>. Sunset about <strong>18:41</strong>. <a href="https://www.meteoblue.com/en/weather/week/athens_greece_264371">meteoblue</a> <a href="https://www.timeanddate.com/sun/greece/athens">Time and Date</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar unavailable today.</strong> No calendar connector is reachable &mdash; check your own calendar for anything scheduled.</li>
+    <li><strong>1 action &mdash; a failed subscription payment.</strong> A service flagged a <strong>payment failure overnight</strong>; it&rsquo;s the <strong>same card</strong> that&rsquo;s been failing on another service, so it&rsquo;s really <strong>one card to update</strong>, not two problems. (Details audio-only.)</li>
+    <li><strong>2 family / school items, no action.</strong> Both are <strong>handled on your behalf</strong> and still moving forward &mdash; nothing for you to do. (Details audio-only.)</li>
+    <li><strong>No new security alerts</strong> since yesterday.</li>
+    <li>Otherwise <strong>routine</strong> &mdash; a service nudge, a couple of receipts and community digests. <strong>Nothing urgent, nothing needs a reply.</strong></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Dry air and a warm afternoon pull more water out of you than you&rsquo;ll notice &mdash; keep a bottle close if you&rsquo;re climbing or training today.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>sonder</em></strong>: the sudden realization that <strong>every stranger you pass has a life as vivid and complex as your own</strong> &mdash; coined by <em>The Dictionary of Obscure Sorrows</em>. <em>Example:</em> &ldquo;Stuck in the crowd at the gym, she was hit by a wave of sonder.&rdquo; <a href="https://www.dictionaryofobscuresorrows.com/post/23536922667/sonder">Dictionary of Obscure Sorrows</a></li>
+    <li><strong>Surprising fact.</strong> There are <strong>more trees on Earth (~3 trillion)</strong> than <strong>stars in the Milky Way (~100&ndash;400 billion)</strong> &mdash; from a global tree census published in <em>Nature</em>. We&rsquo;re outnumbered by trees. <a href="https://www.nature.com/articles/nature14967">Nature (Crowther et al.)</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key needs re-issuing, 51st straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
