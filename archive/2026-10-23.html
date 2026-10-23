@@ -1,0 +1,152 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Friday, 23 October 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the fifty-third straight morning. The ElevenLabs subscription still looks active, so the key is present but revoked and simply needs re-issuing before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip warn">Action &middot; 1 card to fix</span>
+    <span class="chip">World &middot; Tibet earthquake, 16+ dead</span>
+    <span class="chip">World &middot; Venezuela protests return</span>
+    <span class="chip">Science &middot; Fish oil doesn&rsquo;t slow Alzheimer&rsquo;s</span>
+    <span class="chip">AI &middot; Quiet day, regulators circling</span>
+    <span class="chip">Weather &middot; Clearing, warm ~23&deg;</span>
+    <span class="chip">Climbing &middot; IFSC finale opens in Santiago</span>
+    <span class="chip">Learning &middot; Word: kairos</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; it&rsquo;s Friday the twenty-third, and here&rsquo;s the shape of it. Overnight the big one is a bad earthquake in Tibet, a magnitude seven that&rsquo;s already killed at least sixteen people. <span class="redacted">&mdash; personal items &mdash;</span> I still can&rsquo;t see your live calendar, so glance at it yourself. Outside it&rsquo;s a soft, mostly clear day topping out near twenty-three.</p>
+      <p>Let&rsquo;s go wider. The lead is that quake. A magnitude seven struck a remote stretch of Tibet, and Chinese state media says at least sixteen people are dead and dozens hurt &mdash; a toll that&rsquo;ll likely climb as rescuers reach the harder-hit villages. It&rsquo;s the same cold, high plateau that saw a deadly quake early last year, where thin air and freezing nights make every hour of the rescue harder.</p>
+      <p>Over in South America, Venezuela saw its first big national protest in nearly two years &mdash; crowds back on the streets demanding real elections and an end to the deadlock. After a long stretch where fear kept most of that anger indoors, it&rsquo;s a real crack in the quiet. Worth watching whether it holds or gets stamped out fast.</p>
+      <p>And one for the science desk, a useful little letdown: a two-year clinical trial found that fish-oil omega-3 supplements really do reach the brain &mdash; but they didn&rsquo;t improve memory or slow the kind of shrinkage tied to Alzheimer&rsquo;s. So the pills do what the label promises chemically; they just don&rsquo;t buy the brain payoff a lot of people quietly hope they&rsquo;re getting.</p>
+      <p>A quick lap through tech, and honestly it&rsquo;s a quiet one. No new ChatGPT, Claude, Gemini, or Grok feature worth your time dropped overnight &mdash; the model race has gone still for a beat. The one running storyline is regulatory rather than product: the trade regulators are still circling OpenAI and Anthropic over safety and consumer-harm questions. Nothing for you to act on, just the weather in the room as you build.</p>
+      <p>Speaking of weather, Athens today is easy. Fog or low cloud first thing, then it opens up mostly sunny and warms to about twenty-three by mid-afternoon. You&rsquo;ll start the morning around nineteen and settle back toward twenty by evening. Small shower chance right around sunset &mdash; maybe one in four &mdash; but nothing to plan around. Light, shifting winds, no warnings, and the sun&rsquo;s down about twenty to seven.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick health note: warm and dry under that morning cloud, so keep a bottle of water within reach if you&rsquo;re climbing or training today.</p>
+      <p>One for the climber in you: the season finale is finally on. The Lead and Speed World Cup gets underway today in Santiago &mdash; the first World Cup ever held in Chile &mdash; running through Sunday. Speed qualifying is late tonight our time, so there&rsquo;s nothing to watch yet; set a reminder and catch the finals over the weekend.</p>
+      <p>Two for the pocket. Word of the day is <em>kairos</em> &mdash; the Greek word for the right, decisive moment to act, the perfect opening you either seize or lose. As in, she waited through the whole route for her kairos, then threw for the hold. And a productivity trick: the two-minute rule. If something takes under two minutes, do it the second it lands, instead of letting it pile onto a to-do list that quietly grows teeth.</p>
+      <p>So that&rsquo;s your Friday: heavy news abroad, a quiet day for the tools, bright skies here, and one card to finally kill off. Go get after it.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>Magnitude-7 earthquake strikes Tibet &mdash; at least 16 dead.</strong> A <strong>magnitude 7.0 quake</strong> hit a remote part of <strong>Tibet</strong>, with Chinese state media (Xinhua) reporting <strong>at least 16 killed and dozens injured</strong>; the toll is expected to rise as rescuers reach outlying villages on the cold, high plateau. <a href="https://www.aljazeera.com/news/">Al Jazeera</a> <a href="https://english.news.cn/">Xinhua</a></li>
+    <li><strong>Venezuela &mdash; first big national protest in nearly two years.</strong> Demonstrators returned to the streets nationwide, <strong>demanding free elections</strong> and an end to the political deadlock &mdash; a notable break after a long stretch in which fear had kept most dissent indoors. <a href="https://www.aljazeera.com/where/venezuela/">Al Jazeera</a></li>
+    <li><strong>Science &mdash; fish-oil omega-3 doesn&rsquo;t slow Alzheimer&rsquo;s.</strong> A <strong>two-year clinical trial</strong> found omega-3 supplements <strong>did reach the brain</strong> but <strong>did not improve memory or slow Alzheimer&rsquo;s-related brain shrinkage</strong> &mdash; the pills work chemically, just without the hoped-for cognitive payoff. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>A quiet day for the tools.</strong> <strong>No confirmed new ChatGPT, Claude, Gemini or Grok feature</strong> landed overnight &mdash; the consumer-model race has paused for a beat. The live storyline is <strong>regulatory, not product</strong>: US trade regulators are still pressing <strong>OpenAI and Anthropic</strong> over safety and consumer-harm questions. Nothing here needs action. <a href="https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation">Axios</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Foggy start, then mostly sunny and warm &mdash; peak near 23&deg;C.</strong> <strong>Fog or low cloud early</strong>, clearing to <strong>mostly sunny</strong> by midday. From <strong>~19&deg;C in the morning</strong> to a warm <strong>~23&deg;C mid-afternoon</strong>, easing to <strong>~20&deg;C in the evening</strong>. <strong>Small shower chance (~25%) around sunset</strong>; otherwise dry. <strong>Light, shifting winds, no warnings</strong>. Sunset about <strong>18:38</strong>. <a href="https://www.meteoblue.com/en/weather/week/athens_greece_264371">meteoblue</a> <a href="https://www.timeanddate.com/weather/greece/athens/hourly">Time and Date</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>1 action &mdash; a failed subscription payment.</strong> A service flagged a <strong>payment failure</strong> again; it&rsquo;s the <strong>same card</strong> that&rsquo;s been bouncing elsewhere, so it&rsquo;s really <strong>one card to update</strong>. (Details audio-only.)</li>
+    <li><strong>A family/school matter &mdash; already handled.</strong> A school-related item is <strong>being dealt with by family</strong>; you&rsquo;re only CC&rsquo;d, <strong>no action needed</strong>. (Details audio-only.)</li>
+    <li><strong>Live calendar unavailable today.</strong> No calendar connector is reachable &mdash; check your own calendar directly.</li>
+    <li><strong>No new security alerts.</strong></li>
+    <li>Otherwise <strong>routine</strong> &mdash; a couple of community digests and a recurring upsell nudge. <strong>Nothing urgent, nothing needs a reply.</strong></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Warm and dry under the morning cloud &mdash; keep a bottle of water close if you&rsquo;re climbing or training today.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Climbing</h3>
+  <ul>
+    <li><strong>IFSC Lead &amp; Speed World Cup &mdash; Santiago, opens today.</strong> The <strong>season finale</strong> runs <strong>23&ndash;25 October</strong> in Santiago, Chile &mdash; the <strong>first-ever IFSC World Cup in Chile</strong>. <strong>Speed qualifying is late tonight Athens time</strong> (early evening local), so no results yet; <strong>finals are over the weekend</strong>. <a href="https://ifsc.results.info/events/1489/infosheet">Event infosheet</a> <a href="https://www.worldclimbing.com/news/santiago-to-host-historic-lead-and-speed-world-cup-in-2026">World Climbing</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>kairos</em></strong>: the <strong>right, decisive moment to act</strong> &mdash; the perfect opening you either seize or lose. <em>Example:</em> &ldquo;She waited through the whole route for her kairos, then threw for the hold.&rdquo; <a href="https://www.merriam-webster.com/dictionary/kairos">Merriam-Webster</a></li>
+    <li><strong>Productivity &mdash; the two-minute rule.</strong> If a task takes <strong>under two minutes</strong>, do it the moment it lands rather than letting it pile onto a to-do list that quietly grows.</li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key needs re-issuing, 53rd straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
