@@ -44,6 +44,7 @@
   .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
     border:1px solid transparent; font-weight:600; white-space:nowrap; }
   .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
   .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
   #transcript p { margin:0 0 9px; color:var(--ink); }
   #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
@@ -59,40 +60,40 @@
   <header class="masthead">
     <div class="kicker">🎙️ Your Morning Rundown</div>
     <h1>Daily Briefing</h1>
-    <div class="sub">Friday, 23 October 2026 &middot; Athens</div>
+    <div class="sub">Saturday, 24 October 2026 &middot; Athens</div>
   </header>
 
   <div class="card listen">
     <h2>Today&rsquo;s brief</h2>
     <div class="dur">Audio unavailable today</div>
-    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the fifty-third straight morning. The ElevenLabs subscription still looks active, so the key is present but revoked and simply needs re-issuing before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the fifty-fourth straight morning. The ElevenLabs subscription still looks active, so the key is present but revoked and simply needs re-issuing before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
   </div>
 
   <div class="chips">
-    <span class="chip warn">Action &middot; 1 card to fix</span>
-    <span class="chip">World &middot; Tibet earthquake, 16+ dead</span>
-    <span class="chip">World &middot; Venezuela protests return</span>
-    <span class="chip">Science &middot; Fish oil doesn&rsquo;t slow Alzheimer&rsquo;s</span>
-    <span class="chip">AI &middot; Quiet day, regulators circling</span>
-    <span class="chip">Weather &middot; Clearing, warm ~23&deg;</span>
-    <span class="chip">Climbing &middot; IFSC finale opens in Santiago</span>
-    <span class="chip">Learning &middot; Word: kairos</span>
+    <span class="chip">World &middot; Jordan church attack, 7+ dead</span>
+    <span class="chip">World &middot; Typhoon Champi hits Taiwan</span>
+    <span class="chip">Science &middot; Kikai supervolcano refilling</span>
+    <span class="chip">AI &middot; Quiet; OpenAI raise dips below target</span>
+    <span class="chip">Weather &middot; Clear, mild ~22&deg;</span>
+    <span class="chip hi">Reminder &middot; Clocks go back tonight</span>
+    <span class="chip">Climbing &middot; Garnbret leads Santiago finale</span>
+    <span class="chip">Learning &middot; Word: mantle</span>
   </div>
 
   <div class="card nowspeaking">
     <h2>The brief, in full</h2>
     <div id="transcript">
-      <p>Morning, George &mdash; it&rsquo;s Friday the twenty-third, and here&rsquo;s the shape of it. Overnight the big one is a bad earthquake in Tibet, a magnitude seven that&rsquo;s already killed at least sixteen people. <span class="redacted">&mdash; personal items &mdash;</span> I still can&rsquo;t see your live calendar, so glance at it yourself. Outside it&rsquo;s a soft, mostly clear day topping out near twenty-three.</p>
-      <p>Let&rsquo;s go wider. The lead is that quake. A magnitude seven struck a remote stretch of Tibet, and Chinese state media says at least sixteen people are dead and dozens hurt &mdash; a toll that&rsquo;ll likely climb as rescuers reach the harder-hit villages. It&rsquo;s the same cold, high plateau that saw a deadly quake early last year, where thin air and freezing nights make every hour of the rescue harder.</p>
-      <p>Over in South America, Venezuela saw its first big national protest in nearly two years &mdash; crowds back on the streets demanding real elections and an end to the deadlock. After a long stretch where fear kept most of that anger indoors, it&rsquo;s a real crack in the quiet. Worth watching whether it holds or gets stamped out fast.</p>
-      <p>And one for the science desk, a useful little letdown: a two-year clinical trial found that fish-oil omega-3 supplements really do reach the brain &mdash; but they didn&rsquo;t improve memory or slow the kind of shrinkage tied to Alzheimer&rsquo;s. So the pills do what the label promises chemically; they just don&rsquo;t buy the brain payoff a lot of people quietly hope they&rsquo;re getting.</p>
-      <p>A quick lap through tech, and honestly it&rsquo;s a quiet one. No new ChatGPT, Claude, Gemini, or Grok feature worth your time dropped overnight &mdash; the model race has gone still for a beat. The one running storyline is regulatory rather than product: the trade regulators are still circling OpenAI and Anthropic over safety and consumer-harm questions. Nothing for you to act on, just the weather in the room as you build.</p>
-      <p>Speaking of weather, Athens today is easy. Fog or low cloud first thing, then it opens up mostly sunny and warms to about twenty-three by mid-afternoon. You&rsquo;ll start the morning around nineteen and settle back toward twenty by evening. Small shower chance right around sunset &mdash; maybe one in four &mdash; but nothing to plan around. Light, shifting winds, no warnings, and the sun&rsquo;s down about twenty to seven.</p>
+      <p>Morning, George &mdash; it&rsquo;s Saturday the twenty-fourth, and here&rsquo;s the shape of it. <span class="redacted">&mdash; personal items &mdash;</span> Overseas it&rsquo;s a grim one: gunmen attacked a Greek Orthodox church in Jordan and at least seven people are dead. Here at home it&rsquo;s a clear, mild Saturday topping out near twenty-two, and the clocks go back tonight, so you steal an extra hour of sleep. I still can&rsquo;t see your live calendar, so glance at it yourself. <span class="redacted">&mdash; personal items &mdash;</span></p>
+      <p>Let&rsquo;s go wider, and the lead is heavy. Gunmen opened fire inside a Greek Orthodox church in the Karak region of Jordan, killing at least seven people. It&rsquo;s a rare, shocking attack on a Christian congregation in a country that&rsquo;s usually calm, and the authorities are still piecing together who did it and why.</p>
+      <p>Over in the Pacific, Typhoon Champi slammed into Taiwan &mdash; at least one person killed and hundreds hurt as the storm tore through with heavy rain and fierce wind. Rescue and cleanup are underway, and it&rsquo;s a reminder the typhoon season out there isn&rsquo;t finished yet.</p>
+      <p>And one for the science desk: surveys beneath the sea floor off Japan found that Kikai &mdash; one of the most powerful supervolcanoes on Earth &mdash; is slowly refilling with fresh magma, about seven thousand years after its last monster eruption. No alarm, it&rsquo;s a long, slow process, but a fascinating peek at how these giants quietly reload.</p>
+      <p>A quick lap through tech, and the consumer side&rsquo;s quiet again &mdash; no new ChatGPT, Claude, Gemini, or Grok feature worth your time dropped overnight. The one real thread is money: remember OpenAI&rsquo;s giant fundraise? Word is it&rsquo;s closing below the one-point-four-trillion valuation they were pitching, after some investors balked at the price. And on the rumor pile &mdash; and treat it as rumor &mdash; there&rsquo;s chatter Google&rsquo;s lining up a &ldquo;Carbon&rdquo; upgrade to its Gemini four model. Nothing confirmed, nothing to act on; just the weather in the room as you build.</p>
+      <p>Speaking of weather, Athens today is easy and bright. A clear, slightly hazy start near seventeen, climbing to a sunny twenty-two by mid-afternoon, then settling back to seventeen by evening. No rain at all &mdash; flat zero &mdash; just light, shifting breezes and no warnings anywhere. The sun&rsquo;s down about twenty to seven, and remember the clocks fall back overnight, so it&rsquo;ll feel earlier from tomorrow.</p>
       <p class="redacted">&mdash; personal items &mdash;</p>
-      <p>Quick health note: warm and dry under that morning cloud, so keep a bottle of water within reach if you&rsquo;re climbing or training today.</p>
-      <p>One for the climber in you: the season finale is finally on. The Lead and Speed World Cup gets underway today in Santiago &mdash; the first World Cup ever held in Chile &mdash; running through Sunday. Speed qualifying is late tonight our time, so there&rsquo;s nothing to watch yet; set a reminder and catch the finals over the weekend.</p>
-      <p>Two for the pocket. Word of the day is <em>kairos</em> &mdash; the Greek word for the right, decisive moment to act, the perfect opening you either seize or lose. As in, she waited through the whole route for her kairos, then threw for the hold. And a productivity trick: the two-minute rule. If something takes under two minutes, do it the second it lands, instead of letting it pile onto a to-do list that quietly grows teeth.</p>
-      <p>So that&rsquo;s your Friday: heavy news abroad, a quiet day for the tools, bright skies here, and one card to finally kill off. Go get after it.</p>
+      <p>Quick health note: dry and mild out there, so keep a water bottle close if you&rsquo;re training or on the wall today.</p>
+      <p>One for the climber in you &mdash; the season finale&rsquo;s heating up in Santiago. Janja Garnbret is out in front of the lead qualifiers, because of course she is, and Indonesia ran away with the men&rsquo;s speed rounds. The speed finals go late tonight our time, and the lead finals &mdash; the ones you&rsquo;ll actually want to watch &mdash; land on Sunday. Set a reminder.</p>
+      <p>Two for the pocket. Word of the day is <em>mantle</em> &mdash; in climbing, that move where you press straight down on a ledge and push yourself up over it, like hauling out of a pool. And a fact to chew on: Cleopatra lived closer in time to the first Moon landing than to the building of the Great Pyramid &mdash; the pyramids were already ancient history when she was born.</p>
+      <p>So that&rsquo;s your Saturday: grim news abroad, bright skies here, one card finally laid to rest &mdash; and a free hour waiting for you tonight. Enjoy it.</p>
     </div>
   </div>
 
@@ -100,53 +101,53 @@
 <section class="story">
   <h3>World</h3>
   <ul>
-    <li><strong>Magnitude-7 earthquake strikes Tibet &mdash; at least 16 dead.</strong> A <strong>magnitude 7.0 quake</strong> hit a remote part of <strong>Tibet</strong>, with Chinese state media (Xinhua) reporting <strong>at least 16 killed and dozens injured</strong>; the toll is expected to rise as rescuers reach outlying villages on the cold, high plateau. <a href="https://www.aljazeera.com/news/">Al Jazeera</a> <a href="https://english.news.cn/">Xinhua</a></li>
-    <li><strong>Venezuela &mdash; first big national protest in nearly two years.</strong> Demonstrators returned to the streets nationwide, <strong>demanding free elections</strong> and an end to the political deadlock &mdash; a notable break after a long stretch in which fear had kept most dissent indoors. <a href="https://www.aljazeera.com/where/venezuela/">Al Jazeera</a></li>
-    <li><strong>Science &mdash; fish-oil omega-3 doesn&rsquo;t slow Alzheimer&rsquo;s.</strong> A <strong>two-year clinical trial</strong> found omega-3 supplements <strong>did reach the brain</strong> but <strong>did not improve memory or slow Alzheimer&rsquo;s-related brain shrinkage</strong> &mdash; the pills work chemically, just without the hoped-for cognitive payoff. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+    <li><strong>Gunmen attack a Greek Orthodox church in Jordan &mdash; at least 7 dead.</strong> Attackers <strong>opened fire inside a church in the Karak region</strong> of Jordan, <strong>killing at least seven people</strong> &mdash; a rare, shocking assault on a Christian congregation in a normally calm country; investigators are still working to establish who was behind it. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Typhoon Champi batters Taiwan.</strong> The storm <strong>killed at least one person and injured hundreds</strong> as it tore across the island with heavy rain and fierce winds; rescue and cleanup are underway. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Science &mdash; a supervolcano is slowly reloading.</strong> Undersea seismic surveys off Japan show that <strong>Kikai</strong>, one of Earth&rsquo;s most powerful supervolcanoes, is <strong>refilling with fresh magma &mdash; roughly 7,000 years after its last colossal eruption</strong>. No cause for alarm; it&rsquo;s a very slow process, but a striking look at how these giants recharge. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
   </ul>
 </section>
 <section class="story">
   <h3>AI &amp; Tech</h3>
   <ul>
-    <li><strong>A quiet day for the tools.</strong> <strong>No confirmed new ChatGPT, Claude, Gemini or Grok feature</strong> landed overnight &mdash; the consumer-model race has paused for a beat. The live storyline is <strong>regulatory, not product</strong>: US trade regulators are still pressing <strong>OpenAI and Anthropic</strong> over safety and consumer-harm questions. Nothing here needs action. <a href="https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation">Axios</a></li>
+    <li><strong>Quiet on the consumer side.</strong> <strong>No confirmed new ChatGPT, Claude, Gemini or Grok feature</strong> landed overnight. The live thread is financial: <strong>OpenAI&rsquo;s giant fundraise is reportedly closing below the ~$1.4T valuation</strong> it had pitched, after investor pushback on price. <a href="https://finance.yahoo.com/news/anthropic-google-openai-prepare-ai-144212018.html">The Information (via Yahoo)</a></li>
+    <li><strong>Rumor &mdash; labelled as rumor.</strong> There&rsquo;s chatter that Google is preparing a <strong>&ldquo;Carbon&rdquo; upgrade to Gemini 4</strong>; unconfirmed, nothing to act on. <a href="https://finance.yahoo.com/news/anthropic-google-openai-prepare-ai-144212018.html">The Information (via Yahoo)</a></li>
   </ul>
 </section>
 <section class="story">
   <h3>Weather &mdash; Athens</h3>
   <ul>
-    <li><strong>Foggy start, then mostly sunny and warm &mdash; peak near 23&deg;C.</strong> <strong>Fog or low cloud early</strong>, clearing to <strong>mostly sunny</strong> by midday. From <strong>~19&deg;C in the morning</strong> to a warm <strong>~23&deg;C mid-afternoon</strong>, easing to <strong>~20&deg;C in the evening</strong>. <strong>Small shower chance (~25%) around sunset</strong>; otherwise dry. <strong>Light, shifting winds, no warnings</strong>. Sunset about <strong>18:38</strong>. <a href="https://www.meteoblue.com/en/weather/week/athens_greece_264371">meteoblue</a> <a href="https://www.timeanddate.com/weather/greece/athens/hourly">Time and Date</a></li>
+    <li><strong>Clear, bright and mild &mdash; peak near 22&deg;C.</strong> A <strong>clear, slightly hazy start near 17&deg;C</strong>, climbing to a <strong>sunny ~22&deg;C mid-afternoon</strong>, easing back to <strong>~17&deg;C in the evening</strong>. <strong>No rain (0%)</strong>, light shifting breezes, no warnings. Sunset about <strong>18:37</strong>. <strong>Clocks go back overnight</strong> (EU daylight-saving ends Sun 25 Oct), so dusk will feel earlier from tomorrow. <a href="https://www.meteoblue.com/en/weather/week/athens_greece_264371">meteoblue</a></li>
   </ul>
 </section>
 <section class="story">
   <h3>Personal &amp; Comms</h3>
   <ul>
-    <li><strong>1 action &mdash; a failed subscription payment.</strong> A service flagged a <strong>payment failure</strong> again; it&rsquo;s the <strong>same card</strong> that&rsquo;s been bouncing elsewhere, so it&rsquo;s really <strong>one card to update</strong>. (Details audio-only.)</li>
-    <li><strong>A family/school matter &mdash; already handled.</strong> A school-related item is <strong>being dealt with by family</strong>; you&rsquo;re only CC&rsquo;d, <strong>no action needed</strong>. (Details audio-only.)</li>
-    <li><strong>Live calendar unavailable today.</strong> No calendar connector is reachable &mdash; check your own calendar directly.</li>
-    <li><strong>No new security alerts.</strong></li>
+    <li><strong>Good news &mdash; the recurring billing issue is resolved.</strong> The <strong>payments that had been bouncing on the same card went through cleanly</strong>; nothing left to fix. (Details audio-only.)</li>
+    <li><strong>No new security alert on your accounts.</strong> There is a <strong>broad, industry-wide advisory</strong> about newly-disclosed software vulnerabilities &mdash; not aimed at you, but worth a glance for anything you host. (Details audio-only.)</li>
+    <li><strong>Live calendar unavailable today.</strong> No calendar connector is reachable &mdash; check your own calendar directly; <strong>one trip is coming up later this week</strong>.</li>
     <li>Otherwise <strong>routine</strong> &mdash; a couple of community digests and a recurring upsell nudge. <strong>Nothing urgent, nothing needs a reply.</strong></li>
   </ul>
 </section>
 <section class="story">
   <h3>Health</h3>
   <ul>
-    <li>Warm and dry under the morning cloud &mdash; keep a bottle of water close if you&rsquo;re climbing or training today.</li>
+    <li>Dry and mild today &mdash; keep a bottle of water close if you&rsquo;re training or on the wall.</li>
   </ul>
 </section>
 <section class="story">
   <h3>Climbing</h3>
   <ul>
-    <li><strong>IFSC Lead &amp; Speed World Cup &mdash; Santiago, opens today.</strong> The <strong>season finale</strong> runs <strong>23&ndash;25 October</strong> in Santiago, Chile &mdash; the <strong>first-ever IFSC World Cup in Chile</strong>. <strong>Speed qualifying is late tonight Athens time</strong> (early evening local), so no results yet; <strong>finals are over the weekend</strong>. <a href="https://ifsc.results.info/events/1489/infosheet">Event infosheet</a> <a href="https://www.worldclimbing.com/news/santiago-to-host-historic-lead-and-speed-world-cup-in-2026">World Climbing</a></li>
+    <li><strong>IFSC Lead &amp; Speed World Cup, Santiago &mdash; the finale is live.</strong> <strong>Janja Garnbret leads the lead qualifiers</strong>, and <strong>Indonesia topped the men&rsquo;s speed qualification</strong> (Al Hilmi &amp; Nursamsa). <strong>Speed finals are late tonight Athens time; lead finals are Sunday.</strong> <a href="https://www.worldclimbing.com/news">World Climbing</a> <a href="https://www.ifsc-climbing.org/events/ifsc-climbing-world-cup-santiago-2026">IFSC event</a></li>
   </ul>
 </section>
 <section class="story">
   <h3>Learning</h3>
   <ul>
-    <li><strong>Word of the day &mdash; <em>kairos</em></strong>: the <strong>right, decisive moment to act</strong> &mdash; the perfect opening you either seize or lose. <em>Example:</em> &ldquo;She waited through the whole route for her kairos, then threw for the hold.&rdquo; <a href="https://www.merriam-webster.com/dictionary/kairos">Merriam-Webster</a></li>
-    <li><strong>Productivity &mdash; the two-minute rule.</strong> If a task takes <strong>under two minutes</strong>, do it the moment it lands rather than letting it pile onto a to-do list that quietly grows.</li>
+    <li><strong>Word of the day &mdash; <em>mantle</em></strong> (climbing): the move of <strong>pressing straight down on a ledge to push your body up over it</strong> &mdash; like hauling yourself out of a swimming pool. <em>Example:</em> &ldquo;She topped out with a clean mantle onto the slab.&rdquo; <a href="https://www.merriam-webster.com/dictionary/mantle">Merriam-Webster</a></li>
+    <li><strong>Surprising fact.</strong> <strong>Cleopatra lived closer in time to the first Moon landing (1969) than to the building of the Great Pyramid of Giza</strong> (~2560 BC) &mdash; the pyramids were already some 2,500 years old when she was born (~69 BC). <a href="https://en.wikipedia.org/wiki/Cleopatra">Cleopatra</a> <a href="https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza">Great Pyramid</a></li>
   </ul>
 </section>
   </div>
 
-  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key needs re-issuing, 53rd straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key needs re-issuing, 54th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
 </div>
