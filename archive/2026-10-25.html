@@ -1,0 +1,152 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Sunday, 25 October 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the fifty-fifth straight morning. The ElevenLabs subscription still looks active, so the key is present but revoked and simply needs re-issuing before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip">World &middot; US weighs Iran strike or deal</span>
+    <span class="chip">World &middot; Jordan church attack, toll rises to 9</span>
+    <span class="chip">Science &middot; NASA&rsquo;s Bennu samples decoded</span>
+    <span class="chip">AI &middot; Quiet on the consumer side</span>
+    <span class="chip warn">Weather &middot; Wet day, yellow warnings for Attica</span>
+    <span class="chip hi">Reminder &middot; Winter time &mdash; clocks went back</span>
+    <span class="chip">Climbing &middot; Santiago finals day</span>
+    <span class="chip">Learning &middot; Word: jug</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; it&rsquo;s Sunday the twenty-fifth, and you&rsquo;ve already banked your extra hour: the clocks went back overnight, so we&rsquo;re on winter time now. Two things lead today. Washington is openly signalling it could strike Iran as soon as today, or cut a deal with Tehran instead &mdash; nothing&rsquo;s happened yet, but it&rsquo;s balanced on a knife-edge. And that church attack in Jordan has turned darker &mdash; the toll&rsquo;s up to nine. Here at home it&rsquo;s a wet one, rain likely all day with a couple of yellow warnings up for Attica, so grab a jacket. <span class="redacted">&mdash; personal items &mdash;</span></p>
+      <p>Let&rsquo;s go wider, and the big one is the Gulf. The United States is openly weighing a strike on Iran &mdash; Trump floated it happening as soon as today &mdash; while dangling the alternative of a major deal with Tehran. It&rsquo;s genuinely uncertain which way this tips, and the whole region&rsquo;s holding its breath after weeks of shipping attacks around the strait.</p>
+      <p>Closer to home for a Greek reader, that attack on a Greek Orthodox church in Jordan&rsquo;s Karak region has gotten worse. The death toll has climbed to nine after gunmen opened fire during a funeral, and King Abdullah has ordered a firm response. Authorities are still piecing together who was behind it and why &mdash; a rare, shocking strike in a country that&rsquo;s normally calm.</p>
+      <p>And one for the science desk, because it&rsquo;s a lovely one. NASA has finished analysing the samples it hauled back from the asteroid Bennu, and they show the asteroid formed where material from the inner and outer solar system mixed together &mdash; with Jupiter, of all things, playing an unexpected hand. A tiny time capsule from four and a half billion years ago.</p>
+      <p>A quick lap through tech, and honestly it&rsquo;s quiet again on the consumer side &mdash; no new ChatGPT, Claude, Gemini, or Grok feature worth your time dropped overnight. The race right now is all plumbing: compute deals and enterprise models, not anything that changes your Sunday. So nothing to act on unless you&rsquo;re the one building.</p>
+      <p>Athens, though, is the headline you&rsquo;ll actually feel. Forget yesterday&rsquo;s sunshine &mdash; today is grey and wet. A mild, cloudy morning around eighteen, a damp afternoon near twenty with the heaviest rain landing mid-afternoon, then showers and maybe a thunderstorm rolling through tonight. Two yellow warnings are up for Attica into tomorrow. And the sun sets early now &mdash; just after half past five &mdash; thanks to the clock change, so the evening will sneak up on you.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick health note: it&rsquo;s cooler and damper today, which makes it easy to forget, so keep sipping water if you&rsquo;re training indoors on the wall.</p>
+      <p>One for the climber in you &mdash; it&rsquo;s finals day in Santiago, the very last event of the whole season. Janja Garnbret climbed her way to the front of the lead qualifiers, because of course she did, Sorato Suzuki topped the men&rsquo;s qualification, and Indonesia ran away with the speed rounds. The lead finals, where the season title gets decided, go down later today our time, so catch the replay when you&rsquo;re up.</p>
+      <p>Two for the pocket. Word of the day is <em>jug</em> &mdash; in climbing, a big, friendly hold you can wrap your whole hand around, the kind that feels like a little rescue halfway up a route. And today&rsquo;s tip, for when you&rsquo;re prompting an AI: tell it what you <em>do</em> want, not what to avoid &mdash; a clear, positive instruction beats a long list of don&rsquo;ts almost every time.</p>
+      <p>So that&rsquo;s your Sunday: a tense world, a wet Athens, a free hour already in your pocket, and climbing finals to watch tonight. Grab a coffee and ease into it.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>US openly weighs a strike on Iran &mdash; or a deal.</strong> Washington is <strong>signalling it could hit Iran as soon as today</strong>, with President Trump floating that option while also dangling <strong>a possible major deal with Tehran</strong>. The situation is fluid and uncertain, and the region remains on edge after weeks of attacks on Gulf shipping. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Jordan church attack &mdash; death toll rises to nine.</strong> Gunmen who <strong>opened fire at a Greek Orthodox church during a funeral in the Karak region</strong> have now killed at least nine people; <strong>King Abdullah has ordered a firm response</strong>, and investigators are still establishing who was behind it. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Science &mdash; NASA decodes the asteroid Bennu.</strong> Analysis of the <strong>samples returned from asteroid Bennu</strong> shows it <strong>formed where inner- and outer-Solar-System material mixed</strong>, with <strong>Jupiter playing a surprising role</strong> &mdash; a 4.5-billion-year-old window into how our planetary system came together. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Quiet on the consumer side.</strong> <strong>No confirmed new ChatGPT, Claude, Gemini or Grok feature</strong> landed overnight. The current momentum is all infrastructure &mdash; compute and enterprise deals &mdash; rather than anything that changes day-to-day use. Nothing to act on unless you&rsquo;re building. <a href="https://www.anthropic.com/news">Anthropic news</a> <a href="https://blog.google/technology/ai/">Google AI blog</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Grey and wet &mdash; rain likely all day.</strong> A <strong>mild, cloudy morning near 18&deg;C</strong>, a <strong>damp afternoon around 20&deg;C</strong> with the <strong>heaviest rain mid-afternoon</strong>, then <strong>showers and possible thunderstorms tonight</strong>. <strong>Two yellow (moderate) warnings are in force for Attica</strong> (EMY), running into Monday afternoon. Light southeasterly breeze. Sunset now about <strong>17:36</strong> &mdash; the clocks went back overnight (EU daylight-saving ended Sun 25 Oct), so evenings arrive earlier. <a href="https://www.meteoblue.com/en/weather/week/athens_greece_264371">meteoblue</a> <a href="https://www.emy.gr/emy/en/">EMY</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>No new action items today.</strong> The recurring billing issue from last week stays <strong>fully resolved</strong> &mdash; the receipts cleared, nothing left to fix. (Details audio-only.)</li>
+    <li><strong>No new security alert on your accounts.</strong> The only security item around is a <strong>broad, industry-wide advisory</strong> about newly-disclosed software vulnerabilities &mdash; not aimed at you, but worth a glance for anything you host. (Details audio-only.)</li>
+    <li><strong>Live calendar unavailable today.</strong> No calendar connector is reachable &mdash; check your own calendar directly; <strong>one trip is coming up this Friday</strong>.</li>
+    <li>Otherwise <strong>routine</strong> &mdash; community digests, promos and a recurring upsell nudge. <strong>Nothing urgent, nothing needs a reply.</strong></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Cooler and damper today &mdash; easy to forget, so keep sipping water if you&rsquo;re training indoors on the wall.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Climbing</h3>
+  <ul>
+    <li><strong>IFSC / World Climbing Lead &amp; Speed World Cup, Santiago &mdash; finals day.</strong> The <strong>season&rsquo;s final event wraps today</strong>. <strong>Janja Garnbret led the women&rsquo;s lead qualification</strong>, <strong>Sorato Suzuki topped the men&rsquo;s</strong>, and <strong>Indonesia dominated the speed rounds</strong>. The <strong>lead finals &mdash; which decide the season title &mdash; take place later today</strong> (Athens evening). <a href="https://www.worldclimbing.com/news">World Climbing</a> <a href="https://www.ifsc-climbing.org/">IFSC</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>jug</em></strong> (climbing): a <strong>large, easy-to-grip hold you can wrap your whole hand around</strong> &mdash; the most welcome thing to find mid-route. <em>Example:</em> &ldquo;After the crux she reached a huge jug and finally shook out her arms.&rdquo; <a href="https://www.99boulders.com/climbing-terms">Climbing glossary</a></li>
+    <li><strong>AI tip.</strong> When prompting a model, <strong>tell it what you <em>do</em> want rather than what to avoid</strong> &mdash; a clear, positive instruction works far better than a long list of &ldquo;don&rsquo;ts.&rdquo; <a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview">Prompting guide</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key needs re-issuing, 55th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
