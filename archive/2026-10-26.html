@@ -1,0 +1,153 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Monday, 26 October 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the fifty-sixth straight morning. The ElevenLabs subscription still looks active, so the key is present but revoked and simply needs re-issuing before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip">World &middot; US steps back from Iran strike</span>
+    <span class="chip">World &middot; Lula wins Brazil runoff</span>
+    <span class="chip">Science &middot; Liquid that stops cavities</span>
+    <span class="chip">AI &middot; Quiet on the consumer side</span>
+    <span class="chip warn">Weather &middot; Orange warning for Attica, wet day</span>
+    <span class="chip hi">Reminder &middot; Trip this Friday</span>
+    <span class="chip hi">Inbox &middot; 1 email needs a reply</span>
+    <span class="chip">Climbing &middot; Season wraps in Santiago</span>
+    <span class="chip">Learning &middot; Word: fernweh</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; it&rsquo;s Monday the twenty-sixth, and the big overnight news is a good kind of quiet: Washington stepped back from the brink with Iran, so the strike everyone braced for yesterday didn&rsquo;t come. And in Brazil, Lula held onto power in a tense runoff. Here at home it&rsquo;s a wet start, with an orange weather warning up for Attica through the early afternoon, so take a jacket and give yourself extra time. <span class="redacted">&mdash; personal items &mdash;</span></p>
+      <p>Starting wide, and the headline is relief. After a weekend where the United States openly floated hitting Iran as soon as Sunday, Trump said there&rsquo;d be no strike after all, and Qatari mediators headed into Tehran to keep talking. Nothing&rsquo;s signed, and the region&rsquo;s still jittery after weeks of shipping attacks around the strait &mdash; but the worst case everyone feared has, for now, been pulled back from the edge.</p>
+      <p>Over in Brazil, President Lula has won re-election, surviving a genuinely tense runoff against the far right after a shock first-round stumble. It&rsquo;s a big one for Latin America and for climate politics &mdash; Lula&rsquo;s the one fighting to protect the Amazon &mdash; and it keeps the region&rsquo;s biggest economy on its current course for another term.</p>
+      <p>And one for the science desk. A large trial in young children has confirmed that a simple liquid, just painted onto teeth, can actually stop cavities in their tracks &mdash; no drill, no needle, no anesthetic. If it scales to adults, it could quietly change what a trip to the dentist even looks like.</p>
+      <p>A quick lap through tech, and it&rsquo;s another sleepy one on the consumer side. Nothing new worth your time landed overnight from ChatGPT, Claude, Gemini, or Grok. All the real movement right now is in the plumbing &mdash; compute deals and enterprise contracts, the stuff that matters to the people building this, not the people using it. So unless that&rsquo;s you this week, there&rsquo;s nothing to act on.</p>
+      <p>Athens is the thing you&rsquo;ll actually feel this morning. It&rsquo;s grey and wet &mdash; around sixteen degrees as you start, nudging up to eighteen by afternoon, seventeen in the evening. The heaviest rain and thunder are front-loaded, which is why there&rsquo;s an orange warning for Attica until about two; after that it eases to scattered showers, with more rain into Tuesday. Light easterly breeze, nothing dramatic. And the sun now sets around half past five, so plan the daylight you&rsquo;ve got.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick health note: it&rsquo;s cool and damp, the kind of day you forget to drink, so keep the water going if you&rsquo;re on the wall later.</p>
+      <p>One for the climber in you &mdash; the season&rsquo;s officially done. The final World Cup wrapped in Santiago: Sorato Suzuki locked up the men&rsquo;s lead series title, Janja Garnbret topped the women&rsquo;s lead semis as the curtain came down, and China swept the speed podium. That&rsquo;s a wrap on the whole circuit until next year.</p>
+      <p>Two for the pocket. Word of the day is <em>fernweh</em> &mdash; a German word for the ache to be somewhere far away, the opposite of homesickness. And today&rsquo;s tip is <em>temptation bundling</em>: only let yourself do something you love, like a show or a podcast, while you tackle the task you keep avoiding. Chain the two together and the boring thing suddenly gets done.</p>
+      <p>So that&rsquo;s your Monday: a world that exhaled, a wet Athens that needs a jacket, and a short to-do list. Ease into it with a coffee.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>US steps back from the brink with Iran.</strong> After a weekend in which Washington <strong>openly floated striking Iran &ldquo;as soon as Sunday,&rdquo;</strong> President Trump said <strong>there would be no strike</strong>, and <strong>Qatari mediators travelled to Tehran</strong> to keep talks alive. Nothing is signed, and the region stays on edge after weeks of attacks on Gulf shipping &mdash; but the worst case has, for now, been pulled back. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Lula wins Brazil&rsquo;s runoff.</strong> President <strong>Lula has won re-election</strong>, holding off the far right in a <strong>tense runoff</strong> after an <strong>unexpected first-round stumble</strong> had energised the Bolsonaro camp. It keeps Latin America&rsquo;s biggest economy &mdash; and its Amazon-protection agenda &mdash; on course for another term. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Science &mdash; a liquid that stops cavities.</strong> A <strong>large trial in young children</strong> confirms that a <strong>liquid painted onto teeth can halt cavities</strong> &mdash; <strong>no drill, no injection, no anesthetic</strong>. If it scales to adults, it could reshape routine dental care. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Quiet on the consumer side.</strong> <strong>No confirmed new ChatGPT, Claude, Gemini or Grok feature</strong> landed overnight. The momentum remains in infrastructure &mdash; compute and enterprise deals &mdash; rather than anything that changes day-to-day use. Nothing to act on unless you&rsquo;re building. <a href="https://www.anthropic.com/news">Anthropic news</a> <a href="https://blog.google/technology/ai/">Google AI blog</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Grey and wet &mdash; orange warning for Attica.</strong> A <strong>cool, wet start near 16&deg;C</strong>, up to about <strong>18&deg;C in the afternoon</strong> and <strong>17&deg;C in the evening</strong>. The <strong>heaviest rain and thunderstorms are front-loaded</strong>, with an <strong>orange (severe) EMY warning in force for Attica until roughly 14:00</strong>; it then eases to scattered showers, with <strong>more rain lingering into Tuesday</strong>. Light easterly breeze. Sunset now about <strong>17:34</strong>. <a href="https://www.meteoblue.com/en/weather/week/athens_greece_264371">meteoblue</a> <a href="https://www.emy.gr/emy/en/">EMY</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Live calendar unavailable today.</strong> No calendar connector is reachable &mdash; check your own calendar directly. <strong>One trip is coming up this Friday</strong> worth prepping for.</li>
+    <li><strong>No new security alerts</strong> on your accounts, and last week&rsquo;s billing issue stays <strong>fully resolved</strong> &mdash; nothing owed, nothing to chase. (Details audio-only.)</li>
+    <li><strong>One email wants a reply.</strong> A routine yes/no decision on an outstanding enquiry &mdash; answer it or let it close. (Details audio-only.)</li>
+    <li>Otherwise <strong>routine</strong> &mdash; social pings, receipts and promos. <strong>Nothing urgent.</strong></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Cool and damp today &mdash; easy to forget to drink, so keep sipping water if you&rsquo;re training indoors on the wall.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Climbing</h3>
+  <ul>
+    <li><strong>IFSC / World Climbing season finale &mdash; Santiago wraps the year.</strong> The <strong>final World Cup of the season concluded in Santiago</strong>: <strong>Sorato Suzuki secured the men&rsquo;s Lead Series title</strong>, <strong>Janja Garnbret topped the women&rsquo;s lead semi-finals</strong> as the curtain came down, and <strong>China completed a speed double (Zhao and Deng)</strong>. That closes out the whole circuit until next year. <a href="https://www.worldclimbing.com/news">World Climbing</a> <a href="https://www.ifsc-climbing.org/">IFSC</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>fernweh</em></strong> (German, noun): <strong>an ache or longing to be somewhere far away</strong> &mdash; the mirror image of homesickness, a &ldquo;far-sickness.&rdquo; <em>Example:</em> &ldquo;A grey Athens morning gave her a sharp case of fernweh.&rdquo; <a href="https://en.wiktionary.org/wiki/Fernweh">Wiktionary</a></li>
+    <li><strong>Productivity tip &mdash; temptation bundling.</strong> <strong>Only let yourself do something you enjoy</strong> (a show, a podcast, a treat) <strong>while doing a task you keep avoiding</strong>. Linking the two makes the dull task far easier to start &mdash; a trick backed by behavioural-science research. <a href="https://en.wikipedia.org/wiki/Temptation_bundling">Temptation bundling</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key needs re-issuing, 56th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
