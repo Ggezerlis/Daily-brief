@@ -1,0 +1,154 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Tuesday, 27 October 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the fifty-seventh straight morning. The ElevenLabs subscription still looks active, so the key is present but revoked and simply needs re-issuing before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip">World &middot; Kherson ceasefire holds</span>
+    <span class="chip">World &middot; Brazil accepts Lula&rsquo;s win</span>
+    <span class="chip">Science &middot; Exercise rewires the heart</span>
+    <span class="chip">AI &middot; OpenAI ships GPT-6.1 Terra</span>
+    <span class="chip warn">Weather &middot; Orange warning for Attica, wet day</span>
+    <span class="chip hi">Reminder &middot; Climbing trip this Friday</span>
+    <span class="chip hi">Inbox &middot; 1 email needs a reply</span>
+    <span class="chip">Climbing &middot; Season wraps in Santiago</span>
+    <span class="chip">Learning &middot; Word: lockoff</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; it&rsquo;s Tuesday the twenty-seventh, and for once the headlines are leaning your way. Russia&rsquo;s paused its strikes on Kherson as a local ceasefire takes hold, and over in Brazil the losing side has finally accepted Lula&rsquo;s win. Closer to home it&rsquo;s another grey, wet Athens day, with an orange warning up for Attica through late morning, so grab a jacket. <span class="redacted">&mdash; personal items &mdash;</span></p>
+      <p>Let&rsquo;s start wide, and the small piece of good news is out of Ukraine. Russia has halted its strikes on Kherson as a ceasefire tied to the town of Oleshky takes effect. It&rsquo;s local, not the whole war, and nobody&rsquo;s calling it a turning point &mdash; but for the people who&rsquo;ve been under those guns, a quiet morning is its own kind of headline.</p>
+      <p>Staying with yesterday&rsquo;s big one, Brazil. Lula&rsquo;s re-election is now settled: Bolsonaro&rsquo;s own party has accepted the result, even after Trump loudly called the vote rigged. The markets grumbled &mdash; the real slid on worries about higher spending &mdash; but politically the drama&rsquo;s done, and Latin America&rsquo;s biggest economy holds its course for another term.</p>
+      <p>And one for the science desk that&rsquo;s right up your street. A new study finds that regular exercise physically rewires the nerves steering your heart, and that the left and right sides adapt in different ways. It&rsquo;s early work, but it&rsquo;s another hint that training reshapes you deeper than muscle. Your climbing is doing more than you can see.</p>
+      <p>Over to tech, and the quiet streak finally broke. OpenAI shipped GPT six-point-one, codename Terra &mdash; a mid-range model that isn&rsquo;t about raw power so much as price. It&rsquo;s running at roughly half the cost of the last one, which people are calling a new bar for intelligence per dollar. Remember that rumored Terra model from last week? This is it, real now. Meanwhile Anthropic, the Claude folks, opened their books ahead of a possible market debut &mdash; record revenue, but some eye-watering bills to match. Nothing you need to click today, but if you&rsquo;re building, cheaper models are the story to watch.</p>
+      <p>Athens is the thing you&rsquo;ll actually feel this morning. It&rsquo;s grey and wet, around sixteen degrees most of the day, dipping to fifteen tonight. The rain&rsquo;s heaviest early, which is why there&rsquo;s an orange warning for Attica until late morning; it eases to scattered showers by midday, then creeps back in the evening. Light northerly breeze, nothing dramatic. And the sun&rsquo;s down by about half past five now, so plan the daylight you&rsquo;ve got.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick health note: it&rsquo;s cool and damp, the kind of day you forget to drink, so keep water on you if you&rsquo;re on the wall later.</p>
+      <p>One for the climber in you &mdash; the season&rsquo;s last word. The finale wrapped in Santiago: Janja Garnbret took the women&rsquo;s lead gold and Utelli the men&rsquo;s, while Sorato Suzuki had already locked up the men&rsquo;s lead series title and China swept the speed podium. That closes the whole World Cup circuit until next spring.</p>
+      <p>And two for the pocket. Word of the day is <em>lockoff</em> &mdash; in climbing, pulling in and holding yourself close on a bent arm so your other hand can reach up; all control, no lunging. And a fact to chew on: a day on Venus is longer than its year. It spins so slowly that a single rotation outlasts a full lap around the Sun.</p>
+      <p>So that&rsquo;s your Tuesday: a calmer world, a soggy Athens, a trip to prep for, and one email to close out. Jacket on, coffee first.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>A local ceasefire quiets Kherson.</strong> <strong>Russia has halted its strikes on Ukraine&rsquo;s Kherson</strong> as a <strong>ceasefire tied to the town of Oleshky takes effect</strong>. It is <strong>local, not a wider truce</strong>, and no one is calling it a turning point &mdash; but it hands the city a rare quiet morning after months under fire. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Brazil accepts Lula&rsquo;s win.</strong> <strong>Bolsonaro&rsquo;s own party has accepted the runoff result</strong>, even after <strong>Trump called the vote &ldquo;rigged.&rdquo;</strong> Markets were less calm &mdash; <strong>the real slid</strong> on worries about higher spending &mdash; but the political drama is settled, keeping Latin America&rsquo;s biggest economy on course. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Science &mdash; exercise rewires the heart.</strong> A new study finds that <strong>regular exercise physically remodels the nerves that control the heart</strong>, with the <strong>left and right sides adapting differently</strong>. Early work, but another sign that training reshapes the body deeper than muscle. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>OpenAI ships GPT-6.1 &ldquo;Terra.&rdquo;</strong> A <strong>mid-range model priced at roughly half its predecessor</strong> &mdash; the pitch is value, not raw power, with analysts calling it a new bar for <strong>&ldquo;intelligence per dollar.&rdquo;</strong> This is the &ldquo;Terra&rdquo; that was only a rumour last week, now confirmed. <a href="https://the-decoder.com/">The Decoder</a> <a href="https://openai.com/news/">OpenAI</a></li>
+    <li><strong>Anthropic opens its books.</strong> Ahead of a <strong>possible market debut</strong>, the Claude maker disclosed <strong>record revenue alongside mounting obligations</strong>. Nothing to act on day-to-day &mdash; but cheaper, faster models are the trend worth tracking if you&rsquo;re building. <a href="https://www.anthropic.com/news">Anthropic news</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Grey and wet &mdash; orange warning for Attica.</strong> A <strong>cool, damp day near 16&deg;C</strong>, easing to about <strong>14&deg;C in the evening</strong>. <strong>Rain is heaviest early</strong>, with an <strong>orange (severe) EMY warning in force for Attica until roughly 11:00</strong>; it then settles to scattered showers by midday and <strong>creeps back in the evening</strong>. Light northerly breeze. Sunset now about <strong>17:33</strong>. <a href="https://www.meteoblue.com/en/weather/week/athens_greece_264371">meteoblue</a> <a href="https://www.emy.gr/emy/en/">EMY</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Live calendar unavailable today.</strong> No calendar connector is reachable &mdash; check your own calendar directly. <strong>A climbing trip is coming up this Friday</strong> worth prepping gear for, and <strong>one new event invite landed</strong> for next week. (Details audio-only.)</li>
+    <li><strong>One email wants a reply.</strong> A routine yes/no decision on an outstanding enquiry &mdash; answer it or let it close. (Details audio-only.)</li>
+    <li><strong>No new security alerts</strong> on your accounts, and last week&rsquo;s billing issue stays <strong>fully resolved</strong> &mdash; nothing owed, nothing to chase.</li>
+    <li>Otherwise <strong>routine</strong> &mdash; social pings, receipts and promos. <strong>Nothing urgent.</strong></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Cool and damp today &mdash; easy to forget to drink, so keep sipping water if you&rsquo;re training indoors on the wall.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Climbing</h3>
+  <ul>
+    <li><strong>Season finale wraps in Santiago.</strong> The <strong>final World Cup of the season closed in Santiago</strong>: <strong>Janja Garnbret took the women&rsquo;s lead gold and Utelli the men&rsquo;s</strong>, while <strong>Sorato Suzuki had already secured the men&rsquo;s Lead Series title</strong> and <strong>China swept the speed podium</strong>. That closes the whole World Cup circuit until next year. <a href="https://www.worldclimbing.com/news">World Climbing</a> <a href="https://www.ifsc-climbing.org/">IFSC</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>lockoff</em></strong> (climbing, noun): <strong>holding yourself still on a bent arm, pulled in close to the wall, so the other hand is free to reach the next hold</strong> &mdash; all control, no lunging. <em>Example:</em> &ldquo;She pulled into a deep lockoff to set up the next crimp.&rdquo; <a href="https://en.wikipedia.org/wiki/Glossary_of_climbing_terms">Climbing glossary</a></li>
+    <li><strong>Surprising fact &mdash; a day on Venus is longer than its year.</strong> Venus <strong>spins once every ~243 Earth days</strong> but <strong>orbits the Sun every ~225</strong> &mdash; so a single Venusian rotation outlasts a full lap around the Sun. (It also spins backwards.) <a href="https://science.nasa.gov/venus/venus-facts/">NASA &mdash; Venus facts</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key needs re-issuing, 57th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
