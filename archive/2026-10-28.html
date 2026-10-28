@@ -1,0 +1,153 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Wednesday, 28 October 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the fifty-eighth straight morning. The ElevenLabs subscription still looks active, so the key is present but revoked and simply needs re-issuing before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip warn">Weather &middot; Red storm warning for Attica</span>
+    <span class="chip">World &middot; Israel election too close to call</span>
+    <span class="chip">World &middot; UN Gaza genocide finding</span>
+    <span class="chip">Science &middot; Spiders have REM-like sleep</span>
+    <span class="chip">AI &middot; Apple gives Siri a memory</span>
+    <span class="chip">AI &middot; Anthropic files to go public</span>
+    <span class="chip hi">Reminder &middot; Climbing trip this Friday</span>
+    <span class="chip">Gaming &middot; Epic free games end tomorrow</span>
+    <span class="chip">Learning &middot; Word: brontide</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; it&rsquo;s Wednesday the twenty-eighth, and the big thing today is right outside your window. Attica&rsquo;s under a red storm warning now, the top level, heavy rain and thunder running through until at least midday, so whatever you had planned, build it around the weather and grab proper rain gear. Elsewhere, Israel&rsquo;s gone to the polls in a vote that could end Netanyahu&rsquo;s run, and it&rsquo;s too close to call. <span class="redacted">&mdash; personal items &mdash;</span></p>
+      <p>Let&rsquo;s start with that election, because it&rsquo;s a genuine cliffhanger. Israel voted, and the exit polls are a mess &mdash; the opposition looks to have the edge in the popular vote, but Netanyahu&rsquo;s Likud is still the single biggest party, and neither bloc gets to a majority without the Arab parties. The count&rsquo;s early, the numbers keep shifting, and nobody can honestly tell you yet who forms the next government.</p>
+      <p>Staying overseas, a heavier one. A United Nations commission of inquiry says Israel has kept committing genocide in Gaza even after the ceasefire took hold &mdash; a finding Israel flatly rejects. It lands at a raw moment, with the truce still fragile, and it&rsquo;s the kind of report that&rsquo;ll shape the diplomatic argument for weeks, whatever side of it you sit on.</p>
+      <p>And one to lighten the desk &mdash; spiders dream. Researchers in Bonn watched Australian jumping spiders sleep and found actual sleep stages, including a twitchy, eye-flicking phase that looks a lot like our own REM, the part of sleep where we dream. Nobody knows what, if anything, a spider dreams about, but the plumbing is startlingly familiar.</p>
+      <p>Over to tech. It was quiet on the chatbot front &mdash; no big new ChatGPT, Claude or Gemini feature overnight &mdash; but Apple pushed out a software update this week that finally gives Siri a memory, so it can carry context from your past conversations instead of forgetting you every time, plus a handful of new languages. And remember yesterday&rsquo;s Anthropic news? The paperwork&rsquo;s official now &mdash; the Claude company has filed to go public on the Nasdaq, ticker A-N-T, with record revenue and some genuinely eye-watering bills behind it. Nothing you need to click, but if you&rsquo;re building, a model maker opening its books tells you where the real money&rsquo;s going.</p>
+      <p>Now the weather, because this is the day you&rsquo;ll actually feel. Athens is wet and loud &mdash; civil protection has Attica under a red code right through tomorrow. Rain&rsquo;s heaviest this morning with thunderstorms, so expect flooded dips in the road and slower traffic; it may ease a touch by afternoon but don&rsquo;t trust it to fully clear. Temperatures are muted, around fifteen to nineteen degrees, with the wind picking up and the air cooling behind the front. Sunset&rsquo;s early now the clocks have gone back &mdash; about half past five.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick health note: it&rsquo;s cool and damp, the sort of day you forget to drink because you&rsquo;re not sweating, so keep water on you if you&rsquo;re training inside.</p>
+      <p>For the gamer in you &mdash; the Epic free games swap tomorrow. You&rsquo;ve got until Thursday to grab Home, a horror adventure, and Sker Ritual, a co-op survival shooter, before they&rsquo;re gone; after that it&rsquo;s Sorry We&rsquo;re Closed. Two minutes to claim, yours forever.</p>
+      <p>And one for the pocket. Word of the day is <em>brontide</em> &mdash; the low, distant rumble of thunder, which you&rsquo;ll hear plenty of today. And a building tip: when you want a certain output from a model, don&rsquo;t describe it, show it &mdash; one good example beats a paragraph of instructions.</p>
+      <p>So that&rsquo;s your Wednesday: a red-flag storm, a knife-edge election, and a trip to pack for. Rain gear first, coffee close behind.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>Israel&rsquo;s election is too close to call.</strong> Exit polls point to the <strong>opposition edging the popular vote</strong> while <strong>Netanyahu&rsquo;s Likud remains the largest single party</strong>; with <strong>neither bloc reaching a majority without the Arab parties</strong> and the count still early, who forms the next government is genuinely unresolved. <a href="https://www.aljazeera.com/news/">Al Jazeera</a> <a href="https://www.haaretz.com/israel-news/elections/">Haaretz</a></li>
+    <li><strong>UN inquiry: genocide continued after the Gaza truce.</strong> A <strong>UN commission of inquiry says Israel has kept committing genocide in Gaza</strong> even after the ceasefire took hold &mdash; a <strong>finding Israel rejects</strong>. It lands with the truce still fragile and will shape the diplomatic argument for weeks. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Science &mdash; spiders have REM-like sleep.</strong> Researchers in Bonn watched <strong>Australian jumping spiders</strong> and found <strong>distinct sleep stages, including a twitchy, eye-flicking phase resembling human REM</strong> &mdash; the stage tied to dreaming. What a spider might dream of is anyone&rsquo;s guess, but the mechanism looks familiar. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Apple gives Siri a memory.</strong> A <strong>software update this week lets Siri carry context from your past conversations</strong> instead of starting fresh each time, and <strong>adds several new languages</strong>. Quiet otherwise on the chatbot front &mdash; no new ChatGPT, Claude or Gemini feature overnight. <a href="https://www.apple.com/newsroom/">Apple Newsroom</a> <a href="https://aiweekly.co/ai-news-today/edition/2026-10-27">AI Weekly</a></li>
+    <li><strong>Anthropic files to go public.</strong> The <strong>Claude maker filed its S-1 to list on the Nasdaq under ticker &ldquo;ANT&rdquo;</strong> &mdash; the concrete next step on yesterday&rsquo;s &ldquo;opened its books.&rdquo; The filing shows <strong>record first-half revenue alongside a very large net loss</strong> driven largely by a non-cash accounting markup. <a href="https://the-decoder.com/">The Decoder</a> <a href="https://www.anthropic.com/news">Anthropic</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Red storm warning for Attica.</strong> <strong>Civil Protection has placed Attica under a red code</strong> (the top level) <strong>through tomorrow, Thursday 29 October</strong>. <strong>Heavy rain and thunderstorms are heaviest this morning</strong>, bringing flooded dips and slower traffic; it may <strong>ease a little by afternoon but not fully clear</strong>. Temperatures a muted <strong>~15&ndash;19&deg;C</strong>, <strong>wind strengthening</strong> and air cooling behind the front. Sunset now about <strong>17:30</strong> after the clocks went back. <a href="https://www.meteoblue.com/en/weather/week/athens_greece_264371">meteoblue</a> <a href="https://www.emy.gr/emy/en/">EMY</a> <a href="https://en.protothema.gr/2026/10/26/new-severe-weather-warning-heavy-storms-to-hit-attica-and-six-other-regions-today-and-tomorrow-where-rain-is-expected-on-28-october/">Proto Thema</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Live inbox and calendar were unreachable this morning</strong> &mdash; the connector failed to load, so <strong>check both directly today</strong>.</li>
+    <li>From what&rsquo;s already on the books, a <strong>climbing trip this Friday</strong> is the thing to prep gear for, with <strong>two more commitments on the horizon in the next couple of weeks</strong>. (Details audio-only.)</li>
+    <li><strong>No new security alerts</strong> surfaced, and last week&rsquo;s billing issue stays <strong>resolved</strong>.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Cool and damp today &mdash; the kind of weather you forget to drink in because you&rsquo;re not sweating, so keep water on you if you&rsquo;re training indoors.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Gaming &amp; Deals</h3>
+  <ul>
+    <li><strong>Epic&rsquo;s free games swap tomorrow.</strong> Until <strong>Thursday 29 October</strong> you can claim <strong>Home &mdash; A Unique Horror Adventure</strong> and <strong>Sker Ritual</strong> (a co-op survival shooter) for free on PC; after that the store rotates to <strong>Sorry We&rsquo;re Closed</strong> (29 Oct&ndash;5 Nov). Claim once and they&rsquo;re yours to keep. <a href="https://store.epicgames.com/en-US/free-games">Epic Games Store</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>brontide</em></strong> (noun): <strong>a low, muffled rumbling sound like distant thunder</strong> &mdash; fitting for a day like today. <em>Example:</em> &ldquo;A brontide rolled over the hills as the storm swept into Attica.&rdquo; <a href="https://www.wordnik.com/words/brontide">Wordnik</a></li>
+    <li><strong>AI tip &mdash; show, don&rsquo;t tell.</strong> When you want a specific output from a model, <strong>give it one or two concrete examples of exactly what you want</strong> rather than describing it in prose. A single good example usually steers the result better than a paragraph of instructions.</li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key needs re-issuing, 58th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
