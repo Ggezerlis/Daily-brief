@@ -1,0 +1,150 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Friday, 30 October 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the sixtieth straight morning, and a direct account check came back 401 too. The account itself is active and in credit; it&rsquo;s the <strong>API key that&rsquo;s revoked and needs re-issuing</strong> before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip">Weather &middot; Mild, grey, storms gone</span>
+    <span class="chip">World &middot; Patrick Stewart dies at 86</span>
+    <span class="chip">Science &middot; How barn owls spread worldwide</span>
+    <span class="chip">AI &middot; Quiet &mdash; no new releases</span>
+    <span class="chip warn">Action &middot; A payment needs attention</span>
+    <span class="chip hi">Reminder &middot; Weekend trip to pack for</span>
+    <span class="chip">Gaming &middot; Epic free game: Moving Out 2</span>
+    <span class="chip">Learning &middot; Word: flagging</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; it&rsquo;s Friday the thirtieth, and here&rsquo;s the shape of it. <span class="redacted">&mdash; personal items &mdash;</span> And some sad news out in the world overnight, which I&rsquo;ll start with.</p>
+      <p>Sir Patrick Stewart has died, at eighty-six. Picard in Star Trek, Professor X in the X-Men, and before all that a towering Shakespearean on the British stage &mdash; one of those voices that&rsquo;s basically part of the furniture of the culture. His family said he passed at home in Los Angeles after living with Alzheimer&rsquo;s and Lewy body dementia, and tributes have poured in from across the Star Trek and Marvel worlds, his old castmates among the first. If you want an excuse to rewatch a bit of Next Generation this weekend, there it is.</p>
+      <p>On the science desk, a quieter but lovely one &mdash; geneticists have worked out how the barn owl, one of the most widespread birds on the planet, actually spread. It started in Eurasia, made an unlikely hop across the Atlantic to the Caribbean, and from there colonised the whole of the Americas. A nice reminder that even the familiar bird outside the window has a wild backstory.</p>
+      <p>Over on the tech side, it&rsquo;s genuinely quiet again &mdash; no new ChatGPT, Claude, Gemini or Grok release overnight, and the model trackers aren&rsquo;t showing anything major landing. The big labs are clearly between drops, so there&rsquo;s nothing you need to click or action today. The moment something real ships, I&rsquo;ll flag it.</p>
+      <p>Weather in Athens: a mild, mostly grey day now the week&rsquo;s storms have blown through. Highs around nineteen or twenty, down to about fourteen tonight, with a light wind and just a small chance of a shower later in the afternoon. The sun sets early now, just before half past five.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick health note: you&rsquo;ll be climbing and travelling today, so fill a bottle before you head out &mdash; easy to forget when it&rsquo;s cool out.</p>
+      <p>For the gamer in you, before you vanish for the weekend &mdash; Epic&rsquo;s free game this week is Moving Out 2, the co-op moving-company chaos game, yours to keep if you claim it by the sixth of November. Perfect couch co-op for when you&rsquo;re back. After that it looks like Soma and Costume Quest are up next.</p>
+      <p>And one for the road. Word of the day is <em>flagging</em> &mdash; in climbing, swinging a free leg out as a counterweight so you don&rsquo;t barn-door off the wall; &ldquo;she flagged her left foot and stuck the reach.&rdquo; And a bit of trivia for the gamer: there are more ways to shuffle a single deck of fifty-two cards than there are atoms in the entire Earth. Pretty much every shuffle you&rsquo;ve ever dealt was the first time that exact order existed.</p>
+      <p>So: an easy morning, <span class="redacted">&mdash; personal items &mdash;</span> then gear up and head out. Have a brilliant one.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>Sir Patrick Stewart has died, aged 86.</strong> The actor &mdash; <strong>Captain Jean-Luc Picard</strong> in <em>Star Trek</em>, <strong>Professor Charles Xavier</strong> in the <em>X-Men</em> films, and a <strong>celebrated Royal Shakespeare Company stage actor</strong> &mdash; <strong>died at his Los Angeles home</strong> after living with <strong>Alzheimer&rsquo;s and Lewy body dementia</strong>, his family said. Tributes have poured in from across the <em>Star Trek</em> and Marvel casts. <a href="https://variety.com/2026/tv/news/patrick-stewart-dead-star-trek-picardx-men-xavier-1236934412/">Variety</a> <a href="https://www.npr.org/2026/10/29/1230906945/patrick-stewart-dead">NPR</a> <a href="https://deadline.com/2026/10/patrick-stewart-dead-1237208580/">Deadline</a></li>
+    <li><strong>Science &mdash; how the barn owl conquered the world.</strong> A new <strong>genomic study</strong> reconstructs how one of Earth&rsquo;s most widespread birds spread: <strong>from Eurasia, across the Atlantic to the Caribbean, then throughout the Americas</strong> &mdash; a rare long-distance colonisation for a non-migratory species. <a href="https://www.nature.com/subjects/biological-sciences/nature">Nature</a> <a href="https://www.sciencedaily.com/news/plants_animals/nature/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Quiet morning on the model front.</strong> <strong>No confirmed new ChatGPT, Claude, Gemini or Grok release overnight</strong>, and the public model trackers show nothing major landing &mdash; the big labs are between drops, so there&rsquo;s nothing to action today. <a href="https://lmmarketcap.com/tools/model-release-tracker">LMMarketCap tracker</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Mild and mostly grey, with the week&rsquo;s storms gone through.</strong> <strong>Highs around 19&ndash;20&deg;C</strong>, dropping to about <strong>14&deg;C</strong> tonight, <strong>light wind</strong>, and a <strong>small chance of a shower later in the afternoon</strong>. <strong>Sunset ~17:29</strong>. <a href="https://www.meteoblue.com/en/weather/week/athens_greece_264371">meteoblue</a> <a href="https://www.emy.gr/emy/en/">EMY</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>A weekend trip to pack for</strong> &mdash; travel this afternoon, back Sunday. Gear and warm layers on the list.</li>
+    <li><strong>One payment needs attention</strong> &mdash; a subscription charge bounced on the 27th and hasn&rsquo;t retried, so the card needs updating before the account lapses. (Details audio-only.)</li>
+    <li><strong>A few routine subscription receipts</strong> landed in the inbox &mdash; nothing to do. <strong>No new security alerts.</strong></li>
+    <li><strong>On the horizon:</strong> an event next Thursday, a race the following weekend, and a trip abroad mid-month.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Active day with travel ahead &mdash; fill a bottle before you head out; a cool, damp day hides your thirst.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Gaming &amp; Deals</h3>
+  <ul>
+    <li><strong>Epic&rsquo;s free game this week: <em>Moving Out 2</em></strong> &mdash; the chaotic co-op moving-company sequel, <strong>free to keep until 6 November</strong> on PC. Next up reportedly <strong>Soma</strong> and <strong>Costume Quest</strong>. <a href="https://www.pcgamesn.com/free-epic-games">PCGamesN</a> <a href="https://store.epicgames.com/en-US/free-games">Epic Games Store</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>flagging</em></strong> (climbing): extending a <strong>free leg out to the side as a counterweight</strong> to keep your body from swinging (&ldquo;barn-dooring&rdquo;) off the wall. <em>Example:</em> &ldquo;She flagged her left foot and stuck the reach.&rdquo; <a href="https://www.99boulders.com/rock-climbing-terms">99Boulders glossary</a></li>
+    <li><strong>Surprising fact.</strong> There are <strong>more ways to shuffle a single 52-card deck (52! &asymp; 8&times;10&#8310;&#8311;) than there are atoms making up the entire Earth (~10&#8309;&#8304;)</strong> &mdash; so virtually every well-shuffled deck is an ordering that has never existed before. <a href="https://czep.net/weblog/52cards.html">The deck-shuffle math</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key revoked, needs re-issuing; 60th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
