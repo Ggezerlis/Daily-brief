@@ -1,0 +1,142 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Sunday, 8 November 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the sixty-ninth straight morning. The ElevenLabs account itself is fine; it&rsquo;s the <strong>API key that&rsquo;s revoked and needs re-issuing</strong> before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip">World &middot; US chokes Iran&rsquo;s land supply routes</span>
+    <span class="chip hi">World &middot; Israel: mandate may pass Netanyahu</span>
+    <span class="chip">World &middot; Coffee tied to lower dementia risk</span>
+    <span class="chip">AI &middot; Quiet; GPT-6 still a rumor</span>
+    <span class="chip">Weather &middot; Clear &amp; dry, ~15&deg;C</span>
+    <span class="chip">Learning &middot; Word: numinous</span>
+    <span class="chip warn">Audio &middot; TTS key revoked, needs re-issuing</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George. A couple of things are worth your attention before the day gets going. One, the Iran war took another turn overnight &mdash; the US is now moving to choke off Iran&rsquo;s supply routes on land, not just at sea, after another round of strikes on Qeshm. Two, Israel may be watching the end of the Netanyahu era, with the president handing the job of forming the next government to somebody else entirely. <span class="redacted">&mdash; personal items &mdash;</span> Otherwise it&rsquo;s a quiet, clear Sunday.</p>
+      <p>Let&rsquo;s start abroad, where that Iran standoff keeps widening. After Trump confirmed fresh strikes on Qeshm Island &mdash; while insisting, oddly, that it&rsquo;s not a war &mdash; the US has launched a task force aimed at strangling Iran&rsquo;s supply routes over land, a real step up from the naval squeeze in the Strait of Hormuz. Iranian state media reported blasts at Qeshm, Bandar Abbas and a few other spots, and the Revolutionary Guard says it&rsquo;s digging underground sites to keep churning out weapons right through the bombing. Mediators are still scrambling to cool it down.</p>
+      <p>Over in Israel, meanwhile, the ground may be shifting under Netanyahu. After last week&rsquo;s messy, inconclusive election, the president has moved to hand the mandate to form the next government not to him, but to Gadi Eisenkot &mdash; the former army chief &mdash; pushed into position partly by Arab parties throwing their weight behind him. It&rsquo;s not sealed yet; coalitions are fragile, slippery things. But it&rsquo;s the clearest sign so far that his very long run at the top could be winding down.</p>
+      <p>And a cheerful one from the lab, almost tailor-made for you. A big study that followed people for up to forty-odd years found that two or three cups of caffeinated coffee a day were tied to a lower risk of dementia and sharper thinking later in life. Decaf didn&rsquo;t show the same payoff, so it seems to be the caffeine pulling the weight here. Call it official permission to enjoy your morning cup without a shred of guilt.</p>
+      <p>On the tech front, it&rsquo;s another slow one. Nothing new worth stopping for from ChatGPT, Claude, Gemini or Grok in the last day &mdash; the release trackers are quiet, and the few that aren&rsquo;t actually disagree with each other. The GPT-6 chatter is still just that, chatter: the names and dates floating around don&rsquo;t line up from one source to the next, so keep it firmly in the rumor pile until somebody official says otherwise. Nothing new to install today.</p>
+      <p>Athens is in for a bright, easy Sunday. Clear skies pretty much the whole way through, barely a cloud, and dry &mdash; rain just isn&rsquo;t a factor today. Around eleven or twelve first thing, nudging up to a comfortable fourteen or fifteen through the afternoon, then sliding back toward ten once the sun&rsquo;s down. Light northerly breeze, nothing you&rsquo;ll even notice, and the sun clocks off around twenty past five.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>One quick nudge on water &mdash; cool, dry, clear air doesn&rsquo;t trigger thirst the way heat does, so it&rsquo;s easy to drink too little without noticing. Keep sipping through the day, especially around training.</p>
+      <p>Word of the day is <em>numinous</em>: that feeling of awe or mystery, the sense of something far bigger than yourself. As in &mdash; topping out at dawn with the whole valley spread out below, there&rsquo;s something genuinely numinous about it. And a small productivity trick to pocket: <em>eat the frog</em>. Do your hardest, most-dreaded task first thing, before the day fills up with everything else; once it&rsquo;s behind you, the rest tends to feel downhill.</p>
+      <p>That&rsquo;s your lot &mdash; a jumpy world abroad, a soft and open day on your end. Go climb something, George.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>US moves to choke Iran&rsquo;s supply routes on land.</strong> After Trump <strong>confirmed fresh strikes on Qeshm Island</strong> (while insisting &ldquo;it&rsquo;s not a war&rdquo;), the US launched a <strong>task force to disrupt Iran&rsquo;s land-based supply routes</strong> &mdash; an escalation beyond the naval squeeze at the Strait of Hormuz. Iranian state media reported <strong>blasts at Qeshm, Bandar Abbas and elsewhere</strong>; the IRGC says it is building <strong>underground weapons sites</strong>, and mediators are still trying to head off wider war. <a href="https://www.aljazeera.com/where/iran/">Al Jazeera</a> <a href="https://www.aljazeera.com/news/">Al Jazeera News</a></li>
+    <li><strong>Israel: mandate may pass Netanyahu to Eisenkot.</strong> After last week&rsquo;s inconclusive election, the president has moved to hand the task of <strong>forming the next government to Gadi Eisenkot</strong> (former IDF chief of staff) rather than Netanyahu, with <strong>Arab parties backing Eisenkot</strong>. No coalition is settled &mdash; a decision is expected by around Nov 11 &mdash; but it&rsquo;s the clearest sign yet that Netanyahu&rsquo;s long run could be ending. <a href="https://www.jpost.com/israel-election-2026">Jerusalem Post</a> <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Science: coffee linked to lower dementia risk.</strong> A long study <strong>following people for up to ~43 years</strong> found <strong>two to three cups of caffeinated coffee a day</strong> were associated with <strong>lower dementia risk and better cognition</strong> later in life. Decaf did not show the same effect, pointing to caffeine as the active factor. (Association, not proof of cause.) <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Quiet for releases; GPT-6 stays a rumor.</strong> No confirmed new consumer drop from <strong>ChatGPT, Claude, Gemini or Grok</strong> in the last day; the release trackers are quiet and <strong>disagree with one another</strong>. <strong>GPT-6 chatter remains unconfirmed</strong> &mdash; names and dates don&rsquo;t line up across sources, so treat it as rumor until an official announcement lands. Nothing new worth installing today. <a href="https://aireleasetracker.com/latest">AI Release Tracker</a> <a href="https://artificialanalysis.ai/">Artificial Analysis</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Bright, clear and dry.</strong> Near-cloudless all day, essentially <strong>no rain</strong>. <strong>~11&ndash;12&deg;C</strong> early, high <strong>~14&ndash;15&deg;C</strong> midafternoon, back toward <strong>~10&deg;C</strong> after dark. <strong>Light northerly breeze</strong>, no warnings. <strong>Sunset ~17:20</strong>. <a href="https://www.yr.no/en/forecast/daily-table/2-264371/Greece/Attica/Nomarch%C3%ADa%20Ath%C3%ADnas/Athens">Yr</a> <a href="https://www.timeanddate.com/weather/greece/athens">timeanddate</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar couldn&rsquo;t be reached this morning</strong> &mdash; no schedule could be pulled, so check it yourself before planning the day. (Details audio-only when available.)</li>
+    <li><strong>Inbox is all noise</strong> &mdash; about two dozen unread, every one routine (social pings, shop promos, Reddit &amp; gaming digests, a couple of receipts). <strong>Nothing needs a reply</strong>, and no new security flags beyond the app-permissions notice already seen. (Details audio-only.)</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Cool, dry, clear air doesn&rsquo;t trigger thirst the way heat does &mdash; keep sipping water steadily through the day, especially around training. (No medical advice.)</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>numinous</em></strong> (adj.): <strong>evoking awe, mystery, or the sense of something far greater than oneself</strong>. <em>Example:</em> &ldquo;Topping out at dawn with the whole valley below, there&rsquo;s something numinous about it.&rdquo; <a href="https://en.wiktionary.org/wiki/numinous">Wiktionary</a></li>
+    <li><strong>Productivity trick &mdash; &ldquo;eat the frog.&rdquo;</strong> Do your <strong>hardest, most-dreaded task first</strong>, before the day fills up; once it&rsquo;s done, everything after it feels easier. <a href="https://todoist.com/productivity-methods/eat-the-frog">Reference</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; ElevenLabs API key revoked, needs re-issuing; 69th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
