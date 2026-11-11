@@ -1,0 +1,153 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Wednesday, 11 November 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the seventy-second straight morning. Note: the voice account shows a <strong>successful recent receipt</strong>, so the earlier &ldquo;declined card&rdquo; theory doesn&rsquo;t hold &mdash; this is an <strong>API key that&rsquo;s invalid/revoked and needs re-issuing</strong>, with the new key placed in the routine&rsquo;s environment, before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip hi">World &middot; Ukraine &amp; Russia back for day two</span>
+    <span class="chip">World &middot; Iran deal on Trump&rsquo;s desk</span>
+    <span class="chip">World &middot; Hidden planet found in Webb images</span>
+    <span class="chip">AI &middot; Quiet, nothing to install</span>
+    <span class="chip">Weather &middot; Damp AM, sunny ~21&deg;C</span>
+    <span class="chip warn">Personal &middot; 1 security alert to verify</span>
+    <span class="chip hi">Gaming &middot; Flotsam free &mdash; ends tomorrow</span>
+    <span class="chip">Learning &middot; Word: apricity</span>
+    <span class="chip warn">Audio &middot; TTS key invalid, needs re-issuing</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George. Three things before the day runs off with you. One, those Abu Dhabi peace talks are back on today for a second day, after a first round both sides are actually calling constructive. Two, the Iran blockade deal has landed on Trump&rsquo;s desk, and oil&rsquo;s already dropping on the hope it holds. <span class="redacted">&mdash; personal items &mdash;</span></p>
+      <p>Let&rsquo;s start with Ukraine, because there&rsquo;s actual movement. Remember yesterday&rsquo;s three-way sit-down in Abu Dhabi? Day one ran nearly four hours, the Americans called it productive, Zelensky called it constructive and substantive, and they&rsquo;re back at the table today. The focus so far is the humanitarian stuff, prisoner swaps and returning children taken to Russia, with the hard territorial questions still miles apart. Temper the optimism, but after months of nothing, this is motion.</p>
+      <p>Meanwhile that Iran standoff may be inching toward an off-ramp. A Qatar-brokered deal is reportedly on Trump&rsquo;s desk now: Tehran reopens the Strait of Hormuz and stops hitting tankers, Washington lifts the blockade and frees eight billion dollars in frozen Iranian funds. Iran&rsquo;s apparently signed off, though your man Rubio is calling the terms outrageous, so it&rsquo;s a long way from done. Still, oil read it as progress, with Brent sliding about four percent to ninety-four dollars a barrel.</p>
+      <p>And one for the science pile. Astronomers found a hidden planet lurking in old James Webb telescope images that nobody had spotted, using a neat trick: they built a digital twin of the telescope to strip out the glare of the parent star. The real payoff is what it implies, that there may be a whole crowd of planets already sitting in data we&rsquo;ve long had, just waiting to be uncovered.</p>
+      <p>On the AI front, it&rsquo;s quiet again. No confirmed new drop from ChatGPT, Claude, Gemini or Grok in the last day, and the chatter about the next big model is still just chatter, names and dates that don&rsquo;t line up, so keep it filed under rumor. Nothing new worth installing today either. If anything lands, it&rsquo;ll likely be in the Black Friday run-up, not a random Wednesday.</p>
+      <p>Athens starts grey and a bit damp, around fourteen degrees with a fair chance of a passing shower before mid-morning. Then it clears to sunny and genuinely mild, low twenties by the afternoon, easing back to the mid-teens tonight. Light winds all day, and the sun clocks off at quarter past five.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick water nudge: dry, breezy autumn air pulls fluid out of you quietly, so keep sipping through training today even when you don&rsquo;t feel thirsty.</p>
+      <p>Oh, and one for the backlog: Flotsam, that floating-city builder, is free on Epic only until tomorrow afternoon, so grab it today if you fancy it, then Knightica takes its slot next.</p>
+      <p>Word of the day is <em>apricity</em>, the warmth of the sun on a winter&rsquo;s day, which is more or less Athens this afternoon. And a productivity trick to pocket: the two-minute rule. If something crossing your desk takes under two minutes, just do it right then instead of filing it away, because the filing almost always costs you more than the task would have.</p>
+      <p>That&rsquo;s your lot, George, a world edging toward a couple of fragile deals, and a bright, mild Wednesday waiting on your end. <span class="redacted">&mdash; personal items &mdash;</span></p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>Ukraine and Russia back for a second day of US-mediated talks.</strong> Day one in <strong>Abu Dhabi ran nearly four hours</strong>; the US called it <strong>productive</strong>, Zelensky <strong>&ldquo;constructive and substantive.&rdquo;</strong> Talk so far centres on <strong>humanitarian items</strong> &mdash; a large prisoner swap and returning Ukrainian children &mdash; with <strong>territory and a ceasefire still far apart</strong>. Sessions resume today. <a href="https://www.npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks">NPR/AP</a> <a href="https://www.france24.com/en/europe/20261110-live-ukraine-russia-and-us-to-resume-peace-talks-in-abu-dhabi">France 24</a></li>
+    <li><strong>Iran: an $8bn deal reportedly on Trump&rsquo;s desk.</strong> A <strong>Qatar-brokered arrangement</strong> would have <strong>Iran reopen the Strait of Hormuz</strong> and halt tanker attacks while the <strong>US lifts the blockade and releases $8bn</strong> in frozen Iranian funds. Iran has reportedly <strong>signed off</strong>, but <strong>Rubio called the terms &ldquo;outrageous&rdquo;</strong> &mdash; so it&rsquo;s far from done. <strong>Brent fell ~3.6% to ~$94</strong> on the hopes. <a href="https://www.israelhayom.com/2026/11/09/8-billion-lifeline-iranian-deal-set-to-land-on-trumps-desk/">Israel Hayom</a> <a href="https://finance.yahoo.com/energy/articles/oil-sinks-94-iran-8-133000587.html">Yahoo Finance</a></li>
+    <li><strong>Science: a hidden planet spotted in old James Webb images.</strong> Astronomers used a <strong>&ldquo;digital twin&rdquo; of the telescope</strong> to subtract starlight glare and <strong>reveal a planet hiding in existing JWST data</strong> &mdash; a technique that could uncover <strong>many more planets already sitting in archived images</strong>. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Another quiet day for releases.</strong> No confirmed new consumer drop from <strong>ChatGPT, Claude, Gemini or Grok</strong> in the last 24 hours, and <strong>next-flagship chatter stays unconfirmed</strong> (contradictory names/dates &mdash; treat as rumor). Nothing new worth installing today. <a href="https://openai.com/news/">OpenAI</a> <a href="https://www.anthropic.com/news">Anthropic</a> <a href="https://blog.google/technology/google-deepmind/">Google DeepMind</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Damp start, bright afternoon.</strong> <strong>~14&deg;C</strong> early under grey skies with a <strong>~25&ndash;30% chance of a passing shower before mid-morning</strong>, then <strong>clearing to sunny</strong> and a mild <strong>~21&deg;C</strong> by afternoon, back to the <strong>mid-teens overnight</strong>. <strong>Light winds</strong> (gusts ~18&nbsp;km/h midday), no warnings. <strong>Sunset ~17:17</strong>. <a href="https://www.yr.no/en/forecast/daily-table/2-264371/Greece/Attica/Nomarch%C3%ADa%20Ath%C3%ADnas/Athens">Yr</a> <a href="https://wttr.in/Athens,Greece">wttr.in</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar couldn&rsquo;t be reached this morning</strong> &mdash; it&rsquo;s not enabled in this session, so no schedule could be pulled; check it yourself before planning the day.</li>
+    <li><strong>1 account security alert worth a glance.</strong> A <strong>new-device sign-in</strong> was flagged on one of your accounts overnight &mdash; <strong>confirm it was you</strong>. No other security flags. (Details audio/owner-only for privacy.)</li>
+    <li><strong>1 small payment hiccup, likely already sorted.</strong> A <strong>minor charge failed</strong> earlier, but a <strong>receipt followed right after</strong>, so it looks resolved &mdash; worth a quick confirm. (Details audio-only.)</li>
+    <li><strong>Inbox is otherwise noise</strong> &mdash; ~12 unread, all routine (social pings, Reddit, Pinterest, shop promos, a location-sharing reminder, and one &ldquo;urgent action required&rdquo; QR upsell that isn&rsquo;t). <strong>Nothing needs a reply.</strong> (Details audio-only.)</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Dry, breezy autumn air pulls fluid out quietly &mdash; keep sipping water steadily through the day, especially around training. (No medical advice.)</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Gaming &amp; Deals</h3>
+  <ul>
+    <li><strong>Last call &mdash; <em>Flotsam</em> free on Epic until tomorrow.</strong> The <strong>floating-city builder</strong> is free to keep on the <strong>Epic Games Store through ~4pm UK time, Nov 12</strong> &mdash; so grab it today if you want it. <strong>Knightica</strong> takes the slot next (Nov 12&ndash;19). <a href="https://www.ggrecon.com/articles/flotsam-free-epic-games-store/">GGRecon</a> <a href="https://store.epicgames.com/en-US/free-games">Epic Store</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day &mdash; <em>apricity</em></strong> (n.): <strong>the warmth of the sun on a winter&rsquo;s day</strong>. <em>Example:</em> &ldquo;By noon the apricity on the terrace made the chill feel like a rumour.&rdquo; <a href="https://en.wiktionary.org/wiki/apricity">Wiktionary</a></li>
+    <li><strong>Productivity tip &mdash; the two-minute rule.</strong> If a task that lands on you takes <strong>under two minutes, do it now</strong> rather than logging it &mdash; capturing, tracking and revisiting a tiny task usually costs more than just finishing it. <a href="https://jamesclear.com/how-to-stop-procrastinating">James Clear</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; API key invalid/revoked, needs re-issuing; 72nd straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
