@@ -1,0 +1,160 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Friday, 13 November 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two tries, both 401 &ldquo;invalid API key&rdquo;) &mdash; now the <strong>seventy-fourth straight morning</strong>. The voice account is still being <strong>charged</strong> (a fresh receipt landed this week), yet the API key itself stays <strong>invalid/revoked</strong> and needs re-issuing, with the new key placed in the routine&rsquo;s environment, before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip hi">World &middot; Nvidia chief reportedly out, shares slide</span>
+    <span class="chip">World &middot; Israeli strike on Gaza hospital</span>
+    <span class="chip">Science &middot; Earth&rsquo;s water born at home</span>
+    <span class="chip">World &middot; Haiti retakes national stadium</span>
+    <span class="chip">Business &middot; Nvidia wobble hits market</span>
+    <span class="chip">AI &middot; Quiet, nothing to install</span>
+    <span class="chip">Weather &middot; Mild ~21&deg;C, gusty</span>
+    <span class="chip">Gaming &middot; Knightica free on Epic</span>
+    <span class="chip">Space &middot; Starship test maybe tonight</span>
+    <span class="chip warn">Travel &middot; Boarding pass, 07:55 flight today</span>
+    <span class="chip warn">Security &middot; App permissions request to review</span>
+    <span class="chip warn">Audio &middot; TTS key invalid, needs re-issuing</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George. Three things before the day gets going. The big one first: Nvidia, the most valuable company around, is in turmoil, with reports that its boss is stepping down and the shares sliding, so if you hold any tech, glance at it. <span class="redacted">&mdash; personal items &mdash;</span></p>
+      <p>Let&rsquo;s start with the wider world. Over in the Middle East, an overnight Israeli strike hit the Nasser hospital complex in Khan Younis, in southern Gaza, killing at least six people and wounding around twenty. It&rsquo;s a grim reminder that the truce there is holding only loosely, and that hospitals keep ending up in the firing line.</p>
+      <p>From the science desk, a lovely one. Researchers are now arguing that Earth&rsquo;s water didn&rsquo;t all arrive later on comets and asteroids, the way the textbooks tell it, but formed right here, cooked out of the planet&rsquo;s own scorching early atmosphere. If it holds up, it rewrites a decent chunk of how we think the oceans got here in the first place.</p>
+      <p>And a rare bit of good news out of Haiti. Government forces, backed by Salvadoran troops, have retaken the main national stadium in Port-au-Prince after it sat under gang control for two solid years. It&rsquo;s a small thing on a map, but it&rsquo;s a real sign the security push there is finally clawing back ground.</p>
+      <p>Back to the one that&rsquo;s actually moving money. Nvidia, as I said, is the story: multiple outlets have its chief, Jensen Huang, on his way out amid a personal scandal, and the stock dropped sharply on the news. The specifics are still firming up, so treat the details as provisional, but when the biggest chip-maker on earth wobbles, the whole market feels it through the day.</p>
+      <p>On the AI front, genuinely quiet again. No new consumer drop from ChatGPT, Claude, Gemini or Grok in the last day. The one thing worth pocketing if you build on these: the newest flagship tiers have quietly been getting cheaper heading into Black Friday, so if your app&rsquo;s still leaning on an older, pricier model, it might be worth a glance at the latest pricing. Otherwise, nothing you need to install today.</p>
+      <p>Weather in Athens is mild and a touch breezy. You&rsquo;ll wake to around nineteen degrees, climb to a pleasant twenty-one in the afternoon, and stay near nineteen or twenty into the evening, which is warm for mid-November, honestly. Barely any rain, maybe a faint flicker mid-afternoon, nothing you&rsquo;d plan around. The one thing to clock is the wind: gusts could touch sixty kilometres an hour, so anything loose outdoors might rattle. The sun clocks off at quarter past five.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick gaming note: this week&rsquo;s free Epic game is Knightica, a colourful roguelike auto-battler, yours to keep if you grab it before next Thursday. And if that&rsquo;s not your thing, Alien: Isolation headlines next week&rsquo;s freebies, which is a proper scary one worth the wait.</p>
+      <p>For the sky-watchers: SpaceX may fly its next Starship test out of Texas late tonight, around quarter to one your time, though that date&rsquo;s still unconfirmed, so don&rsquo;t set an alarm for it. Before that there&rsquo;s a routine Falcon 9 security launch from California in the small hours. File the Starship one under maybe.</p>
+      <p>Water-wise, it&rsquo;s mild and you&rsquo;ll probably train later, so keep sipping even before you feel thirsty.</p>
+      <p>That&rsquo;s your lot, George: a market shake-up, a mild and breezy Friday, and a quiet to-do list. Go make it a good one.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>Israeli strike hits the Nasser hospital complex in Gaza.</strong> An <strong>overnight strike on the Nasser medical complex in Khan Younis</strong>, southern Gaza, reportedly <strong>killed at least six and wounded around twenty</strong> &mdash; a sign the truce is holding only loosely. <a href="https://www.democracynow.org/2026/11/12/headlines">Democracy Now</a> <a href="https://pbs.org/newshour/show/november-12-2026-pbs-news-hour-full-episode">PBS NewsHour</a></li>
+    <li><strong>Science: Earth&rsquo;s water may have formed at home, not been delivered.</strong> New work argues the planet&rsquo;s water was <strong>cooked out of its own hot early atmosphere</strong> rather than arriving on comets and asteroids &mdash; a potential rewrite of how the oceans got here. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+    <li><strong>Haiti retakes its national stadium from gangs.</strong> Government forces, <strong>backed by Salvadoran troops</strong>, recaptured the <strong>main stadium in Port-au-Prince</strong> after roughly two years of gang control &mdash; a modest but real gain for the security push. <a href="https://www.democracynow.org/2026/11/12/headlines">Democracy Now</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Business</h3>
+  <ul>
+    <li><strong>Nvidia in turmoil &mdash; reports its chief is stepping down, shares slide.</strong> Several outlets say CEO <strong>Jensen Huang is on his way out amid a personal scandal</strong>, and <strong>Nvidia stock fell sharply</strong>; because it&rsquo;s the <strong>most valuable company on the market</strong>, the move ripples across indices. <em>Reports conflict (resigned vs. board preparing) &mdash; treat specifics as provisional.</em> <a href="https://pbs.org/newshour/show/november-12-2026-pbs-news-hour-full-episode">PBS NewsHour</a> <a href="https://www.democracynow.org/2026/11/12/headlines">Democracy Now</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Another quiet day for releases.</strong> No confirmed new consumer drop from <strong>ChatGPT, Claude, Gemini or Grok</strong> in the last 24 hours. The practical note for builders: <strong>newer flagship tiers have been getting cheaper into Black Friday</strong>, so if you&rsquo;re on an older, pricier model it&rsquo;s worth re-checking pricing. Nothing new worth installing today. <a href="https://openai.com/news/">OpenAI</a> <a href="https://www.anthropic.com/news">Anthropic</a> <a href="https://llmgateway.io/timeline">LLM release timeline</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Mild and breezy, warm for mid-November.</strong> <strong>~19&deg;C</strong> this morning, up to a pleasant <strong>~21&deg;C</strong> in the afternoon, easing to <strong>~19&ndash;20&deg;C</strong> this evening. <strong>Rain chance low (~13% mid-afternoon)</strong>. Watch the <strong>wind &mdash; gusts up to ~60&nbsp;km/h</strong>; no formal warning. <strong>Sunset 17:14</strong>. <a href="https://open-meteo.com/en/docs">Open-Meteo</a> <a href="https://wttr.in/Athens,Greece">wttr.in</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar couldn&rsquo;t be reached this morning</strong> &mdash; the connector isn&rsquo;t enabled in this session, so no schedule could be pulled; check it yourself before planning the day.</li>
+    <li><strong>Inbox ~16 unread, mostly routine.</strong> Social pings and newsletters, nothing needing a reply. <strong>Three items earn a glance</strong> (details kept audio/owner-only for privacy): an <strong>app-permissions request</strong> to review, a <strong>travel document for a very early departure today</strong>, and a <strong>recurring charge on a service whose key is currently down</strong>. <strong>One online event invite</strong> sits in the inbox for later next week.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Gaming &amp; Deals</h3>
+  <ul>
+    <li><strong>Epic freebie now &mdash; <em>Knightica</em>, free to keep.</strong> A <strong>colourful roguelike auto-battler</strong> (Mad Mango Games), <strong>free on the Epic Games Store through Thursday 19 Nov</strong>. Up next: <strong><em>Alien: Isolation</em></strong> (plus <em>Mark of the Deep</em>), <strong>Nov 19&ndash;26</strong>. <a href="https://www.gamespot.com/articles/free-games-epic-games-store/1100-6476419/">GameSpot</a> <a href="https://store.epicgames.com/en-US/free-games">Epic Store</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Space</h3>
+  <ul>
+    <li><strong>Possible Starship test tonight &mdash; unconfirmed.</strong> Trackers pencil <strong>Starship Flight 15</strong> from Starbase, Texas for <strong>~00:45 Athens time (late tonight)</strong>, but <strong>the date isn&rsquo;t officially confirmed</strong> &mdash; treat as tentative. Earlier, a routine <strong>Falcon 9 national-security launch</strong> from California is slated for the small hours. <a href="https://www.spacelaunchschedule.com/category/spacex/">Space Launch Schedule</a> <a href="https://en.wikipedia.org/wiki/SpaceX_Starship">Starship (Wikipedia)</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Mild afternoon and likely training later &mdash; keep a bottle going, sipping steadily even before you feel thirsty. (No medical advice.)</li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; API key invalid/revoked, needs re-issuing; 74th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
