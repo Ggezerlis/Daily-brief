@@ -1,0 +1,160 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Saturday, 14 November 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two 401 &ldquo;invalid API key&rdquo; responses) &mdash; now the <strong>seventy-fifth straight morning</strong>. The voice account is still being <strong>charged</strong>, yet the API key itself stays <strong>invalid/revoked</strong> and needs re-issuing, with the new key placed in the routine&rsquo;s environment, before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip hi">Business &middot; Nvidia chief resigns, interim boss named</span>
+    <span class="chip">World &middot; Winter storm floods Gaza camps</span>
+    <span class="chip">World &middot; US peace pressure on Ukraine</span>
+    <span class="chip">Science &middot; Ancient virus DNA in a 1,000-year book</span>
+    <span class="chip">AI &middot; Quiet; Fable 5.2 landed last week</span>
+    <span class="chip">Weather &middot; Clear &amp; calm, ~22&deg;C</span>
+    <span class="chip">Space &middot; Starship reaches orbit, booster lost</span>
+    <span class="chip">Learning &middot; alacrity; a Venus day</span>
+    <span class="chip warn">Account &middot; App permissions to review</span>
+    <span class="chip warn">Travel &middot; Flight upgrade offer</span>
+    <span class="chip warn">Audio &middot; TTS key invalid, needs re-issuing</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; happy Saturday. Three quick things before you&rsquo;re properly awake. First, it&rsquo;s official now: Nvidia&rsquo;s boss, Jensen Huang, has actually resigned, the finance chief is steering the ship for now, and since it&rsquo;s the biggest company on the planet, the whole market felt the jolt. And overnight, SpaceX finally flew that Starship. <span class="redacted">&mdash; personal items &mdash;</span></p>
+      <p>Let&rsquo;s start wider. Over in Gaza, the shaky truce is now colliding with winter. A heavy storm has flooded thousands of tents sheltering displaced families, and doctors are warning of a meningitis surge on top of everything else. Aid agencies are pleading for supplies and repairs to get through &mdash; it&rsquo;s turning into a slow humanitarian emergency layered right under the war.</p>
+      <p>On Ukraine, the pressure just grinds on. The US is still pushing a peace framework that would have Kyiv give up land, and Zelensky&rsquo;s holding the line, insisting his country, in his words, isn&rsquo;t real estate to be traded away. No breakthrough yet, but it&rsquo;s the thread to keep an eye on this week.</p>
+      <p>And from the science desk, a genuinely strange one. Researchers digging through thousand-year-old manuscripts &mdash; including the famous York Gospels &mdash; found DNA from an ancient sheep virus baked right into the parchment, and it&rsquo;s barely changed in a thousand years. A weird little time capsule hiding inside a book.</p>
+      <p>On the AI front, quiet again for brand-new drops in the last day. The one thing worth pocketing, if you missed it last week: Anthropic shipped Claude Fable five-point-two, its most capable coding and reasoning model yet, and crucially cut the price. If your app&rsquo;s still wired to an older, pricier tier, that&rsquo;s worth a look this weekend. Otherwise, nothing new to install today.</p>
+      <p>Athens is lovely today &mdash; clear and calm, a proper autumn gift. You&rsquo;ll start around sixteen degrees, climb to a sunny twenty-two by early afternoon, then settle back near eighteen in the evening. Rain&rsquo;s basically off the table, the wind&rsquo;s gone light after yesterday&rsquo;s gusts, and the sun clocks off at quarter past five.</p>
+      <p>Back to Nvidia for a second, because it runs deeper than the headline. The board confirmed Huang is gone after that spy-affair scandal, named the finance chief as interim boss, and the stock slid about four percent. When the most valuable company on earth swaps leaders overnight, expect the ripples through tech to run for days.</p>
+      <p>For the sky-watchers &mdash; that Starship actually flew late last night. Clean launch, reached orbit for only the second time ever, and dropped twenty-six Starlink satellites. The catch was the catch: one booster engine cut out, they waved off the tower grab, and the booster splashed into the Gulf and caught fire. Half a triumph, half a fireball.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick one for the curious: your word today is alacrity &mdash; a brisk, cheerful readiness to do something. As in, she tackled the overhang with real alacrity. And a fact to carry around: a single day on Venus is actually longer than its entire year, because the planet spins so slowly it laps its own orbit around the sun.</p>
+      <p>Water-wise, it&rsquo;s mild and you&rsquo;ll likely train later, so keep sipping before you even feel thirsty.</p>
+      <p>That&rsquo;s the lot, George: a boardroom shake-up, a rocket half-caught, and a calm Saturday that&rsquo;s entirely yours to shape. Go make it a good one.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>Winter storm floods Gaza&rsquo;s displacement camps.</strong> A heavy storm <strong>flooded thousands of tents</strong> sheltering displaced families, with doctors warning of a <strong>meningitis surge</strong> and aid agencies pleading for supplies and repairs &mdash; a humanitarian emergency deepening under the fragile truce. <a href="https://www.aljazeera.com/tag/israel-palestine-conflict/">Al Jazeera</a> <a href="https://www.haaretz.com/gaza">Haaretz</a> <a href="https://www.timesofisrael.com/topic/gaza-strip/">Times of Israel</a></li>
+    <li><strong>US keeps up peace-plan pressure on Ukraine.</strong> Washington is still pushing a framework that would have <strong>Kyiv cede territory</strong>; Zelensky is <strong>holding the line</strong>, saying Ukraine &ldquo;is not real estate.&rdquo; No breakthrough &mdash; the thread to watch this week. <a href="https://www.cnbc.com/2026/11/11/ukraine-russia-peace-talks-zelenskyy-putin.html">CNBC</a></li>
+    <li><strong>Science: ancient sheep-virus DNA found in a 1,000-year-old book.</strong> Researchers studying medieval manuscripts, including the <strong>York Gospels</strong>, recovered <strong>DNA from an ancient sheep virus</strong> preserved in the parchment &mdash; and found it <strong>barely changed over a millennium</strong>. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Business</h3>
+  <ul>
+    <li><strong>Nvidia&rsquo;s Jensen Huang resigns; interim CEO named.</strong> The board confirmed Huang <strong>stepped down as CEO and board member</strong> after a spy-affair scandal, naming <strong>CFO Colette Kress interim CEO</strong> and Harvey Jones board chair; the <strong>stock fell ~4%</strong>. As the market&rsquo;s most valuable company, the shake-up ripples across tech. <a href="https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition">NVIDIA</a> <a href="https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html">CNBC</a> <a href="https://www.washingtonpost.com/technology/2026/11/12/nvidia-board-weighs-jensen-huangs-future-after-affair-with-allege-chinese-spy/">Washington Post</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Quiet day for new drops &mdash; last week&rsquo;s big one still rolling out.</strong> No confirmed new consumer release from <strong>ChatGPT, Claude, Gemini or Grok</strong> in 24 hours. Worth knowing if you missed it: Anthropic shipped <strong>Claude Fable 5.2</strong> (and Mythos 5.2) on Nov 9, its most capable coding/reasoning model yet, and <strong>cut the price</strong> (API id <code>claude-fable-5-2</code>). <a href="https://www.anthropic.com/claude/fable">Anthropic</a> <a href="https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html">CNBC</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Clear and calm &mdash; a mild autumn Saturday.</strong> <strong>~16&deg;C</strong> this morning, up to a sunny <strong>~22&deg;C</strong> early afternoon, easing to <strong>~18&deg;C</strong> this evening. <strong>Rain chance very low (~5&ndash;13%)</strong>; <strong>wind light</strong> after yesterday&rsquo;s gusts. <strong>Sunset 17:14</strong>. <a href="https://open-meteo.com/en/docs">Open-Meteo</a> <a href="https://wttr.in/Athens,Greece">wttr.in</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar couldn&rsquo;t be reached this morning</strong> &mdash; the connector isn&rsquo;t enabled in this session, so no schedule could be pulled; check it yourself before planning the day.</li>
+    <li><strong>Inbox ~20 unread, mostly routine</strong> (socials, newsletters, retail). <strong>Three items earn a glance</strong> (details kept audio/owner-only for privacy): an <strong>account app-permissions request</strong> to approve or deny, an <strong>upgrade offer on an upcoming flight</strong>, and a <strong>subscription about to lapse</strong>. <strong>One online event invite</strong> sits for next week.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Space</h3>
+  <ul>
+    <li><strong>Starship Flight 15 reaches orbit; booster lost.</strong> A <strong>clean launch late Nov 13</strong> put Starship into orbit (<strong>only the 2nd time ever</strong>) and deployed <strong>26 Starlink V3 satellites</strong>; the <strong>Super Heavy tower-catch was waved off</strong> after an engine issue, and the booster splashed into the Gulf and burned. <a href="https://www.cnbc.com/2026/11/13/spacex-launches-starship-in-key-test-flight-of-massive-rocket.html">CNBC</a> <a href="https://www.space.com/news/live/spacex-starship-flight-15-live-updates-nov-13-2026-starship-first-double-landing-attempt">Space.com</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day: <em>alacrity</em></strong> (n.) &mdash; brisk and cheerful readiness. <em>She tackled the overhang with real alacrity.</em></li>
+    <li><strong>Fact:</strong> a <strong>day on Venus is longer than its year</strong> &mdash; it rotates so slowly (~243 Earth days) that one spin outlasts its ~225-day orbit of the Sun. <a href="https://science.nasa.gov/venus/venus-facts/">NASA</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Mild, sunny, and a likely training day &mdash; keep a bottle going, sipping steadily even before you feel thirsty. (No medical advice.)</li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; API key invalid/revoked, needs re-issuing; 75th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
