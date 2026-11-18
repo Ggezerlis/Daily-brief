@@ -1,0 +1,154 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Wednesday, 18 November 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two 401 &ldquo;invalid API key&rdquo; responses) &mdash; now the <strong>seventy-eighth straight morning</strong>. The voice account keeps getting <strong>charged</strong>, yet the API key itself stays <strong>invalid/revoked</strong> and needs re-issuing, with the new key placed in the routine&rsquo;s environment, before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip hi">Gaming &middot; GTA VI unlocks tonight at midnight</span>
+    <span class="chip">World &middot; Iran war widens across the Gulf</span>
+    <span class="chip">World &middot; Russian military plane crash in Siberia</span>
+    <span class="chip">Science &middot; A twist in the Big Bang&rsquo;s oldest light</span>
+    <span class="chip">AI &middot; Quiet week; Fable 5.2 still on top</span>
+    <span class="chip">Weather &middot; Grey but dry, ~20&deg;C</span>
+    <span class="chip">Gaming &middot; Last day for the free Epic game</span>
+    <span class="chip">Learning &middot; serac; an Eiffel Tower fact</span>
+    <span class="chip warn">Account &middot; New-device sign-in alert &mdash; review</span>
+    <span class="chip warn">Audio &middot; TTS key invalid, needs re-issuing</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George, and good to have you back on home turf after Slovenia. A couple of things before the coffee kicks in. Top of the pile, and this one&rsquo;s for you especially: Grand Theft Auto Six finally unlocks tonight at midnight, consoles only, after two delays and more than a decade of waiting. On the heavier side, the war around Iran has gone properly kinetic, with American strikes and drone attacks now spreading across the Gulf. <span class="redacted">&mdash; personal items &mdash;</span></p>
+      <p>Let&rsquo;s go wide, and it&rsquo;s the Middle East again. The Iran conflict has widened sharply. The United States has hit targets on Qeshm Island and over in Bahrain, Kuwait is now reporting drone attacks of its own, and Iran-backed Houthis say they&rsquo;ve struck a Saudi oil pipeline. What had been a tense standoff over the Strait of Hormuz has turned into open fighting spilling right across the Gulf.</p>
+      <p>Elsewhere, a Russian military transport plane went down in Siberia, killing all nineteen people on board. The defence ministry is blaming equipment failure rather than anything hostile, but it&rsquo;s another grim entry in a long run of Russian aviation trouble this year.</p>
+      <p>And from the science desk, one for the stargazer in you. Astronomers poring over the oldest light in the universe, the faint afterglow of the Big Bang itself, think they&rsquo;ve spotted a mysterious little twist in it. If it holds up under scrutiny, it could be a genuine crack in our physics, a fresh clue about what dark matter and dark energy actually are.</p>
+      <p>On the AI front, it&rsquo;s quiet again. No real new release from ChatGPT, Claude, Gemini or Grok in the last day, and the chatter about next-gen flagships is still just that, chatter, so file it under rumor. Last week&rsquo;s Claude Fable five-point-two is still the one to beat for coding, and there&rsquo;s nothing fresh worth installing this morning. The one thing actually worth watching is price: the big tiers keep quietly getting cheaper into Black Friday, so it&rsquo;s a smart week to re-check what you&rsquo;re paying for.</p>
+      <p>Athens is greyer today, mostly cloudy, but dry, with basically no rain on the radar. You&rsquo;ll start around thirteen degrees, nudge up to a mild twenty or twenty-one by mid-afternoon, then slide back to about seventeen by evening. The wind&rsquo;s light, nothing to grumble about, and the sun clocks off early again, eleven minutes past five.</p>
+      <p>Quick one for the gamer in you, beyond the big midnight drop. Your free Epic game, Knightica, that little card roguelike, is on its last day, so grab it before it swaps out tomorrow afternoon. After that Epic rolls out Alien Isolation alongside Mark of the Deep, free to keep for a week, which is a seriously good scare for exactly nothing.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick health nudge: it&rsquo;s mild and you&rsquo;ll probably train later, so keep a bottle moving through the day and sip before you actually feel thirsty, not after.</p>
+      <p>Two for the curious. Your word today is serac, a towering block or pinnacle of glacier ice, the sort that guards the big alpine routes; the climbers roped up and threaded a careful path between the seracs. And a small fact to pocket: the Eiffel Tower actually grows about fifteen centimetres taller in summer, because the iron expands in the heat, then shrinks back down again once it cools.</p>
+      <p>That&rsquo;s your lot, George: a blockbuster midnight, a widening war, and an open, grey-but-dry Wednesday that&rsquo;s entirely yours to shape. Go make it count.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>The Iran conflict widens across the Gulf.</strong> The US struck targets on <strong>Qeshm Island</strong> and in <strong>Bahrain</strong>, <strong>Kuwait</strong> reported drone attacks, and Iran-backed <strong>Houthis</strong> claimed a hit on a <strong>Saudi oil pipeline</strong> &mdash; a standoff over the Strait of Hormuz turning into open regional fighting. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Russian military plane crashes in Siberia, 19 dead.</strong> A military transport aircraft went down killing <strong>all 19 on board</strong>; the defence ministry cited <strong>likely equipment failure</strong> rather than hostile action &mdash; another entry in a rough year for Russian aviation. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Science: a mysterious twist in the universe&rsquo;s oldest light.</strong> Scientists studying the <strong>cosmic microwave background</strong> &mdash; the Big Bang&rsquo;s afterglow &mdash; report hints of a faint rotation that, if confirmed, could point to <strong>new physics</strong> around dark matter and dark energy. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Quiet on releases &mdash; nothing new to install.</strong> No confirmed new consumer drop from <strong>ChatGPT, Claude, Gemini or Grok</strong> in 24 hours; next-gen flagship talk stays unconfirmed (rumor). Last week&rsquo;s <strong>Claude Fable 5.2</strong> (<code>claude-fable-5-2</code>) remains the headline coding model. <a href="https://www.anthropic.com/claude/fable">Anthropic</a></li>
+    <li><strong>Worth watching: price.</strong> Flagship tiers keep edging cheaper into <strong>Black Friday</strong> &mdash; a good week to re-check what you&rsquo;re paying across your AI subscriptions.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Gaming &amp; Deals</h3>
+  <ul>
+    <li><strong>Grand Theft Auto VI unlocks at midnight local time, Thursday 19 November.</strong> After two delays and a decade-plus wait, Rockstar&rsquo;s <strong>GTA VI</strong> launches on <strong>PS5 and Xbox Series X|S</strong> &mdash; a staggered, midnight-local rollout (so Athens unlocks overnight tonight). <strong>Preloads are open</strong> (~212&nbsp;GB); <strong>PC isn&rsquo;t expected until 2027</strong>. <a href="https://www.forbes.com/sites/brianmazique/2026/11/12/gta-6-unlocks-at-midnight-on-november-19-but-millions-of-americans-can-start-playing-the-night-before/">Forbes</a> <a href="https://qz.com/gta-6-release-time-us-time-zones">Quartz</a></li>
+    <li><strong>Free on Epic &mdash; last day for <em>Knightica</em>.</strong> The card roguelike (normally ~&euro;14.99) is free to keep until the weekly swap on <strong>19 November</strong>; next up are <strong>Alien: Isolation</strong> and <strong>Mark of the Deep</strong>, free 19&ndash;26 November. <a href="https://worthplaying.com/article/2026/11/12/news/151426-knightica-free-on-epic-games-store-alien-isolation-and-mark-of-the-deep-next-week/">WorthPlaying</a> <a href="https://www.ggrecon.com/articles/knightica-free-epic-games-store/">GGRecon</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Mostly cloudy but dry &mdash; a mild, grey midweek.</strong> <strong>~13&deg;C</strong> early, up to a mild <strong>~20&ndash;21&deg;C</strong> mid-afternoon, easing to <strong>~17&deg;C</strong> in the evening. <strong>Rain chance ~0%</strong>; <strong>wind light</strong> (~16&nbsp;km/h). <strong>Sunset 17:11</strong>. <a href="https://www.timeanddate.com/weather/greece/athens/ext">timeanddate</a> <a href="https://open-meteo.com/en/docs">Open-Meteo</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar couldn&rsquo;t be reached this morning</strong> &mdash; no calendar connector is enabled in this session, so no schedule could be pulled; check it yourself before planning the day.</li>
+    <li><strong>Inbox ~14 worth a glance, almost all routine</strong> (socials, shop promos, Reddit digests, Black Friday early-access codes). <strong>Two items earn a glance</strong> (details kept audio/owner-only for privacy): <strong>one family/school logistics item</strong>, already handled, and a <strong>new-device sign-in alert on a shopping account</strong> &mdash; review and change the password if it wasn&rsquo;t you. Nothing needs a reply.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day: <em>serac</em></strong> (n.) &mdash; a towering block or pinnacle of glacier ice, the kind that guards big alpine routes. <em>The climbers roped up and threaded a careful path between the seracs.</em></li>
+    <li><strong>Fact to pocket:</strong> the <strong>Eiffel Tower grows about 15&nbsp;cm taller in summer</strong> &mdash; its iron frame expands in the heat and shrinks back down as it cools.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Mild, dry and a likely training day &mdash; keep a bottle going, sipping steadily even before you feel thirsty. (No medical advice.)</li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; API key invalid/revoked, needs re-issuing; 78th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
