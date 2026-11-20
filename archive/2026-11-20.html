@@ -1,0 +1,144 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Friday, 20 November 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (two 401 &ldquo;invalid API key&rdquo; responses) &mdash; now the <strong>eightieth straight morning</strong>. The voice account keeps getting <strong>charged</strong>, yet the API key itself stays <strong>invalid/revoked</strong> and needs re-issuing, with the new key placed in the routine&rsquo;s environment, before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip hi">World &middot; ICJ finds Myanmar guilty of Rohingya genocide</span>
+    <span class="chip">AI &middot; Anthropic debut spooks markets, bubble fears</span>
+    <span class="chip">World &middot; Houthi strike hits a Riyadh tower</span>
+    <span class="chip">World &middot; Trump&ndash;Xi&ndash;Putin summit wraps</span>
+    <span class="chip">Science &middot; Antarctic ice cliffs steadier than feared</span>
+    <span class="chip">Weather &middot; Dry, warm ~22&ndash;23&deg;C</span>
+    <span class="chip">Learning &middot; couloir; an AI tip</span>
+    <span class="chip warn">Audio &middot; TTS key invalid, needs re-issuing</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George. Let&rsquo;s get you sorted. Top of the pile: the world&rsquo;s highest court just found Myanmar guilty of genocide against the Rohingya, a landmark ruling years in the making. Closer to your world, Asian markets took a dive overnight as Anthropic&rsquo;s blockbuster stock debut failed to calm nerves about an AI bubble, so expect some jitters. And that three-way Trump, Xi and Putin summit wrapped with plenty of talk and not much signed. Your calendar&rsquo;s still offline on my end, so glance at your own before you plan the day.</p>
+      <p>Let&rsquo;s go wide, and the big one is out of The Hague. The International Court of Justice ruled that Myanmar is responsible for genocide against the Rohingya Muslim minority. It&rsquo;s a historic, legally binding finding that backs up what survivors have said for years about the 2017 military campaign that drove hundreds of thousands into Bangladesh. Enforcement, as ever, is the hard part.</p>
+      <p>Meanwhile the Iran war keeps spilling outward. Saudi authorities say a Houthi strike hit a tower in Riyadh, dragging the Gulf&rsquo;s wealthiest capital deeper into a fight that&rsquo;s now bleeding well past Iran&rsquo;s own borders. It&rsquo;s the kind of escalation that rattles oil markets and everyone living nearby, and there&rsquo;s no sign of it cooling down.</p>
+      <p>And from the science desk, a rare bit of good news on climate. After tracking more than fifteen thousand Antarctic ice cliffs, researchers now think they&rsquo;re far less likely to collapse in a sudden, runaway chain reaction than the scariest models predicted. It doesn&rsquo;t cancel sea-level rise, but one of the field&rsquo;s genuine nightmares just got a little less likely.</p>
+      <p>Over to AI, and this morning it&rsquo;s less about new toys and more about money. The headline is the fallout from Anthropic&rsquo;s record-breaking market debut. Instead of settling nerves, it&rsquo;s got investors openly fretting that the whole AI boom might be a bubble waiting to pop, and that unease rippled straight into Asian stocks overnight. On the product side it&rsquo;s quiet, though: no fresh drop from ChatGPT, Claude, Gemini or Grok in the last day, and the next-gen flagship chatter is still just rumor. Fable five-point-two is still the coding model to beat, and with Black Friday deals landing, it&rsquo;s a smart week to re-check what you&rsquo;re paying across your subscriptions.</p>
+      <p>Weather in Athens is a treat for late November. A cool, slightly cloudy start around sixteen degrees, climbing to a genuinely pleasant twenty-two or twenty-three by early afternoon, light-layers weather. It drifts back to around nineteen or twenty in the evening, there&rsquo;s no rain anywhere in sight, the wind is barely a whisper, and the sun clocks off at ten past five.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick hydration nudge: it&rsquo;s warmer than the calendar says it should be and you&rsquo;ll probably train later, so keep a bottle moving and sip before you&rsquo;re thirsty, not after.</p>
+      <p>Two for the curious. Your word today is <em>couloir</em>, a steep, narrow gully gouged into a mountainside, often choked with snow or ice, and a classic alpine line to climb. And an AI tip to pocket: tell the model what <em>not</em> to do, not just what to do. A couple of sharp negative rules &mdash; no jargon, keep it under three bullets &mdash; will steer the output just as hard as your positive instructions.</p>
+      <p>That&rsquo;s your lot, George: a landmark verdict, jittery markets, and a soft, summery day in November that&rsquo;s entirely yours. Go make it count.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>ICJ finds Myanmar responsible for genocide against the Rohingya.</strong> The International Court of Justice issued a historic, legally binding ruling backing survivors&rsquo; accounts of the <strong>2017 military campaign</strong> that drove hundreds of thousands of Rohingya Muslims into Bangladesh. Enforcement remains the open question. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Iran war spills over: Houthi strike hits a tower in Riyadh.</strong> Saudi authorities say the attack pulled the Gulf&rsquo;s wealthiest capital deeper into a widening conflict now bleeding well past Iran&rsquo;s borders &mdash; the kind of escalation that rattles oil markets and the whole region. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Science: Antarctic ice cliffs steadier than feared.</strong> After tracking more than <strong>15,000 ice cliffs</strong>, researchers conclude a sudden, runaway collapse is far less likely than worst-case models warned &mdash; a rare hopeful twist, though it doesn&rsquo;t undo sea-level rise. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Anthropic&rsquo;s record debut spooks markets.</strong> Rather than calming nerves, Claude&rsquo;s maker&rsquo;s blockbuster listing stoked fears of an <strong>AI bubble</strong> &mdash; and <strong>Asian stock markets dived</strong> on the unease. A reminder of how jittery the money behind the boom has become. <a href="https://www.aljazeera.com/economy/">Al Jazeera</a></li>
+    <li><strong>Otherwise quiet &mdash; nothing new to install.</strong> No confirmed consumer drop from <strong>ChatGPT, Claude, Gemini or Grok</strong> in 24 hours; next-gen flagship talk stays rumor. <strong>Claude Fable 5.2</strong> (<code>claude-fable-5-2</code>) remains the headline coding model; Black Friday is a good week to re-check subscription pricing. <a href="https://www.anthropic.com/claude/fable">Anthropic</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Dry, and unusually mild for late November.</strong> A cool, slightly cloudy start near <strong>~16&deg;C</strong>, warming to a pleasant <strong>~22&ndash;23&deg;C</strong> by early afternoon, easing to <strong>~19&ndash;20&deg;C</strong> in the evening. <strong>Rain ~0%</strong>; <strong>wind very light</strong> (~5&nbsp;km/h). <strong>Sunset 17:10</strong>. <a href="https://www.timeanddate.com/weather/greece/athens/ext">timeanddate</a> <a href="https://open-meteo.com/en/docs">Open-Meteo</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar couldn&rsquo;t be reached this morning</strong> &mdash; no calendar connector is enabled in this session, so no schedule could be pulled; check it yourself before planning the day.</li>
+    <li><strong>Inbox ~16 unread, almost all routine</strong> (Black Friday blasts, socials, receipts). <strong>A couple earn a glance</strong> (kept audio/owner-only for privacy): a <strong>family logistics thread that already looks sorted</strong>, and one <strong>industry webinar this evening</strong> if you&rsquo;re in the mood. Nothing needs a reply.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day: <em>couloir</em></strong> (n.) &mdash; a steep, narrow gully gouged into a mountainside, often choked with snow or ice; a classic alpine climbing line. <em>They roped up at dawn to beat the sun off the icy couloir.</em></li>
+    <li><strong>AI tip: say what <em>not</em> to do.</strong> Negative constraints &mdash; &ldquo;no jargon,&rdquo; &ldquo;keep it under three bullets&rdquo; &mdash; steer a model&rsquo;s output just as hard as positive instructions. Pair a couple with your ask.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Warmer than the calendar suggests and a likely training day &mdash; keep a bottle going, sipping steadily even before you feel thirsty. (No medical advice.)</li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; API key invalid/revoked, needs re-issuing; 80th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
