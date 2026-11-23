@@ -1,0 +1,143 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Sunday, 23 November 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (another 401 &ldquo;invalid API key&rdquo; response) &mdash; now the <strong>eighty-third straight morning</strong>. The voice account keeps getting <strong>charged</strong>, yet the API key itself stays <strong>invalid/revoked</strong> and needs re-issuing, with the new key placed in the routine&rsquo;s environment, before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip">World &middot; Democrats take largest US House majority since 1992</span>
+    <span class="chip">World &middot; Russian warship capsized at Benghazi by suspected drone</span>
+    <span class="chip">World &middot; Hormuz tankers ablaze; oil risk if it holds</span>
+    <span class="chip">Science &middot; Some stars may skip the supernova entirely</span>
+    <span class="chip">AI &middot; Quiet on releases; nothing new to install</span>
+    <span class="chip">Weather &middot; Warm &amp; dry ~14&ndash;23&deg;C, breezy midday</span>
+    <span class="chip">Learning &middot; clement; role prompting</span>
+    <span class="chip warn">Audio &middot; TTS key invalid, needs re-issuing</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George. A few things worth your attention before the day gets going. The one that actually touches your wallet: the war on Iran is still boiling, with Iran&rsquo;s navy setting tankers ablaze in the Strait of Hormuz overnight &mdash; the kind of thing that moves oil prices if it holds. Closer to home for a news junkie, American politics just shifted hard, with the Democrats grabbing their biggest House majority in over thirty years. And there&rsquo;s a genuinely weird one from the physics desk about black holes. Your calendar&rsquo;s offline on my end again, so eyeball your own plans &mdash; but the weather&rsquo;s lovely, so it&rsquo;s shaping up to be a warm, open Sunday.</p>
+      <p>Let&rsquo;s go wider. Over in the States, the midterm dust has settled and it&rsquo;s a landslide: the Democrats have locked in their largest House majority since 1992, clinching it with a North Carolina seat that pushed them past two hundred and fifty-eight seats, with a handful of races still uncalled. Whatever you make of the politics, a majority that size reshapes what can actually pass over the next two years, and it&rsquo;s a sharp rebuke to the sitting administration.</p>
+      <p>Meanwhile the war at sea keeps widening in strange directions. A Russian navy warship was caught capsized at a naval base in Benghazi, Libya, apparently after a suspected Ukrainian drone strike, with satellite photos showing the corvette tipped right over in the water. It&rsquo;s a striking reach: Ukraine hitting Russian hardware not in the Black Sea but parked at a foreign port on the far side of the Mediterranean.</p>
+      <p>And the fun one. Astronomers sifting through two hundred and fifty-seven black-hole collisions spotted a curious gap in the data, a missing size range that hints some massive stars may skip the supernova entirely and just quietly collapse straight into a black hole, no explosion at all. If it holds up, it rewrites part of how we thought the biggest stars die. Not bad for a Sunday.</p>
+      <p>Over to AI, and for anything you can actually install it&rsquo;s quiet again. No fresh drop from ChatGPT, Claude, Gemini or Grok in the last day, and the talk about next-generation flagships is still just talk, rumor rather than release, so treat it that way. Claude&rsquo;s Fable five-point-two is holding its spot as the model everyone else gets benchmarked against, and there&rsquo;s genuinely nothing new to download this morning. A slow day in model land, which, after the last couple of frantic weeks, might honestly be a small mercy.</p>
+      <p>Now, Athens. It turns on a properly lovely late-November Sunday for you, dry all day, not a drop of rain anywhere in the forecast. A mild start around sixteen degrees, climbing to an almost summery twenty-two or twenty-three by early afternoon, then easing back to the mid-teens by evening. The one wrinkle is the wind: it picks up around midday, gusting into the low twenties of kilometres an hour, so nothing dramatic, but you&rsquo;ll feel it. The sun clocks off at eight minutes past five.</p>
+      <p>On the personal front, your calendar connector&rsquo;s still not reachable from here, so I can&rsquo;t lay out your day, check it yourself before you commit to anything. Your inbox, meanwhile, is pure background noise: social pings, a couple of forum threads, and the usual parade of Black Friday promos. Nothing in there needs a reply, and nothing&rsquo;s urgent, so you can safely leave it till later.</p>
+      <p>Quick hydration nudge: it&rsquo;s mild, dry, and probably a climbing day, so keep a bottle moving and sip before you actually feel thirsty.</p>
+      <p>Two for the collection. Your word today is <em>clement</em>, meaning mild and pleasant, usually of the weather, which is basically today in a single word: a clement Sunday if ever there was one. And an AI tip: try role prompting. Tell the model who it is before you ask, you&rsquo;re a careful copy editor, say, or act as a skeptical investor, and its whole answer shifts to match the part. A tiny bit of casting, surprisingly big difference.</p>
+      <p>That&rsquo;s your lot, George: the world&rsquo;s a touch loud but your own Sunday is warm, bright and refreshingly empty. Go climb something.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>Democrats take their largest US House majority since 1992.</strong> With a <strong>North Carolina seat</strong> called, Democrats now control <strong>at least 258 House seats</strong> &mdash; the biggest majority in over three decades &mdash; with four midterm races still undecided. A margin that size reshapes what can pass over the next two years. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Russian warship capsized at Benghazi after suspected drone strike.</strong> A satellite image shows a <strong>Russian navy corvette capsized</strong> at a naval base in <strong>Benghazi, Libya</strong>, following a suspected Ukrainian drone strike &mdash; a striking reach for Kyiv, hitting Russian hardware parked across the Mediterranean rather than in the Black Sea. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Science: some massive stars may skip the supernova.</strong> A gap in the data from <strong>257 black-hole mergers</strong> hints that certain massive stars may <strong>collapse straight into a black hole with no explosion</strong> at all &mdash; a finding that, if confirmed, rewrites part of how the biggest stars are thought to die. <a href="https://www.sciencedaily.com/news/top/science/">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Quiet on releases &mdash; nothing new to install.</strong> No confirmed consumer drop from <strong>ChatGPT, Claude, Gemini or Grok</strong> in 24 hours; next-gen flagship talk stays rumor. <strong>Claude Fable 5.2</strong> (<code>claude-fable-5-2</code>) remains the benchmark coding model, and there&rsquo;s nothing to download this morning. <a href="https://www.anthropic.com/claude/fable">Anthropic</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Warm and dry for late November.</strong> A mild start near <strong>~16&deg;C</strong>, climbing to an almost-summery <strong>~22&ndash;23&deg;C</strong> by early afternoon, easing to the <strong>mid-teens</strong> in the evening. <strong>Rain ~0%</strong> (0&nbsp;mm); <strong>breezy around midday</strong> (wind up to ~23&nbsp;km/h). <strong>Sunset 17:08</strong>. <a href="https://open-meteo.com/en/docs">Open-Meteo</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar couldn&rsquo;t be reached this morning</strong> &mdash; no calendar connector is enabled in this session, so no schedule could be pulled; check it yourself before planning the day.</li>
+    <li><strong>Inbox is all routine</strong> &mdash; social notifications, a couple of forum threads, and Black Friday promos. <strong>Nothing needs a reply</strong> and nothing is urgent.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Mild, dry, and likely a climbing day &mdash; keep a bottle going and sip steadily, even before you feel thirsty. (No medical advice.)</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day: <em>clement</em></strong> (adj.) &mdash; mild and pleasant, especially of weather. <em>They seized the clement afternoon for one last route before the cold set in.</em></li>
+    <li><strong>AI tip: role prompting.</strong> Tell the model <strong>who it is</strong> before you ask &mdash; &ldquo;you&rsquo;re a careful copy editor,&rdquo; or &ldquo;act as a skeptical investor&rdquo; &mdash; and its whole answer shifts to match the part. A little casting goes a long way. <a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/system-prompts">Background</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; API key invalid/revoked, needs re-issuing; 83rd straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
