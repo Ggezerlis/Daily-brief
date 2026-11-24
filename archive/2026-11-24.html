@@ -1,0 +1,146 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Tuesday, 24 November 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (another 401 &ldquo;invalid API key&rdquo; response) &mdash; now the <strong>eighty-fourth straight morning</strong>. The voice account keeps getting <strong>charged</strong>, yet the API key itself stays <strong>invalid/revoked</strong> and needs re-issuing, with the new key placed in the routine&rsquo;s environment, before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip warn">Action &middot; A few subscriptions lapsing &mdash; review which to keep</span>
+    <span class="chip">World &middot; Russia threatens NATO&rsquo;s Estonia with &ldquo;open war&rdquo;</span>
+    <span class="chip">World &middot; Mexico refuses US extradition of a cartel figure</span>
+    <span class="chip">Science &middot; Iron Age &ldquo;king&rdquo; Verica may have been a woman</span>
+    <span class="chip">AI &middot; UN chief wants global AI rules within a year</span>
+    <span class="chip">Weather &middot; Wintry turn, dry &amp; bright ~12&ndash;18&deg;C</span>
+    <span class="chip">Learning &middot; brumal; chess vs. the cosmos</span>
+    <span class="chip warn">Audio &middot; TTS key invalid, needs re-issuing</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George. Three things before you&rsquo;re properly awake. <span class="redacted">&mdash; personal items &mdash;</span> The world&rsquo;s gone a touch tense on the edges of Europe, with Russia threatening a NATO neighbour outright. And a heads-up, your calendar&rsquo;s offline on my end again, so eyeball it yourself before you commit to anything. Weather&rsquo;s turned properly wintry, cool and dry and bright.</p>
+      <p>Let&rsquo;s go wider. The big one out of Europe is this: Russia has openly threatened Estonia, an actual NATO member, with what it called open war, after a run of Ukrainian strikes on Russian ships. That&rsquo;s a sharp new register. Threatening a treaty ally to its face is the kind of line that drags the whole alliance into the maths. And it&rsquo;s not idle noise: overnight Russian strikes killed at least fifteen in the Kyiv region, so the shooting war&rsquo;s still grinding on under the rhetoric.</p>
+      <p>Over in the Americas, Mexico says it&rsquo;ll put the alleged drug lord known as El Chapo Isidro on trial at home, flatly refusing a US extradition request. It&rsquo;s a small act of defiance with a big subtext: Mexico insisting it handles its own cartel kingpins rather than shipping them north, just as Washington leans hard the other way.</p>
+      <p>And the one for the dinner table. Archaeologists now think Verica, the Iron Age British king whose exile helped trigger Rome&rsquo;s invasion of Britain back in forty-three AD, may actually have been a woman. If the evidence holds up, a ruler who&rsquo;s been written as a he for two thousand years gets rewritten, and one of the hinge moments of British history suddenly looks rather different.</p>
+      <p>Over to AI, and the headline today isn&rsquo;t a product, it&rsquo;s politics. The head of the UN is calling on the world to agree on real oversight of artificial intelligence within a year, warning the tech is outrunning the rules. Whether governments actually move that fast is another question, but it&rsquo;s the clearest sign yet that AI governance is becoming a top-table issue. On the stuff you can actually install, it&rsquo;s quiet again, no fresh drop from ChatGPT, Claude, Gemini or Grok in the last day, and Claude&rsquo;s Fable five-point-two is still the model everyone else gets measured against. Nothing new to download this morning.</p>
+      <p>Now, Athens, and it&rsquo;s taken a wintry turn. Dry all day, not a drop of rain anywhere, but noticeably cooler than the balmy stretch you&rsquo;ve had. A chilly start around twelve or thirteen degrees first thing, up to about eighteen at the peak in the early afternoon, then sliding back into the mid-teens by evening and colder once it&rsquo;s dark. The wind&rsquo;s barely there, just a light breeze around midday, and the sun clocks off at eight minutes past five.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick hydration nudge: cooler weather tricks you into not drinking, so if you&rsquo;re climbing, keep sipping anyway.</p>
+      <p>Two for the collection. Your word today is brumal, meaning wintry, of or belonging to winter, which is Athens in a nutshell this morning, the first properly brumal day of the season. And a fact to chew on, one for the gamer in you: there are more possible games of chess than there are atoms in the observable universe. The universe holds around ten to the eighty atoms; chess has something like ten to the one hundred and twenty legal games. A whole cosmos, outnumbered by a board game.</p>
+      <p>That&rsquo;s your lot, George: a tense world, a calm inbox, and a cold, clear Athens day that&rsquo;s begging for a crisp climb. Go get after it.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>Russia threatens NATO&rsquo;s Estonia with &ldquo;open war.&rdquo;</strong> Moscow openly warned Estonia &mdash; a <strong>NATO member</strong> &mdash; of &ldquo;open war&rdquo; after a run of Ukrainian strikes on Russian shipping. Threatening a treaty ally directly is a sharp escalation that pulls the whole alliance into the calculation. Meanwhile overnight Russian strikes <strong>killed at least 15</strong> in the <strong>Kyiv region</strong>. <a href="https://www.aljazeera.com/news/2026/11/23/russia-threatens-hostile-estonia-with-open-war">Al Jazeera</a> <a href="https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine">Kyiv</a></li>
+    <li><strong>Mexico refuses to extradite &ldquo;El Chapo Isidro&rdquo; to the US.</strong> Mexico says it will <strong>try the alleged drug lord at home</strong> rather than hand him over, a pointed act of sovereignty just as Washington presses it to send cartel figures north. <a href="https://www.aljazeera.com/news/2026/11/24/mexico-to-try-el-chapo-isidro-despite-us-extradition-request">Al Jazeera</a></li>
+    <li><strong>Science: Iron Age &ldquo;king&rdquo; Verica may have been a woman.</strong> New analysis suggests <strong>Verica</strong> &mdash; the Iron Age British ruler whose exile helped trigger <strong>Rome&rsquo;s invasion of Britain in AD 43</strong> &mdash; may have been female, which would rewrite a long-standing account of one of British history&rsquo;s hinge moments. <a href="https://www.sciencedaily.com/releases/2026/11/261122060338.htm">ScienceDaily</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>UN chief: agree on AI oversight within a year.</strong> The <strong>UN secretary-general</strong> urged the world to settle real international rules for artificial intelligence <strong>within 12 months</strong>, warning the technology is outrunning governance &mdash; the clearest sign yet that AI oversight is a top-table issue. <a href="https://www.aljazeera.com/news/2026/11/24/un-chief-calls-for-world-to-agree-on-ai-oversight-within-a-year">Al Jazeera</a></li>
+    <li><strong>Quiet on consumer releases.</strong> No confirmed new drop from <strong>ChatGPT, Claude, Gemini or Grok</strong> in 24 hours; <strong>Claude Fable 5.2</strong> (<code>claude-fable-5-2</code>) remains the benchmark coding model, and there&rsquo;s nothing new to install this morning. <a href="https://www.anthropic.com/claude/fable">Anthropic</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Wintry turn &mdash; dry and bright, but cooler.</strong> A chilly start near <strong>~12&ndash;13&deg;C</strong>, peaking around <strong>~18&deg;C</strong> in the early afternoon, easing to the <strong>mid-teens</strong> by evening and colder after dark. <strong>Rain ~0%</strong> (0&nbsp;mm); <strong>wind light</strong> (max ~8&nbsp;km/h, midday gusts ~22&nbsp;km/h). <strong>Sunset 17:08</strong>. <a href="https://open-meteo.com/en/docs">Open-Meteo</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Action &mdash; a few subscriptions are lapsing or failing to renew.</strong> Review which ones you actually want to keep, and make any changes <strong>through the account settings themselves</strong>, not via links in the emails.</li>
+    <li><strong>A couple of routine new-sign-in / security notices</strong> landed (consistent with your own device) &mdash; worth a quick glance to confirm.</li>
+    <li><strong>One shared document</strong> arrived. <strong>Nothing needs a reply today.</strong></li>
+    <li><strong>Calendar couldn&rsquo;t be reached</strong> &mdash; no calendar connector is enabled in this session, so check your own schedule before planning the day.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Cooler weather tricks you into not drinking &mdash; if you&rsquo;re climbing, keep a bottle going and sip steadily anyway. (No medical advice.)</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day: <em>brumal</em></strong> (adj.) &mdash; of or relating to winter; wintry. <em>The first brumal morning sent them reaching for warmer belay jackets.</em> <a href="https://www.merriam-webster.com/dictionary/brumal">Merriam-Webster</a></li>
+    <li><strong>Fact:</strong> there are <strong>more possible games of chess than atoms in the observable universe</strong> &mdash; roughly <strong>10<sup>120</sup></strong> legal games (the Shannon number) against about <strong>10<sup>80</sup></strong> atoms. A whole cosmos, outnumbered by a board game. <a href="https://en.wikipedia.org/wiki/Shannon_number">Shannon number</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; API key invalid/revoked, needs re-issuing; 84th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
