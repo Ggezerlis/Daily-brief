@@ -1,0 +1,147 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Wednesday, 25 November 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (another 401 &ldquo;invalid API key&rdquo; response) &mdash; now the <strong>eighty-fifth straight morning</strong>. The voice account keeps being <strong>charged</strong>, yet the API key itself stays <strong>invalid/revoked</strong> and needs re-issuing, with the new key placed in the routine&rsquo;s environment, before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip warn">Action &middot; Subscriptions &amp; payments lapsing &mdash; review which to keep</span>
+    <span class="chip warn">Action &middot; A personal project&rsquo;s build broke overnight</span>
+    <span class="chip">World &middot; Colombia: supermarket hostage standoff</span>
+    <span class="chip">World &middot; WHO chief presses US to lift Cuba fuel blockade</span>
+    <span class="chip">World &middot; Landmine casualties hit a five-year high</span>
+    <span class="chip">AI &middot; Quiet &mdash; Fable 5.2 still the benchmark</span>
+    <span class="chip">Weather &middot; Wintry &amp; dry, ~9&ndash;15&deg;C</span>
+    <span class="chip">Learning &middot; n&eacute;v&eacute;; implementation intentions</span>
+    <span class="chip warn">Audio &middot; TTS key invalid, needs re-issuing</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George. A few things before you&rsquo;re properly awake. <span class="redacted">&mdash; personal items &mdash;</span> Fair warning, the world&rsquo;s a heavy read this morning, and your calendar&rsquo;s offline on my end again, so eyeball your own schedule before you lock anything in. But Athens itself has turned properly wintry, cold and dry and bright.</p>
+      <p>Let&rsquo;s go wider, and brace yourself, it&rsquo;s a grim one out there. Start in Colombia, where gunmen stormed a supermarket and took around twenty-five people hostage. As of last night roughly ten had been freed while police and troops ringed the building, a tense standoff still unresolved, and it comes on the same day a car bomb tore through Villavicencio, which President Petro is pinning on former FARC rebels. A bad day for the country on two fronts at once.</p>
+      <p>Second, a flare-up over Cuba. The head of the World Health Organization, Tedros, flew into Havana and publicly called on Washington to lift its fuel blockade of the island, warning it&rsquo;s starting to choke hospitals and the most basic services. It&rsquo;s a pointed intervention, a global health chief wading straight into one of the hemisphere&rsquo;s oldest and most entrenched standoffs.</p>
+      <p>And one more sombre marker. Global landmine casualties have climbed to a five-year high, driven mostly by Myanmar and Syria, with the monitor finding more than eight in every ten of those deaths happened in Southeast Asia. It&rsquo;s a quiet reminder that the wars which make the headlines keep taking a toll long after the cameras have moved on.</p>
+      <p>Over to AI, and it&rsquo;s a genuinely quiet one, no fresh drop from ChatGPT, Claude, Gemini or Grok in the last day. Claude&rsquo;s Fable five-point-two is still the model everyone else gets measured against, and there&rsquo;s honestly nothing new worth installing this morning. A rare calm stretch in a corner of the world that usually can&rsquo;t sit still for an hour.</p>
+      <p>Now, Athens, and winter&rsquo;s arrived in earnest. Bone-dry all day, not a drop of rain anywhere, but properly cold now, a frosty start around nine or ten degrees first thing, climbing only to about fifteen at the early-afternoon peak, then sliding back toward ten by nightfall and colder after dark. The wind&rsquo;s barely there, just the faintest breeze, and the sun clocks off at seven minutes past five.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick hydration nudge: the cold tricks you into forgetting to drink, so if you&rsquo;re on the wall today, keep a bottle going and sip anyway.</p>
+      <p>Two for the collection. Your word today is n&eacute;v&eacute;, spelled n-e-v-e with an accent, the granular, half-compacted snow that sits at the head of a glacier before it&rsquo;s crushed into proper ice, exactly the stuff you kick steps into on an alpine approach. And a productivity trick worth stealing: implementation intentions. Instead of vaguely planning to train, you spell out the exact if-then, if it&rsquo;s Tuesday at six, then I&rsquo;m on the boulders, and the research is clear that wiring a plan to a specific moment makes you far likelier to actually show up.</p>
+      <p>That&rsquo;s your lot, George: a heavy world, a bit of admin that&rsquo;s on you, and a cold, clear Athens day practically built for a crisp climb. Go get after it.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>Colombia: supermarket hostage standoff, and a car bomb.</strong> Gunmen seized a supermarket and took <strong>~25 people hostage</strong>; <strong>around 10 were freed</strong> overnight as police and troops surrounded the building, with the standoff unresolved. The same day, a <strong>car bomb struck Villavicencio</strong>, which President <strong>Petro</strong> blamed on former FARC rebels. <a href="https://www.aljazeera.com/where/colombia/">Al Jazeera</a></li>
+    <li><strong>WHO chief presses US to lift Cuba fuel blockade.</strong> In Havana, WHO director-general <strong>Tedros</strong> publicly urged Washington to end its <strong>fuel blockade</strong> of Cuba, warning it is beginning to <strong>choke hospitals and basic services</strong> &mdash; a notable intervention into a long-running standoff. <a href="https://www.aljazeera.com/where/cuba/">Al Jazeera</a></li>
+    <li><strong>Global landmine casualties hit a five-year high.</strong> A monitoring report finds deaths and injuries from landmines at their highest in five years, driven mainly by <strong>Myanmar and Syria</strong>, with <strong>~84% of deaths in Southeast Asia</strong> &mdash; the lingering toll of conflict long after the fighting fades. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Quiet on consumer releases.</strong> No confirmed new drop from <strong>ChatGPT, Claude, Gemini or Grok</strong> in 24 hours; <strong>Claude Fable 5.2</strong> (<code>claude-fable-5-2</code>) remains the benchmark model, and there&rsquo;s nothing new worth installing this morning. <a href="https://www.anthropic.com/claude/fable">Anthropic</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Winter in earnest &mdash; dry and bright, but cold.</strong> A frosty start near <strong>~9&ndash;10&deg;C</strong>, peaking only around <strong>~15&deg;C</strong> in the early afternoon, easing back toward <strong>~10&deg;C</strong> by nightfall and colder after dark. <strong>Rain ~0%</strong> (0&nbsp;mm); <strong>wind light</strong> (max ~8&nbsp;km/h; early-morning gusts ~17&nbsp;km/h). <strong>Sunset 17:07</strong>. <a href="https://open-meteo.com/en/docs">Open-Meteo</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Action &mdash; a few subscriptions / payments are lapsing or failing.</strong> Decide which you actually want to keep, and make any changes <strong>through the account settings themselves</strong>, not via links in the emails.</li>
+    <li><strong>Action &mdash; a personal project&rsquo;s automated build failed overnight.</strong> Worth a look when you&rsquo;re next at a keyboard.</li>
+    <li><strong>A couple of routine new-sign-in notices</strong> landed (consistent with your own device) &mdash; worth a quick glance to confirm.</li>
+    <li><strong>One shared document</strong> arrived. <strong>Nothing needs a reply today.</strong></li>
+    <li><strong>Calendar couldn&rsquo;t be reached</strong> &mdash; no calendar connector is enabled in this session, so check your own schedule before planning the day.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Cold weather tricks you into forgetting to drink &mdash; if you&rsquo;re on the wall today, keep a bottle going and sip steadily anyway. (No medical advice.)</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day: <em>n&eacute;v&eacute;</em></strong> (n.) &mdash; granular, partly-compacted snow at the head of a glacier, not yet turned to solid ice. <em>They kicked steps into firm n&eacute;v&eacute; on the dawn approach.</em> <a href="https://www.merriam-webster.com/dictionary/neve">Merriam-Webster</a></li>
+    <li><strong>Productivity: implementation intentions.</strong> Instead of a vague goal, pre-commit to a specific <strong>if-then</strong> (&ldquo;if it&rsquo;s Tuesday at 6, then I&rsquo;m bouldering&rdquo;). Research shows tying an action to a concrete cue markedly raises follow-through. <a href="https://en.wikipedia.org/wiki/Implementation_intention">Reference</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; API key invalid/revoked, needs re-issuing; 85th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
