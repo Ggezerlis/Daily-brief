@@ -1,0 +1,149 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Thursday, 26 November 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (another 401 &ldquo;invalid API key&rdquo; response) &mdash; now the <strong>eighty-sixth straight morning</strong>. The voice account keeps being <strong>charged</strong>, yet the API key itself stays <strong>invalid/revoked</strong> and needs re-issuing, with the new key placed in the routine&rsquo;s environment, before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip warn">Action &middot; A personal project&rsquo;s build keeps failing on main</span>
+    <span class="chip hi">To do &middot; 1 event invite awaiting your RSVP</span>
+    <span class="chip">World &middot; N.&nbsp;Korea: Kim pushes to widen tactical-nuke deployment</span>
+    <span class="chip">World &middot; Iraq court clears Baghdad takeover of Kurdish oil</span>
+    <span class="chip">World &middot; California storms &amp; king tide; Pacifica Pier collapses</span>
+    <span class="chip">AI &middot; OpenAI tightens ChatGPT limits; S&amp;P eyes Nvidia</span>
+    <span class="chip">Weather &middot; Cold, grey, windy; evening drizzle</span>
+    <span class="chip">Learning &middot; rime; few-shot examples</span>
+    <span class="chip warn">Audio &middot; TTS key invalid, needs re-issuing</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George. A couple of things want your attention first thing. <span class="redacted">&mdash; personal items &mdash;</span> Your calendar connector&rsquo;s offline on my end again, so eyeball your own day before you lock anything in. Athens has turned raw and grey, with wind and a bit of evening drizzle, and the wider world is a heavy read this morning. Let&rsquo;s get into it.</p>
+      <p>First, North Korea. Kim Jong Un has called for the North to widen the deployment of its tactical nuclear weapons, and he put teeth on it, warning that any attempt to deny the country&rsquo;s nuclear status would be treated as, in his words, an open declaration of war. It lands barely a week after the UN&rsquo;s nuclear watchdog reported Pyongyang is enlarging a uranium enrichment site, so the rhetoric and the hardware are moving together.</p>
+      <p>Next, Iraq, where the fight over Kurdish oil just escalated hard. The country&rsquo;s top court ruled that Baghdad can take over the Kurdish region&rsquo;s borders and its oil fields, a day after the federal government ordered exactly that. Kurdish authorities are calling it an assault on their constitutional rights, which sets up a serious confrontation over who actually controls the north&rsquo;s crude.</p>
+      <p>And something different to close the set. California&rsquo;s getting battered by storms and an El Ni&ntilde;o-driven king tide, one of those extra-high seasonal tides that stack right on top of the swell. High waves and flooding have hammered the coast, and part of the Pacifica Pier, just south of San Francisco, has collapsed into the sea.</p>
+      <p>Over to AI, and the model makers are quiet, but the business around them isn&rsquo;t. OpenAI is tightening ChatGPT&rsquo;s usage limits. As it merges its chat and work experiences, heavy users are going to hit their caps sooner, so if you lean on it hard, expect to feel that. And the bigger one is Nvidia. S&amp;P is weighing a credit downgrade over governance worries and so-called key-man risk around Jensen Huang, after a report he breached the company&rsquo;s own code of conduct. When the ratings agencies start circling the firm bankrolling the whole AI boom, people pay attention.</p>
+      <p>Now Athens, and bundle up, because today&rsquo;s a raw one. Grey and overcast from dawn, cold all the way through, only crawling to about ten degrees at the afternoon peak, and breezy enough to notice, with gusts punching up near fifty kilometres an hour. It stays dry through the middle of the day, then the rain chance climbs through the afternoon into light evening drizzle. The sun clocks off just after five.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>Quick hydration nudge, since cold, dry, windy days quietly pull the water out of you: if you&rsquo;re on the wall, keep a bottle going and sip anyway.</p>
+      <p>Two for the collection. Your word today is rime, r-i-m-e, the feathery white ice that forms when freezing fog settles straight onto rock and rail, the stuff that furs up a crag on a morning exactly like this one. And an AI tip worth stealing: when you want a specific format back, don&rsquo;t just describe it, show it. Paste one or two quick examples of the exact output you&rsquo;re after, and the model will match them far more reliably than it follows instructions alone.</p>
+      <p>That&rsquo;s your lot, George: a heavy world, a bit on your plate, and a cold, blustery Athens day. Keep the hood up and get after it.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>North Korea: Kim calls to widen tactical-nuke deployment.</strong> Kim Jong Un urged the North to <strong>expand deployment of its tactical nuclear weapons</strong>, warning that any attempt to deny the country&rsquo;s nuclear status would be an <strong>&ldquo;open declaration of war.&rdquo;</strong> It follows a UN watchdog report (Nov&nbsp;19) that Pyongyang is <strong>enlarging a uranium-enrichment site</strong>. <a href="https://www.aljazeera.com/where/north-korea/">Al Jazeera</a></li>
+    <li><strong>Iraq&rsquo;s top court clears Baghdad takeover of Kurdish oil.</strong> The federal supreme court ruled the government can <strong>take over the Kurdish region&rsquo;s borders and oil fields</strong>, a day after Baghdad <strong>ordered a takeover</strong> of oilfields in Kurdish-controlled areas. Kurdish authorities call it an <strong>&ldquo;assault&rdquo; on constitutional rights</strong>. <a href="https://www.aljazeera.com/where/iraq/">Al Jazeera</a></li>
+    <li><strong>California: storms and a king tide batter the coast.</strong> Storms plus an <strong>El Ni&ntilde;o-driven king tide</strong> (an extra-high seasonal tide) brought high waves and flooding to California&rsquo;s coast, and <strong>part of the Pacifica Pier</strong>, south of San Francisco, <strong>collapsed</strong>. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>OpenAI tightens ChatGPT usage limits.</strong> As OpenAI <strong>merges its Chat and Work experiences</strong>, it says <strong>heavy users may hit their caps sooner</strong> &mdash; worth knowing if you lean on ChatGPT hard. <a href="https://techcrunch.com/category/artificial-intelligence/">TechCrunch</a></li>
+    <li><strong>S&amp;P weighs an Nvidia credit downgrade.</strong> The ratings agency is considering lowering <strong>Nvidia&rsquo;s credit rating</strong> over governance concerns and <strong>&ldquo;key-man&rdquo; risk</strong> tied to CEO Jensen Huang, after a report he breached the company&rsquo;s code of conduct. <a href="https://techcrunch.com/category/artificial-intelligence/">TechCrunch</a></li>
+    <li><strong>Model releases: quiet.</strong> No confirmed new consumer drop from <strong>ChatGPT, Claude, Gemini or Grok</strong> in the last 24 hours. <a href="https://www.anthropic.com/claude/fable">Anthropic</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Cold, grey and windy &mdash; a raw turn.</strong> Overcast from dawn, a <strong>chilly ~7&deg;C</strong> start, peaking only around <strong>~10&deg;C</strong> and easing to <strong>~8&deg;C</strong> by evening. <strong>Dry through midday</strong>, then rain chance climbs through the afternoon into <strong>light evening drizzle</strong> (rising past ~50% after dark; small totals). <strong>Windy</strong> &mdash; sustained ~20&ndash;25&nbsp;km/h with <strong>gusts near ~50&nbsp;km/h</strong>. <strong>Sunset just after 5&nbsp;PM</strong>. <a href="https://wttr.in/Athens">wttr.in</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Action &mdash; a personal project&rsquo;s automated build keeps failing on main.</strong> A run of failed builds landed overnight; worth a look when you&rsquo;re next at a keyboard.</li>
+    <li><strong>1 event invitation is awaiting your RSVP</strong> &mdash; an invite-only event in Athens <strong>early next month</strong>. Confirm if you want the seat.</li>
+    <li><strong>Calendar couldn&rsquo;t be reached</strong> &mdash; no calendar connector is enabled in this session, so check your own schedule before planning the day.</li>
+    <li><strong>A couple of routine confirmations arrived</strong> (a dispute acknowledgement; a refund/unsubscribe went through cleanly). <strong>Nothing needs a reply today.</strong></li>
+    <li><strong>A service-provider notice</strong> about pricing / policy changes coming in <strong>2027</strong> &mdash; informational, no action now.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Cold, dry, windy days quietly dehydrate you &mdash; if you&rsquo;re on the wall today, keep a bottle going and sip steadily anyway. (No medical advice.)</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day: <em>rime</em></strong> (n.) &mdash; a feathery white ice coating formed when supercooled fog freezes directly onto surfaces. <em>Rime furred every hold on the north crag after the freezing mist.</em> <a href="https://www.merriam-webster.com/dictionary/rime">Merriam-Webster</a></li>
+    <li><strong>AI tip: show, don&rsquo;t just tell (few-shot).</strong> When you want a specific output format, paste <strong>one or two quick examples</strong> of exactly what you want back. Models match concrete examples far more reliably than they follow described instructions alone. <a href="https://en.wikipedia.org/wiki/Few-shot_learning">Reference</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; API key invalid/revoked, needs re-issuing; 86th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
