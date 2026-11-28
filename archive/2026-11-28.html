@@ -1,0 +1,156 @@
+<title>Daily Briefing</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+      --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+      --hi:#3a3316; --hi-line:#6e6132;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#15130f; --card:#201d18; --ink:#efe9df; --muted:#a49c8e; --line:#332e26;
+    --accent:#e8935f; --accent-soft:#3a2a1e; --warn-bg:#3a1f1d; --warn-ink:#f2a9a3; --warn-line:#5c2f2b;
+    --hi:#3a3316; --hi-line:#6e6132;
+  }
+  :root[data-theme="light"] {
+    --bg:#f4f1ea; --card:#fffdf8; --ink:#1c1a17; --muted:#6b655c; --line:#e4ded2;
+    --accent:#b4531f; --accent-soft:#f3e2d6; --warn-bg:#fdecec; --warn-ink:#a5241f; --warn-line:#f2c4c0;
+    --hi:#fff6d6; --hi-line:#e9d68a;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:720px; margin:0 auto; padding:28px 20px 64px; }
+  .masthead { border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:22px; }
+  .kicker { font-size:12px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent); font-weight:700; }
+  .masthead h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(30px,7vw,44px); margin:6px 0 4px; letter-spacing:-.01em; }
+  .masthead .sub { color:var(--muted); font-size:15px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+  .listen h2 { margin:0 0 4px; font-size:19px; }
+  .listen .dur { color:var(--muted); font-size:14px; margin-bottom:12px; }
+  .notice { background:var(--warn-bg); color:var(--warn-ink); border:1px solid var(--warn-line);
+    border-radius:12px; padding:12px 14px; font-size:14px; }
+  audio { width:100%; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+  .chip { font-size:13px; padding:6px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent);
+    border:1px solid transparent; font-weight:600; white-space:nowrap; }
+  .chip.warn { background:var(--warn-bg); color:var(--warn-ink); border-color:var(--warn-line); }
+  .chip.hi { background:var(--hi); color:var(--ink); border-color:var(--hi-line); }
+  .nowspeaking h2 { margin:0 0 12px; font-size:16px; color:var(--muted); font-weight:600; letter-spacing:.02em; }
+  #transcript p { margin:0 0 9px; color:var(--ink); }
+  #transcript p.redacted, #transcript span.redacted { font-style:italic; opacity:.5; color:var(--muted); }
+  .written h2 { font-family:Georgia,serif; font-size:22px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:34px 0 4px; }
+  .story h3 { font-size:13px; text-transform:uppercase; letter-spacing:.1em; color:var(--accent); margin:22px 0 6px; }
+  .story ul { margin:0; padding-left:20px; }
+  .story li { margin:0 0 9px; }
+  .story a { color:var(--accent); text-decoration:none; border-bottom:1px solid var(--line); font-size:13px; white-space:nowrap; }
+  .story a:hover { border-color:var(--accent); }
+  .foot { margin-top:36px; color:var(--muted); font-size:12px; text-align:center; }
+</style>
+<div class="wrap">
+  <header class="masthead">
+    <div class="kicker">🎙️ Your Morning Rundown</div>
+    <h1>Daily Briefing</h1>
+    <div class="sub">Saturday, 28 November 2026 &middot; Athens</div>
+  </header>
+
+  <div class="card listen">
+    <h2>Today&rsquo;s brief</h2>
+    <div class="dur">Audio unavailable today</div>
+    <div class="notice">The text-to-speech service rejected our credentials again this morning (another 401 &ldquo;invalid API key&rdquo; response) &mdash; now the <strong>eighty-eighth straight morning</strong>. The key is being <strong>rejected outright by the voice provider</strong> (even the account-status check returns 401), so it has been <strong>revoked and needs re-issuing</strong>, with the new key placed in the routine&rsquo;s environment, before the morning voice can return. No player today; the written brief is below in full, with personal items kept off this page for privacy.</div>
+  </div>
+
+  <div class="chips">
+    <span class="chip">World &middot; Taiwan votes in local elections</span>
+    <span class="chip">World &middot; Kuwait drone strike kills two Italians</span>
+    <span class="chip">World &middot; Russia unveils nuclear-armed submarine</span>
+    <span class="chip">AI &middot; Anthropic rewrites its API in Rust</span>
+    <span class="chip">AI &middot; Gemini agents cut quantum-algorithm cost</span>
+    <span class="chip">Weather &middot; Mild, showery; sunset ~5:07</span>
+    <span class="chip">Space &middot; Cygnus cargo launch tomorrow (tentative)</span>
+    <span class="chip">Learning &middot; susurrus; an anti-hallucination tip</span>
+    <span class="chip hi">To check &middot; 1 message worth a peek</span>
+    <span class="chip warn">Audio &middot; TTS key revoked, needs re-issuing</span>
+  </div>
+
+  <div class="card nowspeaking">
+    <h2>The brief, in full</h2>
+    <div id="transcript">
+      <p>Morning, George &mdash; it&rsquo;s Saturday, the twenty-eighth. Three things up top. Taiwan&rsquo;s voting today in local elections that&rsquo;ll read as a referendum on how the island feels about Beijing. On the AI front there&rsquo;s actually something worth your attention for once, which I&rsquo;ll get to. And it&rsquo;s a mild, showery weekend out there, nothing dramatic. <span class="redacted">&mdash; personal items &mdash;</span> Okay &mdash; the world first.</p>
+      <p>Taiwan&rsquo;s the big one. Voters across all twenty-two cities and counties are casting ballots today, and the Taipei mayor&rsquo;s race especially is being watched as a gauge of the public mood toward China. These are local seats, but the read-through to cross-strait politics is the whole story &mdash; an early temperature check ahead of the bigger national fights to come.</p>
+      <p>Next, a grim one out of Kuwait. A drone strike there killed two Italian citizens, and Italy&rsquo;s foreign minister says the drone was Iranian-made. That pulls Italy directly into the region&rsquo;s widening conflict, and it&rsquo;s the kind of attribution that tends to harden European positions fast. Rome&rsquo;s going to be under pressure to respond.</p>
+      <p>And Russia&rsquo;s flexing. Putin unveiled a new nuclear-powered submarine armed with hypersonic weapons, with the Kremlin saying five more are coming by twenty-thirty. It&rsquo;s as much message as machine &mdash; a reminder, aimed at NATO, that Moscow&rsquo;s still pouring money into strategic hardware even while the war grinds on.</p>
+      <p>Over to AI, and for once it&rsquo;s not all money and hot air. Anthropic rewrote its main Messages API &mdash; the pipe that basically every Claude app runs through &mdash; from Python into Rust, and had Claude itself do most of the rewriting. For you as a founder shipping on these tools, that&rsquo;s a speed-and-reliability story worth watching. Meanwhile Google&rsquo;s DeepMind turned teams of Gemini agents loose on quantum algorithms, and they found versions of five known ones up to two hundred and ninety times cheaper to run, with every result formally checked in a proof system &mdash; so it&rsquo;s not just vibes. On actual new flagship models you can install today, though, it&rsquo;s still quiet: nothing fresh from ChatGPT, Gemini or Grok in the last day.</p>
+      <p>Now Athens, and it&rsquo;s a soft, grey one &mdash; a real change from the cold snap. Mid-teens most of the day: around fourteen first thing, nudging up to eighteen by early afternoon, then back to the mid-teens come evening. Expect on-and-off light showers, likeliest around dawn and again around six in the evening, with a drier window in the middle of the day. Barely any wind to speak of. The sun&rsquo;s gone by about five past five.</p>
+      <p class="redacted">&mdash; personal items &mdash;</p>
+      <p>One more before you go. There&rsquo;s a cargo resupply launch on the books &mdash; a Cygnus capsule riding a Falcon 9 up to the space station, currently penciled in for tomorrow, Sunday, at around quarter to six in the evening our time. Call it tentative, though; these slip all the time, so don&rsquo;t build your evening around it.</p>
+      <p>Two for the shelf. Your word today is susurrus &mdash; a soft whispering or rustling murmur, like the susurrus of light rain on the awning. And a quick tip, since you live in these tools: when you&rsquo;re worried about a model making things up, explicitly tell it it&rsquo;s allowed to say &ldquo;I don&rsquo;t know.&rdquo; Giving it that out measurably cuts down on confident nonsense.</p>
+      <p>And since the air&rsquo;s damp and you&rsquo;ll probably forget &mdash; keep some water near the desk and sip through the day.</p>
+      <p>That&rsquo;s your Saturday: a quiet, showery weekend with Taiwan at the polls and, finally, some real movement in AI. Ease into it.</p>
+    </div>
+  </div>
+
+  <div class="written">
+<section class="story">
+  <h3>World</h3>
+  <ul>
+    <li><strong>Taiwan votes in local elections.</strong> Voters across all <strong>22 cities and counties</strong> are casting ballots today; the <strong>Taipei mayoral race</strong> is being watched closely as a gauge of public sentiment toward China &mdash; local seats with an outsized read-through to cross-strait politics. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Kuwait drone strike kills two Italians.</strong> Italy&rsquo;s foreign minister says the drone used in the deadly Kuwait strike that <strong>killed two Italian citizens</strong> was <strong>Iranian-made</strong>, pulling Rome deeper into the region&rsquo;s widening conflict. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+    <li><strong>Russia unveils a nuclear-armed submarine.</strong> Putin presented a new <strong>nuclear-powered submarine carrying hypersonic weapons</strong>, with the Kremlin saying <strong>five more are planned by 2030</strong> &mdash; a strategic-hardware signal aimed squarely at NATO. <a href="https://www.aljazeera.com/news/">Al Jazeera</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>AI &amp; Tech</h3>
+  <ul>
+    <li><strong>Anthropic rewrote its Messages API in Rust.</strong> The core API behind essentially every Claude app was <strong>ported from Python to Rust</strong>, with <strong>Claude doing most of the rewrite</strong> &mdash; a speed-and-reliability move relevant to anyone building on the API. <a href="https://www.anthropic.com/engineering">Anthropic Engineering</a></li>
+    <li><strong>Gemini agents cut quantum-algorithm costs.</strong> Google DeepMind had teams of <strong>Gemini agents</strong> find versions of <strong>five known quantum algorithms up to ~290&times; cheaper</strong> to run, with every result <strong>verified in the Lean proof system</strong>. <a href="https://deepmind.google/discover/blog/">Google DeepMind</a></li>
+    <li><strong>Flagship releases: quiet.</strong> No confirmed new consumer model from <strong>ChatGPT, Gemini or Grok</strong> in the last 24 hours &mdash; nothing new to install today. <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-27-2026/">The Neuron</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Weather &mdash; Athens</h3>
+  <ul>
+    <li><strong>Mild and showery &mdash; a soft, grey day.</strong> A big change from the cold snap: <strong>~14&deg;C</strong> first thing, up to <strong>~18&deg;C</strong> by early afternoon, back to the <strong>mid-teens</strong> by evening. <strong>On-and-off light showers</strong>, likeliest around <strong>dawn (~66%)</strong> and <strong>~6&nbsp;PM (~68%)</strong>, with a drier window midday (~20%). <strong>Light winds</strong> (gusts only ~19&nbsp;km/h). <strong>Sunset ~5:07&nbsp;PM</strong>. <a href="https://wttr.in/Athens,Greece">wttr.in</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Space</h3>
+  <ul>
+    <li><strong>Cygnus cargo launch &mdash; tomorrow (tentative).</strong> A <strong>Cygnus CRS resupply</strong> to the ISS on a <strong>Falcon 9</strong> is currently targeted for <strong>Sun, Nov&nbsp;29, ~5:49&nbsp;PM Athens time</strong>. Schedules disagree and cargo slots slip often &mdash; treat the date as provisional. <a href="https://www.spacelaunchschedule.com/">Space Launch Schedule</a></li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Personal &amp; Comms</h3>
+  <ul>
+    <li><strong>Calendar couldn&rsquo;t be reached</strong> &mdash; no calendar connector is enabled in this session, so check your own schedule before planning the day.</li>
+    <li><strong>1 message worth a peek</strong> on a messaging app (school-related). Nothing needs a reply today.</li>
+    <li><strong>Two routine receipts</strong> landed (a usage bill and a subscription confirmation) &mdash; <strong>no action needed.</strong></li>
+    <li><strong>No security or new-device alerts</strong> today. The rest of the inbox is Black Friday promo noise.</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Health</h3>
+  <ul>
+    <li>Damp, mild days still dry you out without you noticing &mdash; keep a water bottle within reach and sip steadily through the day. (No medical advice.)</li>
+  </ul>
+</section>
+<section class="story">
+  <h3>Learning</h3>
+  <ul>
+    <li><strong>Word of the day: <em>susurrus</em></strong> (n.) &mdash; a soft whispering, murmuring or rustling sound. <em>The only sound on the balcony was the susurrus of light rain on the awning.</em> <a href="https://www.merriam-webster.com/dictionary/susurrus">Merriam-Webster</a></li>
+    <li><strong>AI tip: give the model an &ldquo;out.&rdquo;</strong> When accuracy matters, explicitly tell it that <strong>&ldquo;I don&rsquo;t know&rdquo; is an acceptable answer</strong>. Granting permission to abstain measurably reduces confident, made-up responses. <a href="https://www.anthropic.com/research">Anthropic</a></li>
+  </ul>
+</section>
+  </div>
+
+  <div class="foot">Generated automatically &middot; audio unavailable today (TTS auth failed &mdash; API key invalid/revoked, needs re-issuing; 88th straight day) &middot; email &amp; calendar content kept off this page for privacy.</div>
+</div>
